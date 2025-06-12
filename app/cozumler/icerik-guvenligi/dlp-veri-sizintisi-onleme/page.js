@@ -19,14 +19,13 @@ export default function GuvenlikOtomasyonu() {
         ></div>
         <div className="z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Security Automation
+            DLP (Data Leak Prevention)
           </h1>
           <p className="text-sm md:text-base text-white mt-4 max-w-3xl px-4 mx-auto">
-            With Security Automation Solutions, We Organize Machine-Based
-            Solutions That Identify Incoming Threats And Prioritize And Respond
-            To Alerts As They Arise, With The Power To Detect, Investigate And
-            Remediate Cyber Threats Programmatically; With Or Without Human
-            Intervention.
+            Keeping your important data safe is a critical factor for the
+            sustainability of your business. We help you maintain your
+            competitive advantage by taking your business's data security to the
+            highest level with DLP solutions.
           </p>
           <div className="mt-8">
             <Link href="/hizmetler/support-plans">
@@ -41,15 +40,23 @@ export default function GuvenlikOtomasyonu() {
       {/* Security Automation Features Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Regularly Performs Repetitive And Time-Consuming Actions,
-              Workflows, And Rules With Security Automation.
-            </h2>
-            <p className="text-sm text-gray-600 max-w-4xl mx-auto">
-              It Triggers Potential Threats By Following The Steps, Rules, And
-              Workflow Taken By Security Analysts To Investigate The Incident
-              And Determine If It Is A Legitimate Problem.
+          <div className="text-center mb-12 flex flex-col gap-4">
+            <p className="text-gray-600 max-w-4xl mx-auto font-semibold">
+              In today’s world where technology is rapidly advancing, data is
+              among the most valuable assets of businesses. This data can
+              contain a variety of sensitive information, from customer
+              information to financial reports, and it is critical that it is
+              properly protected. This is where data loss prevention (DLP)
+              solutions come into play and aim to maximize data security for
+              you.
+            </p>
+            <p className="text-gray-600 max-w-4xl mx-auto font-semibold">
+              Our company was founded by a team specialized in DLP solutions and
+              offers comprehensive solutions for the needs of businesses to
+              protect their sensitive data. With our understanding based on
+              customer satisfaction and our experienced team in the field, we
+              offer the best practices to monitor, classify and prevent leaks of
+              your data.
             </p>
           </div>
 
@@ -66,10 +73,13 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Performs Advanced Threat Detection
+                Data Monitoring and Classification
               </h3>
               <p className="text-gray-600">
-                It detects threats in your environment quickly and easily.
+                Knowing where your data is and how it’s being used is important.
+                Our DLP solutions automatically track and classify your data,
+                allowing you to track who is accessing your valuable
+                information.
               </p>
             </div>
 
@@ -85,10 +95,12 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Provides an Effective Response Process
+                Leak Prevention
               </h3>
               <p className="text-gray-600">
-                Determines whether you can take action in response.
+                We not only monitor your sensitive data, but also intervene
+                immediately when there is a risk of leakage. We detect and
+                prevent data leaks, so your security is always protected.
               </p>
             </div>
 
@@ -104,10 +116,12 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Identifies Potential Problems
+                Warning and Reporting
               </h3>
               <p className="text-gray-600">
-                Analyzes problem details and solves them.
+                When it comes to data security, being proactive is vital. Our
+                DLP solutions identify potential threats, alert users, and
+                provide detailed reports so you can manage risks.
               </p>
             </div>
           </div>

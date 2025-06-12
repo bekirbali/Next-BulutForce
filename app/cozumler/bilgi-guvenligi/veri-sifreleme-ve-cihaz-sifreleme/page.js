@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function GuvenlikOtomasyonu() {
+export default function VeriSifrelemeVeCihazSifreleme() {
   return (
     <div>
       {/* Banner Section */}
@@ -19,14 +19,11 @@ export default function GuvenlikOtomasyonu() {
         ></div>
         <div className="z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Security Automation
+            Data Encryption and Device Encryption
           </h1>
           <p className="text-sm md:text-base text-white mt-4 max-w-3xl px-4 mx-auto">
-            With Security Automation Solutions, We Organize Machine-Based
-            Solutions That Identify Incoming Threats And Prioritize And Respond
-            To Alerts As They Arise, With The Power To Detect, Investigate And
-            Remediate Cyber Threats Programmatically; With Or Without Human
-            Intervention.
+            Data and device encryption is an integral part of modern
+            cybersecurity strategies.
           </p>
           <div className="mt-8">
             <Link href="/hizmetler/support-plans">
@@ -41,15 +38,19 @@ export default function GuvenlikOtomasyonu() {
       {/* Security Automation Features Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Regularly Performs Repetitive And Time-Consuming Actions,
-              Workflows, And Rules With Security Automation.
-            </h2>
-            <p className="text-sm text-gray-600 max-w-4xl mx-auto">
-              It Triggers Potential Threats By Following The Steps, Rules, And
-              Workflow Taken By Security Analysts To Investigate The Incident
-              And Determine If It Is A Legitimate Problem.
+          <div className="text-center mb-12 flex flex-col gap-4">
+            <p className="text-gray-600 max-w-4xl mx-auto font-semibold">
+              Data and device encryption is one of the key strategies in
+              cybersecurity. These methods ensure that sensitive data and
+              devices are protected from unauthorized access, so businesses and
+              individuals can maintain the highest level of data security.
+            </p>
+            <p className="text-gray-600 max-w-4xl mx-auto font-semibold">
+              Data and device encryption is an integral part of modern
+              cybersecurity strategies, enabling businesses and individuals to
+              securely manage their digital assets, with benefits such as data
+              privacy, protection against unauthorized access, and regulatory
+              compliance.
             </p>
           </div>
 
@@ -66,10 +67,14 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Performs Advanced Threat Detection
+                Data Protection
               </h3>
               <p className="text-gray-600">
-                It detects threats in your environment quickly and easily.
+                Data encryption involves encoding sensitive data in a complex
+                format using an encryption algorithm. This prevents unauthorized
+                access to data, and if data is stolen, it is very difficult to
+                decipher the stolen data. Data encryption not only ensures
+                confidentiality but also supports regulatory compliance.
               </p>
             </div>
 
@@ -85,10 +90,13 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Provides an Effective Response Process
+                Device Security
               </h3>
               <p className="text-gray-600">
-                Determines whether you can take action in response.
+                Device encryption ensures that data remains safe, especially in
+                the event of loss or theft of portable devices such as mobile
+                devices and laptops. When device encryption is used,
+                authentication is required to unlock the device and access data.
               </p>
             </div>
 
@@ -104,10 +112,13 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Identifies Potential Problems
+                Preventing Data Leaks
               </h3>
               <p className="text-gray-600">
-                Analyzes problem details and solves them.
+                Data and device encryption greatly prevents data leaks. If a
+                device is stolen or lost, the risk of data leaks is minimized as
+                unauthorized access to encrypted data cannot be gained. This
+                helps protect business reputation.
               </p>
             </div>
           </div>

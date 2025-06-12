@@ -54,9 +54,12 @@ export default function Home() {
                   Security, We Introduce The Security Of Your Corporate Assets
                   With Operational Excellence.
                 </p>
-                <button className="bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 uppercase text-sm font-medium mt-auto">
+                <Link
+                  href="/cozumler/bilgi-guvenligi"
+                  className="bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 uppercase text-sm font-medium mt-auto inline-block"
+                >
                   Get More Detailed Information
-                </button>
+                </Link>
               </div>
             </div>
             {/* Network Security Card */}
@@ -79,9 +82,12 @@ export default function Home() {
                   Work In A Risk-Oriented Manner And Take Precautions Against
                   Possible Malicious Attacks In Advance.
                 </p>
-                <button className="bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 uppercase text-sm font-medium mt-auto">
+                <Link
+                  href="/cozumler/ag-guvenligi"
+                  className="bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 uppercase text-sm font-medium mt-auto inline-block"
+                >
                   Get More Detailed Information
-                </button>
+                </Link>
               </div>
             </div>
             {/* Content Security Card */}
@@ -104,9 +110,12 @@ export default function Home() {
                   Cybersecurity Measures To Ensure Your Workflow Operates In
                   Full Integration.
                 </p>
-                <button className="bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 uppercase text-sm font-medium mt-auto">
+                <Link
+                  href="/cozumler/icerik-guvenligi"
+                  className="bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 uppercase text-sm font-medium mt-auto inline-block"
+                >
                   Get More Detailed Information
-                </button>
+                </Link>
               </div>
             </div>
           </div>

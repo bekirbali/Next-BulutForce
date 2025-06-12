@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function GuvenlikOtomasyonu() {
+export default function YapayZekaIleTehditAvi() {
   return (
     <div>
       {/* Banner Section */}
@@ -19,14 +19,10 @@ export default function GuvenlikOtomasyonu() {
         ></div>
         <div className="z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Security Automation
+            Threat Hunting with Artificial Intelligence
           </h1>
           <p className="text-sm md:text-base text-white mt-4 max-w-3xl px-4 mx-auto">
-            With Security Automation Solutions, We Organize Machine-Based
-            Solutions That Identify Incoming Threats And Prioritize And Respond
-            To Alerts As They Arise, With The Power To Detect, Investigate And
-            Remediate Cyber Threats Programmatically; With Or Without Human
-            Intervention.
+            Redefining Cybersecurity
           </p>
           <div className="mt-8">
             <Link href="/hizmetler/support-plans">
@@ -41,15 +37,26 @@ export default function GuvenlikOtomasyonu() {
       {/* Security Automation Features Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Regularly Performs Repetitive And Time-Consuming Actions,
-              Workflows, And Rules With Security Automation.
-            </h2>
-            <p className="text-sm text-gray-600 max-w-4xl mx-auto">
-              It Triggers Potential Threats By Following The Steps, Rules, And
-              Workflow Taken By Security Analysts To Investigate The Incident
-              And Determine If It Is A Legitimate Problem.
+          <div className="text-center mb-12 flex flex-col gap-4">
+            <p className="text-gray-600 max-w-4xl mx-auto font-semibold">
+              As cyber threats become increasingly complex and sophisticated,
+              traditional security methods are becoming inadequate. Therefore,
+              artificial intelligence (AI) technology stands out as an effective
+              weapon in threat hunting. AI offers a new perspective in cyber
+              security to detect, analyze and prevent threats.
+            </p>
+            <p className="text-gray-600 max-w-4xl mx-auto font-semibold">
+              AI offers a smarter, faster and more effective approach to threat
+              hunting. Without being limited by traditional security methods,
+              businesses can get ahead of threats more effectively with big data
+              analysis and learning capabilities.
+            </p>
+            <p className="text-gray-600 max-w-4xl mx-auto font-semibold">
+              AI plays a key role in detecting anomalies and potential threats
+              thanks to its ability to quickly analyze large amounts of data. AI
+              algorithms identify anomalies and potential security breaches by
+              learning normal usage patterns. This helps detect threats at an
+              early stage and speeds up response times.
             </p>
           </div>
 
@@ -66,11 +73,8 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Performs Advanced Threat Detection
+                Threat Detection and Analysis
               </h3>
-              <p className="text-gray-600">
-                It detects threats in your environment quickly and easily.
-              </p>
             </div>
 
             {/* Column 2 */}
@@ -85,11 +89,8 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Provides an Effective Response Process
+                Automatic Response and Action
               </h3>
-              <p className="text-gray-600">
-                Determines whether you can take action in response.
-              </p>
             </div>
 
             {/* Column 3 */}
@@ -104,11 +105,8 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Identifies Potential Problems
+                Continuous Learning and Adapting
               </h3>
-              <p className="text-gray-600">
-                Analyzes problem details and solves them.
-              </p>
             </div>
           </div>
         </div>

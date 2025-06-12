@@ -266,6 +266,30 @@ const Navbar = () => {
                         E-posta Güvenliği
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/cozumler/icerik-guvenligi/konfigurasyonyonetimi"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+                      >
+                        Konfigürasyon Yönetimi
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/cozumler/icerik-guvenligi/url-icerik-filtreleme-ve-gecit"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+                      >
+                        URL/İçerik Filtreleme ve Geçit
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/cozumler/icerik-guvenligi/veri-siniflandirma"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+                      >
+                        Veri Sınıflandırma
+                      </Link>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -324,7 +348,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="/markalarimiz/skyron"
+                    href="/cozumler/ag-guvenligi/ag-guvenligi-yonetimi"
                     className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
                   >
                     Skyron
@@ -403,6 +427,64 @@ const Navbar = () => {
               >
                 Çözümler
               </Link>
+              <div className="pl-4">
+                <Link
+                  href="/cozumler/bilgi-guvenligi"
+                  className="block py-2 px-4 text-white hover:text-blue-200 transition-colors duration-200 text-sm"
+                >
+                  - Bilgi Güvenliği
+                </Link>
+                <Link
+                  href="/cozumler/ag-guvenligi"
+                  className="block py-2 px-4 text-white hover:text-blue-200 transition-colors duration-200 text-sm"
+                >
+                  - Ağ Güvenliği
+                </Link>
+                <Link
+                  href="/cozumler/icerik-guvenligi"
+                  className="block py-2 px-4 text-white hover:text-blue-200 transition-colors duration-200 text-sm"
+                >
+                  - İçerik Güvenliği
+                </Link>
+                <div className="pl-4">
+                  <Link
+                    href="/cozumler/icerik-guvenligi/bulut-erisimi-guvenlik-aracisi"
+                    className="block py-1 px-4 text-white hover:text-blue-200 transition-colors duration-200 text-xs"
+                  >
+                    • Bulut Erişimi Güvenlik Aracısı
+                  </Link>
+                  <Link
+                    href="/cozumler/icerik-guvenligi/dlp-veri-sizintisi-onleme"
+                    className="block py-1 px-4 text-white hover:text-blue-200 transition-colors duration-200 text-xs"
+                  >
+                    • DLP - Veri Sızıntısı Önleme
+                  </Link>
+                  <Link
+                    href="/cozumler/icerik-guvenligi/eposta-guvenligi"
+                    className="block py-1 px-4 text-white hover:text-blue-200 transition-colors duration-200 text-xs"
+                  >
+                    • E-posta Güvenliği
+                  </Link>
+                  <Link
+                    href="/cozumler/icerik-guvenligi/konfigurasyonyonetimi"
+                    className="block py-1 px-4 text-white hover:text-blue-200 transition-colors duration-200 text-xs"
+                  >
+                    • Konfigürasyon Yönetimi
+                  </Link>
+                  <Link
+                    href="/cozumler/icerik-guvenligi/url-icerik-filtreleme-ve-gecit"
+                    className="block py-1 px-4 text-white hover:text-blue-200 transition-colors duration-200 text-xs"
+                  >
+                    • URL/İçerik Filtreleme ve Geçit
+                  </Link>
+                  <Link
+                    href="/cozumler/icerik-guvenligi/veri-siniflandirma"
+                    className="block py-1 px-4 text-white hover:text-blue-200 transition-colors duration-200 text-xs"
+                  >
+                    • Veri Sınıflandırma
+                  </Link>
+                </div>
+              </div>
             </li>
             <li>
               <Link

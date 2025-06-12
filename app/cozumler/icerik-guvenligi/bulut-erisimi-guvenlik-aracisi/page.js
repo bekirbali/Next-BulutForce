@@ -19,14 +19,11 @@ export default function GuvenlikOtomasyonu() {
         ></div>
         <div className="z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Security Automation
+            Cloud Access Security Agent
           </h1>
           <p className="text-sm md:text-base text-white mt-4 max-w-3xl px-4 mx-auto">
-            With Security Automation Solutions, We Organize Machine-Based
-            Solutions That Identify Incoming Threats And Prioritize And Respond
-            To Alerts As They Arise, With The Power To Detect, Investigate And
-            Remediate Cyber Threats Programmatically; With Or Without Human
-            Intervention.
+            CASB solutions monitor all activity between cloud service users and
+            cloud applications and ensure that security policies are enforced.
           </p>
           <div className="mt-8">
             <Link href="/hizmetler/support-plans">
@@ -42,14 +39,15 @@ export default function GuvenlikOtomasyonu() {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Regularly Performs Repetitive And Time-Consuming Actions,
-              Workflows, And Rules With Security Automation.
+            <h2 className="text-3xl font-bold max-w-5xl mx-auto text-gray-800 mb-4">
+              It enables you to analyze cloud service risks on your corporate
+              assets, apply security policies and make regulations.
             </h2>
-            <p className="text-sm text-gray-600 max-w-4xl mx-auto">
-              It Triggers Potential Threats By Following The Steps, Rules, And
-              Workflow Taken By Security Analysts To Investigate The Incident
-              And Determine If It Is A Legitimate Problem.
+            <p className="text-gray-600 max-w-4xl mx-auto">
+              An on-premises or cloud-based security policy enforcement point is
+              created that is placed between cloud service consumers and cloud
+              service providers to converge and cut across corporate security
+              policies when accessing cloud service resources.
             </p>
           </div>
 
@@ -66,10 +64,11 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Performs Advanced Threat Detection
+                More Organization Security
               </h3>
               <p className="text-gray-600">
-                It detects threats in your environment quickly and easily.
+                With CASB solutions, you can manage your organization's cloud
+                usage with granular visibility and control.
               </p>
             </div>
 
@@ -85,10 +84,11 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Provides an Effective Response Process
+                Provides Reliable Data
               </h3>
               <p className="text-gray-600">
-                Determines whether you can take action in response.
+                You can protect against loss of sensitive data across all cloud
+                services around you, not just the apps you approve.
               </p>
             </div>
 
@@ -104,10 +104,11 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Identifies Potential Problems
+                Protects Against Threats
               </h3>
               <p className="text-gray-600">
-                Analyzes problem details and solves them.
+                Get full visibility into all cloud services, including those
+                using SSL encrypted connections.
               </p>
             </div>
           </div>

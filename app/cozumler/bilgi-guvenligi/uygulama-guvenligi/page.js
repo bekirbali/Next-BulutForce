@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function GuvenlikOtomasyonu() {
+export default function UygulamaGuvenligi() {
   return (
     <div>
       {/* Banner Section */}
@@ -19,14 +19,10 @@ export default function GuvenlikOtomasyonu() {
         ></div>
         <div className="z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Security Automation
+            Application Security
           </h1>
           <p className="text-sm md:text-base text-white mt-4 max-w-3xl px-4 mx-auto">
-            With Security Automation Solutions, We Organize Machine-Based
-            Solutions That Identify Incoming Threats And Prioritize And Respond
-            To Alerts As They Arise, With The Power To Detect, Investigate And
-            Remediate Cyber Threats Programmatically; With Or Without Human
-            Intervention.
+            Application Security: Minimizing Risks in the Digital World
           </p>
           <div className="mt-8">
             <Link href="/hizmetler/support-plans">
@@ -41,15 +37,19 @@ export default function GuvenlikOtomasyonu() {
       {/* Security Automation Features Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Regularly Performs Repetitive And Time-Consuming Actions,
-              Workflows, And Rules With Security Automation.
-            </h2>
-            <p className="text-sm text-gray-600 max-w-4xl mx-auto">
-              It Triggers Potential Threats By Following The Steps, Rules, And
-              Workflow Taken By Security Analysts To Investigate The Incident
-              And Determine If It Is A Legitimate Problem.
+          <div className="text-center flex flex-col gap-4 mb-12">
+            <p className="text-gray-600 max-w-4xl mx-auto font-semibold">
+              Application security is a vital issue for businesses and
+              individuals in today’s digital age. Securing mobile apps,
+              websites, and other software is an important step in combating
+              data leaks, cyberattacks, and other threats.
+            </p>
+            <p className="text-gray-600 max-w-4xl mx-auto font-semibold">
+              Application security not only ensures the safety of users, but
+              also protects the reputation of the business. Creating application
+              security strategies to protect user data, prevent data leaks, and
+              counter malicious attacks is a must-have in the modern digital
+              world.
             </p>
           </div>
 
@@ -66,10 +66,13 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Performs Advanced Threat Detection
+                Weak Point Detection
               </h3>
               <p className="text-gray-600">
-                It detects threats in your environment quickly and easily.
+                Application security involves identifying and remediating
+                vulnerabilities in software that could lead to cyber attackers
+                attempting to infiltrate the system or perform malicious
+                activities.
               </p>
             </div>
 
@@ -85,10 +88,13 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Provides an Effective Response Process
+                Code Security
               </h3>
               <p className="text-gray-600">
-                Determines whether you can take action in response.
+                It requires the software code to be secure and error-free. To
+                block malware and protect against data leaks, software code must
+                be written properly and comply with security standards. Secure
+                coding practices largely prevent cyber threats.
               </p>
             </div>
 
@@ -104,10 +110,13 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Identifies Potential Problems
+                Continuous Monitoring and Update
               </h3>
               <p className="text-gray-600">
-                Analyzes problem details and solves them.
+                It does not end at one point. The application must be constantly
+                monitored, tracked for security threats, and updated with new
+                security measures. Continuous security audits throughout the
+                application lifecycle are important to minimize potential risks.
               </p>
             </div>
           </div>

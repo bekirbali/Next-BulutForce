@@ -19,14 +19,10 @@ export default function GuvenlikOtomasyonu() {
         ></div>
         <div className="z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Security Automation
+            URL / Content Filtering and Gateway
           </h1>
           <p className="text-sm md:text-base text-white mt-4 max-w-3xl px-4 mx-auto">
-            With Security Automation Solutions, We Organize Machine-Based
-            Solutions That Identify Incoming Threats And Prioritize And Respond
-            To Alerts As They Arise, With The Power To Detect, Investigate And
-            Remediate Cyber Threats Programmatically; With Or Without Human
-            Intervention.
+            Safe and Productive Digital Experience
           </p>
           <div className="mt-8">
             <Link href="/hizmetler/support-plans">
@@ -38,21 +34,55 @@ export default function GuvenlikOtomasyonu() {
         </div>
       </div>
 
+      {/* URL/Content Filtering and Gateway Section */}
+      <div className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                URL/Content Filtering and Gateway Solutions
+              </h2>
+              <p className="text-gray-700 mb-6">
+                URL/Content filtering and gateway solutions are important
+                security tools that enable businesses to control and manage
+                network traffic. These solutions increase network security by
+                protecting against malicious content, while also optimizing
+                employee productivity and resource utilization.
+              </p>
+            </div>
+
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                URL/Content Filtering:
+              </h3>
+              <p className="text-gray-700">
+                URL/Content filtering is used to control users' access to
+                certain websites or types of content. These solutions allow
+                blocking certain categories (e.g. social media, gaming sites) or
+                harmful sites (phishing, malware). This limits users' access to
+                sites that may contain unsafe content or cause time-wasting.
+              </p>
+            </div>
+
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Gateway:
+              </h3>
+              <p className="text-gray-700">
+                A gateway is a point that directs and controls network traffic.
+                Gateway solutions monitor, analyze and, if necessary, block
+                incoming and outgoing traffic. This increases network security
+                by filtering malicious traffic, while also ensuring high
+                performance and efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Security Automation Features Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Regularly Performs Repetitive And Time-Consuming Actions,
-              Workflows, And Rules With Security Automation.
-            </h2>
-            <p className="text-sm text-gray-600 max-w-4xl mx-auto">
-              It Triggers Potential Threats By Following The Steps, Rules, And
-              Workflow Taken By Security Analysts To Investigate The Incident
-              And Determine If It Is A Legitimate Problem.
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {/* Column 1 */}
             <div className="flex flex-col items-center text-center p-4">
@@ -66,10 +96,11 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Performs Advanced Threat Detection
+                Protection from Harmful Content
               </h3>
               <p className="text-gray-600">
-                It detects threats in your environment quickly and easily.
+                Malicious websites, malware, and phishing attacks have the
+                potential to harm users' devices or steal sensitive information.
               </p>
             </div>
 
@@ -85,10 +116,12 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Provides an Effective Response Process
+                Efficiency and Productivity
               </h3>
               <p className="text-gray-600">
-                Determines whether you can take action in response.
+                These solutions are used to ensure that users stay productive at
+                work or school and prevent them from wasting time on unnecessary
+                content.
               </p>
             </div>
 
@@ -104,10 +137,12 @@ export default function GuvenlikOtomasyonu() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Identifies Potential Problems
+                Traffic Control
               </h3>
               <p className="text-gray-600">
-                Analyzes problem details and solves them.
+                URL/Content filtering and gateway solutions ensure efficient use
+                of bandwidth, for example by controlling excessive consumption
+                of video and media content.
               </p>
             </div>
           </div>
