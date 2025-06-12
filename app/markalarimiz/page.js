@@ -16,19 +16,19 @@ export default function Markalarimiz() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Caspiot Card */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col">
             <div className="h-48 bg-blue-900 flex items-center justify-center">
               <h2 className="text-3xl font-bold text-white">Caspipot</h2>
             </div>
-            <div className="p-6">
-              <p className="text-gray-700 mb-6">
+            <div className="p-6 flex flex-col flex-grow">
+              <p className="text-gray-700 mb-6 flex-grow">
                 Caspipot, IoT cihazları ve endüstriyel kontrol sistemleri için
                 geliştirilmiş gelişmiş bir güvenlik çözümüdür. Gerçek zamanlı
                 izleme ve tehdit tespiti ile bağlantılı cihazlarınızı korur.
               </p>
               <Link
                 href="/markalarimiz/caspipot"
-                className="block text-center bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300"
+                className="block text-center bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 mt-auto"
               >
                 Detaylı Bilgi
               </Link>
@@ -36,42 +36,25 @@ export default function Markalarimiz() {
           </div>
 
           {/* Skyron Card */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col">
             <div className="h-48 bg-blue-800 flex items-center justify-center">
               <h2 className="text-3xl font-bold text-white">Skyron</h2>
             </div>
-            <div className="p-6">
-              <p className="text-gray-700 mb-6">
+            <div className="p-6 flex flex-col flex-grow">
+              <p className="text-gray-700 mb-6 flex-grow">
                 Skyron, bulut altyapınız ve uygulamalarınız için kapsamlı koruma
                 sağlayan gelişmiş bir bulut güvenlik platformudur. Yapay zeka
                 destekli tehdit tespiti ve otomatik müdahale yetenekleri ile
                 bulut ortamınızı güvende tutar.
               </p>
               <Link
-                href="/markalarimiz/skyron"
-                className="block text-center bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300"
+                href="/cozumler/ag-guvenligi/ag-guvenligi-yonetimi"
+                className="block text-center bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 mt-auto"
               >
                 Detaylı Bilgi
               </Link>
             </div>
           </div>
-        </div>
-
-        <div className="text-center p-6 bg-blue-50 rounded-lg">
-          <h3 className="text-xl font-semibold text-blue-900 mb-4">
-            Çözüm Ortaklıklarımız
-          </h3>
-          <p className="text-gray-700 mb-6">
-            BulutForce olarak, müşterilerimize en yüksek kalitede hizmet sunmak
-            için sektör lideri global markalarla çözüm ortaklıkları
-            geliştiriyoruz.
-          </p>
-          <Link
-            href="/iletisim"
-            className="inline-block bg-blue-900 text-white py-3 px-8 rounded-full hover:bg-blue-800 transition-colors duration-300"
-          >
-            Bizimle İletişime Geçin
-          </Link>
         </div>
       </div>
     </div>
