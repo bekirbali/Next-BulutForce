@@ -23,7 +23,7 @@ export default function Hizmetler() {
   ];
 
   return (
-    <div className="container mx-auto py-12 px-4">
+    <div className="container mx-auto py-12 px-4 min-h-[500px]">
       <h1 className="text-4xl font-bold mb-4 text-center text-blue-800">
         Hizmetlerimiz
       </h1>
