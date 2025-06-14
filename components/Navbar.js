@@ -90,7 +90,7 @@ const Navbar = () => {
                 href="/"
                 className="block py-4 px-3 text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
-                Ana Sayfa
+                Home
               </Link>
             </li>
 
@@ -99,7 +99,7 @@ const Navbar = () => {
                 href="/biz-kimiz"
                 className="block py-4 px-3 text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
-                Biz Kimiz?
+                About Us
               </Link>
               <ul className="absolute left-0 top-full w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <li>
@@ -107,7 +107,7 @@ const Navbar = () => {
                     href="/biz-kimiz/hikayemiz"
                     className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                   >
-                    Hikayemiz
+                    Our Story
                   </Link>
                 </li>
                 <li>
@@ -115,7 +115,7 @@ const Navbar = () => {
                     href="/biz-kimiz/kariyer"
                     className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                   >
-                    Kariyer
+                    Careers
                   </Link>
                 </li>
                 <li>
@@ -123,7 +123,7 @@ const Navbar = () => {
                     href="/biz-kimiz/duyurular"
                     className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                   >
-                    Duyurular
+                    Announcements
                   </Link>
                 </li>
               </ul>
@@ -134,7 +134,7 @@ const Navbar = () => {
                 href="/cozumler"
                 className="block py-4 px-3 text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
-                Çözümler
+                Solutions
               </Link>
               <ul className="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <li className="relative group/nested">
@@ -143,7 +143,7 @@ const Navbar = () => {
                     className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                   >
                     <span className="flex items-center">
-                      Bilgi Güvenliği{" "}
+                      Information Security{" "}
                       <svg
                         className="ml-1 w-4 h-4 text-gray-400"
                         fill="none"
@@ -165,7 +165,7 @@ const Navbar = () => {
                         href="/cozumler/bilgi-guvenligi/guvenlik-otomasyonu"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Güvenlik Otomasyonu
+                        Security Automation
                       </Link>
                     </li>
                     <li>
@@ -173,7 +173,7 @@ const Navbar = () => {
                         href="/cozumler/bilgi-guvenligi/guvenlik-bilgi-olay-yonetimi-ve-korelasyon-sistemi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Güvenlik Bilgi Olay Yönetimi ve Korelasyon Sistemi
+                        Security Information and Event Management
                       </Link>
                     </li>
                     <li>
@@ -181,7 +181,7 @@ const Navbar = () => {
                         href="/cozumler/bilgi-guvenligi/guvenlik-yapilandirilmasi-ve-uyumluluk"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Güvenlik Yapılandırılması ve Uyumluluk
+                        Security Configuration and Compliance
                       </Link>
                     </li>
                     <li>
@@ -189,7 +189,7 @@ const Navbar = () => {
                         href="/cozumler/bilgi-guvenligi/kullanici-davranisi-ve-analizi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Kullanıcı Davranışı ve Analizi
+                        User Behavior and Analytics
                       </Link>
                     </li>
                     <li>
@@ -197,7 +197,7 @@ const Navbar = () => {
                         href="/cozumler/bilgi-guvenligi/kurumsal-guvenlik-operasyonu"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Kurumsal Güvenlik Operasyonu
+                        Enterprise Security Operations
                       </Link>
                     </li>
                     <li>
@@ -205,7 +205,7 @@ const Navbar = () => {
                         href="/cozumler/bilgi-guvenligi/siber-risk-puanlamasi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Siber Risk Puanlaması
+                        Cyber Risk Scoring
                       </Link>
                     </li>
                     <li>
@@ -213,7 +213,7 @@ const Navbar = () => {
                         href="/cozumler/bilgi-guvenligi/veri-sifreleme-ve-cihaz-sifreleme"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Veri Şifreleme ve Cihaz Şifreleme
+                        Data Encryption and Device Encryption
                       </Link>
                     </li>
                     <li>
@@ -221,7 +221,7 @@ const Navbar = () => {
                         href="/cozumler/bilgi-guvenligi/uygulama-guvenligi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Uygulama Güvenliği
+                        Application Security
                       </Link>
                     </li>
                     <li>
@@ -229,7 +229,7 @@ const Navbar = () => {
                         href="/cozumler/bilgi-guvenligi/yapay-zeka-ile-tehdit-avi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Yapay Zeka ile Tehdit Avı
+                        AI-Powered Threat Hunting
                       </Link>
                     </li>
                   </ul>
@@ -241,7 +241,7 @@ const Navbar = () => {
                     className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                   >
                     <span className="flex items-center">
-                      Ağ Güvenliği{" "}
+                      Network Security{" "}
                       <svg
                         className="ml-1 w-4 h-4 text-gray-400"
                         fill="none"
@@ -263,7 +263,7 @@ const Navbar = () => {
                         href="/cozumler/ag-guvenligi/ag-guvenligi-yonetimi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Ağ Güvenliği Yönetimi
+                        Network Security Management
                       </Link>
                     </li>
                     <li>
@@ -271,7 +271,7 @@ const Navbar = () => {
                         href="/cozumler/ag-guvenligi/anti-ransomware-cozumleri"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Anti Ransomware Çözümleri
+                        Anti-Ransomware Solutions
                       </Link>
                     </li>
                     <li>
@@ -279,7 +279,7 @@ const Navbar = () => {
                         href="/cozumler/ag-guvenligi/bulut-guvenligi-ve-yonetimi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Bulut Güvenliği ve Yönetimi
+                        Cloud Security and Management
                       </Link>
                     </li>
                     <li>
@@ -287,7 +287,7 @@ const Navbar = () => {
                         href="/cozumler/ag-guvenligi/dns-ve-dhcp-yonetimi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        DNS ve DHCP Yönetimi
+                        DNS and DHCP Management
                       </Link>
                     </li>
                     <li>
@@ -295,7 +295,7 @@ const Navbar = () => {
                         href="/cozumler/ag-guvenligi/guvenlik-acigi-yonetimi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Güvenlik Açığı Yönetimi
+                        Vulnerability Management
                       </Link>
                     </li>
                     <li>
@@ -303,7 +303,7 @@ const Navbar = () => {
                         href="/cozumler/ag-guvenligi/guvenlik-duvari-ve-ips-ids"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Güvenlik Duvarı ve IPS/IDS
+                        Firewall and IPS/IDS
                       </Link>
                     </li>
                     <li>
@@ -311,7 +311,7 @@ const Navbar = () => {
                         href="/cozumler/ag-guvenligi/kotu-amacli-yazilim-analizi-ve-algilama"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Kötü Amaçlı Yazılım Analizi ve Algılama
+                        Malware Analysis and Detection
                       </Link>
                     </li>
                     <li>
@@ -319,7 +319,7 @@ const Navbar = () => {
                         href="/cozumler/ag-guvenligi/uc-nokta-guvenlik-yonetimi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Uç Nokta Güvenlik Yönetimi
+                        Endpoint Security Management
                       </Link>
                     </li>
                   </ul>
@@ -331,7 +331,7 @@ const Navbar = () => {
                     className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                   >
                     <span className="flex items-center">
-                      İçerik Güvenliği{" "}
+                      Content Security{" "}
                       <svg
                         className="ml-1 w-4 h-4 text-gray-400"
                         fill="none"
@@ -353,7 +353,7 @@ const Navbar = () => {
                         href="/cozumler/icerik-guvenligi/bulut-erisimi-guvenlik-aracisi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Bulut Erişimi Güvenlik Aracısı
+                        Cloud Access Security Broker
                       </Link>
                     </li>
                     <li>
@@ -361,7 +361,7 @@ const Navbar = () => {
                         href="/cozumler/icerik-guvenligi/dlp-veri-sizintisi-onleme"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        DLP - Veri Sızıntısı Önleme
+                        DLP - Data Loss Prevention
                       </Link>
                     </li>
                     <li>
@@ -369,7 +369,7 @@ const Navbar = () => {
                         href="/cozumler/icerik-guvenligi/eposta-guvenligi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        E-posta Güvenliği
+                        Email Security
                       </Link>
                     </li>
                     <li>
@@ -377,7 +377,7 @@ const Navbar = () => {
                         href="/cozumler/icerik-guvenligi/konfigurasyonyonetimi"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Konfigürasyon Yönetimi
+                        Configuration Management
                       </Link>
                     </li>
                     <li>
@@ -385,7 +385,7 @@ const Navbar = () => {
                         href="/cozumler/icerik-guvenligi/url-icerik-filtreleme-ve-gecit"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        URL/İçerik Filtreleme ve Geçit
+                        URL/Content Filtering and Gateway
                       </Link>
                     </li>
                     <li>
@@ -393,7 +393,7 @@ const Navbar = () => {
                         href="/cozumler/icerik-guvenligi/veri-siniflandirma"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200"
                       >
-                        Veri Sınıflandırma
+                        Data Classification
                       </Link>
                     </li>
                   </ul>
@@ -406,7 +406,7 @@ const Navbar = () => {
                 href="/hizmetler"
                 className="block py-4 px-3 text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
-                Hizmetler
+                Services
               </Link>
               <ul className="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <li>
@@ -441,7 +441,7 @@ const Navbar = () => {
                 href="/markalarimiz"
                 className="block py-4 px-3 text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
-                Markalarımız
+                Our Brands
               </Link>
               <ul className="absolute left-0 top-full w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <li>
@@ -467,7 +467,7 @@ const Navbar = () => {
                 href="/iletisim"
                 className="block py-4 px-3 text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
-                İletişim
+                Contact
               </Link>
             </li>
           </ul>
@@ -516,7 +516,7 @@ const Navbar = () => {
                 onClick={toggleMobileMenu}
                 className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200"
               >
-                Ana Sayfa
+                Home
               </Link>
             </li>
             <li className="w-full">
@@ -526,7 +526,7 @@ const Navbar = () => {
                   onClick={toggleMobileMenu}
                   className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200"
                 >
-                  Biz Kimiz?
+                  About Us
                 </Link>
                 <button
                   onClick={() => toggleDropdown("bizKimiz")}
@@ -556,21 +556,21 @@ const Navbar = () => {
                     onClick={toggleMobileMenu}
                     className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 text-sm"
                   >
-                    • Hikayemiz
+                    • Our Story
                   </Link>
                   <Link
                     href="/biz-kimiz/kariyer"
                     onClick={toggleMobileMenu}
                     className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 text-sm"
                   >
-                    • Kariyer
+                    • Careers
                   </Link>
                   <Link
                     href="/biz-kimiz/duyurular"
                     onClick={toggleMobileMenu}
                     className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 text-sm"
                   >
-                    • Duyurular
+                    • Announcements
                   </Link>
                 </div>
               )}
@@ -582,7 +582,7 @@ const Navbar = () => {
                   onClick={toggleMobileMenu}
                   className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200"
                 >
-                  Çözümler
+                  Solutions
                 </Link>
                 <button
                   onClick={() => toggleDropdown("cozumler")}
@@ -618,7 +618,7 @@ const Navbar = () => {
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200"
                       >
                         <span className="flex items-center">
-                          Bilgi Güvenliği
+                          Information Security
                         </span>
                       </Link>
                     </Link>
@@ -650,63 +650,63 @@ const Navbar = () => {
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Güvenlik Otomasyonu
+                        • Security Automation
                       </Link>
                       <Link
                         href="/cozumler/bilgi-guvenligi/guvenlik-bilgi-olay-yonetimi-ve-korelasyon-sistemi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Güvenlik Bilgi Olay Yönetimi ve Korelasyon Sistemi
+                        • Security Information and Event Management
                       </Link>
                       <Link
                         href="/cozumler/bilgi-guvenligi/guvenlik-yapilandirilmasi-ve-uyumluluk"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Güvenlik Yapılandırılması ve Uyumluluk
+                        • Security Configuration and Compliance
                       </Link>
                       <Link
                         href="/cozumler/bilgi-guvenligi/kullanici-davranisi-ve-analizi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Kullanıcı Davranışı ve Analizi
+                        • User Behavior and Analytics
                       </Link>
                       <Link
                         href="/cozumler/bilgi-guvenligi/kurumsal-guvenlik-operasyonu"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Kurumsal Güvenlik Operasyonu
+                        • Enterprise Security Operations
                       </Link>
                       <Link
                         href="/cozumler/bilgi-guvenligi/siber-risk-puanlamasi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Siber Risk Puanlaması
+                        • Cyber Risk Scoring
                       </Link>
                       <Link
                         href="/cozumler/bilgi-guvenligi/veri-sifreleme-ve-cihaz-sifreleme"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Veri Şifreleme ve Cihaz Şifreleme
+                        • Data Encryption and Device Encryption
                       </Link>
                       <Link
                         href="/cozumler/bilgi-guvenligi/uygulama-guvenligi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Uygulama Güvenliği
+                        • Application Security
                       </Link>
                       <Link
                         href="/cozumler/bilgi-guvenligi/yapay-zeka-ile-tehdit-avi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Yapay Zeka ile Tehdit Avı
+                        • AI-Powered Threat Hunting
                       </Link>
                     </div>
                   )}
@@ -720,7 +720,9 @@ const Navbar = () => {
                         href="/cozumler/ag-guvenligi"
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200"
                       >
-                        <span className="flex items-center">Ağ Güvenliği</span>
+                        <span className="flex items-center">
+                          Network Security
+                        </span>
                       </Link>
                     </Link>
                     <button
@@ -751,56 +753,56 @@ const Navbar = () => {
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Ağ Güvenliği Yönetimi
+                        • Network Security Management
                       </Link>
                       <Link
                         href="/cozumler/ag-guvenligi/anti-ransomware-cozumleri"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Anti Ransomware Çözümleri
+                        • Anti-Ransomware Solutions
                       </Link>
                       <Link
                         href="/cozumler/ag-guvenligi/bulut-guvenligi-ve-yonetimi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Bulut Güvenliği ve Yönetimi
+                        • Cloud Security and Management
                       </Link>
                       <Link
                         href="/cozumler/ag-guvenligi/dns-ve-dhcp-yonetimi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • DNS ve DHCP Yönetimi
+                        • DNS and DHCP Management
                       </Link>
                       <Link
                         href="/cozumler/ag-guvenligi/guvenlik-acigi-yonetimi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Güvenlik Açığı Yönetimi
+                        • Vulnerability Management
                       </Link>
                       <Link
                         href="/cozumler/ag-guvenligi/guvenlik-duvari-ve-ips-ids"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Güvenlik Duvarı ve IPS/IDS
+                        • Firewall and IPS/IDS
                       </Link>
                       <Link
                         href="/cozumler/ag-guvenligi/kotu-amacli-yazilim-analizi-ve-algilama"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Kötü Amaçlı Yazılım Analizi ve Algılama
+                        • Malware Analysis and Detection
                       </Link>
                       <Link
                         href="/cozumler/ag-guvenligi/uc-nokta-guvenlik-yonetimi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Uç Nokta Güvenlik Yönetimi
+                        • Endpoint Security Management
                       </Link>
                     </div>
                   )}
@@ -815,7 +817,7 @@ const Navbar = () => {
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200"
                       >
                         <span className="flex items-center">
-                          İçerik Güvenliği
+                          Content Security
                         </span>
                       </Link>
                     </Link>
@@ -847,42 +849,42 @@ const Navbar = () => {
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Bulut Erişimi Güvenlik Aracısı
+                        • Cloud Access Security Broker
                       </Link>
                       <Link
                         href="/cozumler/icerik-guvenligi/dlp-veri-sizintisi-onleme"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • DLP - Veri Sızıntısı Önleme
+                        • DLP - Data Loss Prevention
                       </Link>
                       <Link
                         href="/cozumler/icerik-guvenligi/eposta-guvenligi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • E-posta Güvenliği
+                        • Email Security
                       </Link>
                       <Link
                         href="/cozumler/icerik-guvenligi/konfigurasyonyonetimi"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Konfigürasyon Yönetimi
+                        • Configuration Management
                       </Link>
                       <Link
                         href="/cozumler/icerik-guvenligi/url-icerik-filtreleme-ve-gecit"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • URL/İçerik Filtreleme ve Geçit
+                        • URL/Content Filtering and Gateway
                       </Link>
                       <Link
                         href="/cozumler/icerik-guvenligi/veri-siniflandirma"
                         onClick={toggleMobileMenu}
                         className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-colors duration-200 text-sm"
                       >
-                        • Veri Sınıflandırma
+                        • Data Classification
                       </Link>
                     </div>
                   )}
@@ -896,7 +898,7 @@ const Navbar = () => {
                   onClick={toggleMobileMenu}
                   className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200"
                 >
-                  Hizmetler
+                  Services
                 </Link>
                 <button
                   onClick={() => toggleDropdown("hizmetler")}
@@ -952,7 +954,7 @@ const Navbar = () => {
                   onClick={toggleMobileMenu}
                   className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200"
                 >
-                  Markalarımız
+                  Our Brands
                 </Link>
                 <button
                   onClick={() => toggleDropdown("markalarimiz")}
@@ -1000,7 +1002,7 @@ const Navbar = () => {
                 onClick={toggleMobileMenu}
                 className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200"
               >
-                İletişim
+                Contact
               </Link>
             </li>
           </ul>
