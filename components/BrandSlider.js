@@ -37,6 +37,7 @@ const BrandSlider = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -54,7 +55,7 @@ const BrandSlider = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden relative pb-16">
+    <div className="w-full overflow-hidden relative pb-16 z-20">
       <style jsx global>{`
         .custom-dots-container {
           position: absolute;
@@ -66,6 +67,7 @@ const BrandSlider = () => {
           text-align: center;
           display: flex !important;
           justify-content: center;
+          z-index: 20;
         }
         .custom-dots-container li {
           position: relative;
@@ -79,6 +81,17 @@ const BrandSlider = () => {
         }
         .custom-dots-container li div {
           opacity: 0.5;
+        }
+        .slick-slider {
+          position: relative;
+          z-index: 20;
+        }
+        .slick-list {
+          overflow: visible;
+        }
+        .slick-track {
+          display: flex;
+          align-items: center;
         }
       `}</style>
       <Slider {...settings}>

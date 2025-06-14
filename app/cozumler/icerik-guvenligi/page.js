@@ -3,46 +3,46 @@ import Link from "next/link";
 export default function IcerikGuvenligi() {
   const subcategories = [
     {
-      title: "Bulut Erişimi Güvenlik Aracısı",
+      title: "Cloud Access Security Agent",
       path: "/cozumler/icerik-guvenligi/bulut-erisimi-guvenlik-aracisi",
-      description: "Bulut servislerine güvenli erişim yönetimi",
+      description: "Secure management of access to cloud services",
     },
     {
-      title: "DLP - Veri Sızıntısı Önleme",
+      title: "DLP - Data Leakage Prevention",
       path: "/cozumler/icerik-guvenligi/dlp-veri-sizintisi-onleme",
-      description: "Hassas verilerin sızıntısını önleme çözümleri",
+      description: "Solutions to prevent the leakage of sensitive data",
     },
     {
-      title: "E-posta Güvenliği",
+      title: "Email Security",
       path: "/cozumler/icerik-guvenligi/eposta-guvenligi",
-      description: "E-posta iletişiminin güvenliğini sağlama çözümleri",
+      description: "Solutions to ensure the security of email communication",
     },
     {
-      title: "Konfigürasyon Yönetimi",
+      title: "Configuration Management",
       path: "/cozumler/icerik-guvenligi/konfigurasyonyonetimi",
-      description: "Sistem ve uygulama konfigürasyonlarının güvenli yönetimi",
+      description: "Secure management of system and application configurations",
     },
     {
-      title: "URL/İçerik Filtreleme ve Geçit",
+      title: "URL/Content Filtering and Gateway",
       path: "/cozumler/icerik-guvenligi/url-icerik-filtreleme-ve-gecit",
-      description: "Web içerik filtreleme ve güvenli internet erişim çözümleri",
+      description: "Web content filtering and secure internet access solutions",
     },
     {
-      title: "Veri Sınıflandırma",
+      title: "Data Classification",
       path: "/cozumler/icerik-guvenligi/veri-siniflandirma",
-      description: "Kurumsal verilerin sınıflandırılması ve yönetimi",
+      description: "Classification and management of corporate data",
     },
   ];
 
   return (
     <div className="container mx-auto py-12 px-4 min-h-[500px]">
       <h1 className="text-3xl font-bold mb-8 text-center text-blue-800">
-        İçerik Güvenliği Çözümlerimiz
+        Our Content Security Solutions
       </h1>
 
       <p className="text-lg text-gray-700 mb-10 max-w-3xl mx-auto text-center">
-        Kurumsal içerik ve verilerinizin güvenliğini sağlamak için gelişmiş
-        içerik güvenliği çözümleri sunuyoruz.
+        We offer advanced content security solutions to protect and secure your
+        corporate content and data.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -57,7 +57,7 @@ export default function IcerikGuvenligi() {
             </h2>
             <p className="text-gray-600">{subcategory.description}</p>
             <div className="mt-4 text-blue-600 font-medium">
-              Daha fazla bilgi →
+              More information
             </div>
           </Link>
         ))}

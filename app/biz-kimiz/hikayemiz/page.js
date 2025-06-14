@@ -16,7 +16,7 @@ export default function Hikayemiz() {
         />
         <div className="z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            HİKAYEMİZ
+            Our Story
           </h1>
         </div>
       </div>
