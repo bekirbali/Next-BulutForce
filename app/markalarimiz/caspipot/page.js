@@ -80,6 +80,43 @@ export default function GuvenlikOtomasyonu() {
           </div>
         </div>
       </div>
+
+      {/* Application Security Solution Layout */}
+      <div
+        className="flex flex-col md:flex-row items-center justify-center py-20 gap-10 bg-[#f8f8f8] rounded-2xl"
+        style={{ backgroundColor: "#f8f8f8" }}
+      >
+        {/* Image Section */}
+        <div className="flex-shrink-0 flex justify-center w-full md:w-1/2">
+          <Image
+            src="/assets/markalar/caspipotroket.png"
+            alt="Rocket Girl Security"
+            width={600}
+            height={600}
+            className="object-contain"
+            priority
+          />
+        </div>
+        {/* Text Section */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">
+            The Perfect Solution for Application Security
+          </h2>
+          <p className="mb-6 text-gray-800">
+            Protect your business against the latest cyber issues.
+          </p>
+          <ul className="list-disc pl-5 space-y-2 flex flex-col gap-4 text-gray-800">
+            <li>Trap APPs</li>
+            <li>Managed Web Service</li>
+            <li>WAF Tester</li>
+            <li>Breach Data Control</li>
+            <li>WAF Rule Generator</li>
+            <li>IOC Pool</li>
+            <li>24/7 Automatic Reports</li>
+            <li>Offensive Phishing</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
