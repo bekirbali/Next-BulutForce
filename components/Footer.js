@@ -123,7 +123,7 @@ const Footer = () => {
 
             <p>Future Technology Vision</p>
 
-            <p>+90 530 773 52 65</p>
+            <p>+90 850 308 0246</p>
 
             <p>onder.kucuk@bulutforce.com</p>
 

@@ -3,21 +3,21 @@ import Link from "next/link";
 export default function Hizmetler() {
   const services = [
     {
-      title: "Kurulum ve Profesyonel Hizmetler",
+      title: "Installation and Professional Services",
       description:
-        "Güvenlik çözümlerinizin kurulumu ve yapılandırılması için profesyonel hizmetler.",
+        "Professional services for the installation and configuration of security solutions.",
       path: "/hizmetler/installation-professional-services",
     },
     {
-      title: "Gelişmiş Destek",
+      title: "Advanced Support",
       description:
-        "Kritik sistemleriniz için gelişmiş destek ve müdahale hizmetleri ile kesintisiz çalışma.",
+        "Advanced support and intervention services for critical systems to ensure uninterrupted operation.",
       path: "/hizmetler/advanced-support",
     },
     {
-      title: "Destek Planları",
+      title: "Support Plans",
       description:
-        "Kurumunuzun ihtiyaçlarına göre özelleştirilmiş, farklı seviyelerde destek planları sunuyoruz.",
+        "Customized support plans tailored to your needs at different levels.",
       path: "/hizmetler/support-plans",
     },
   ];
@@ -25,12 +25,12 @@ export default function Hizmetler() {
   return (
     <div className="container mx-auto py-12 px-4 min-h-[500px]">
       <h1 className="text-4xl font-bold mb-4 text-center text-blue-800">
-        Hizmetlerimiz
+        Our Services
       </h1>
 
       <p className="text-xl text-gray-700 mb-12 max-w-4xl mx-auto text-center">
-        BulutForce olarak, kurumunuzun siber güvenlik ihtiyaçlarını karşılamak
-        için kapsamlı ve profesyonel hizmetler sunuyoruz.
+        As BulutForce, we offer comprehensive and professional services to meet
+        your corporate cyber security needs.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -44,7 +44,7 @@ export default function Hizmetler() {
               href={service.path}
               className="text-blue-500 hover:text-blue-700 inline-flex items-center"
             >
-              Daha fazla bilgi →
+              More information
             </Link>
           </div>
         ))}

@@ -4,48 +4,49 @@ import Image from "next/image";
 export default function Cozumler() {
   const mainCategories = [
     {
-      title: "Bilgi Güvenliği",
+      title: "Information Security",
       path: "/cozumler/bilgi-guvenligi",
       description:
-        "Kurumsal bilgi varlıklarınızı korumak ve güvenliğini sağlamak için kapsamlı bilgi güvenliği çözümleri.",
+        "Comprehensive information security solutions to protect and secure your corporate information assets.",
       bgImage: "/assets/bizkimiz/kariyer.jpg", // First image
       subcategories: [
-        "Güvenlik Otomasyonu",
-        "Güvenlik Bilgi Olay Yönetimi",
-        "Güvenlik Yapılandırılması",
-        "Kullanıcı Davranışı Analizi",
-        "Kurumsal Güvenlik Operasyonu",
-        "ve daha fazlası...",
+        "Security Automation",
+        "Security Information Event Management",
+        "Security Configuration Management",
+        "User Behavior Analysis",
+        "Corporate Security Operations",
+        "and more...",
       ],
     },
     {
-      title: "Ağ Güvenliği",
+      title: "Network Security",
       path: "/cozumler/ag-guvenligi",
       description:
-        "Kurumsal ağ altyapınızı dış tehditlerden korumak ve güvenliğini sağlamak için kapsamlı ağ güvenliği çözümleri.",
+        "Comprehensive network security solutions to protect and secure your corporate network infrastructure.",
       bgImage: "/assets/bizkimiz/kariyerbanner.jpg", // Second image
       subcategories: [
-        "Ağ Güvenliği Yönetimi",
-        "Anti Ransomware Çözümleri",
-        "Bulut Güvenliği ve Yönetimi",
-        "DNS ve DHCP Yönetimi",
-        "Güvenlik Açığı Yönetimi",
-        "ve daha fazlası...",
+        "Network Security Management",
+        "Anti Ransomware Solutions",
+        "Cloud Security and Management",
+        "DNS and DHCP Management",
+        "Vulnerability Management",
+        "and more...",
       ],
     },
     {
-      title: "İçerik Güvenliği",
+      title: "Content Security",
       path: "/cozumler/icerik-guvenligi",
       description:
-        "Kurumsal içerik ve verilerinizin güvenliğini sağlamak için gelişmiş içerik güvenliği çözümleri.",
+        "Advanced content security solutions to protect and secure your corporate content and data.",
       bgImage: "/assets/bizkimiz/ourstoryBanner.jpg", // Third image
       subcategories: [
-        "Bulut Erişimi Güvenlik Aracısı",
-        "DLP - Veri Sızıntısı Önleme",
-        "E-posta Güvenliği",
-        "Konfigürasyon Yönetimi",
-        "URL/İçerik Filtreleme ve Geçit",
-        "Veri Sınıflandırma",
+        "Cloud Access Security Agent",
+        "DLP - Data Leakage Prevention",
+        "Email Security",
+        "Configuration Management",
+        "URL/Content Filtering and Gateway",
+        "Data Classification",
+        "and more...",
       ],
     },
   ];
@@ -53,13 +54,14 @@ export default function Cozumler() {
   return (
     <div className="container mx-auto py-12 px-4 min-h-[600px]">
       <h1 className="text-4xl font-bold mb-4 text-center text-blue-800">
-        Güvenlik Çözümlerimiz
+        Our Security Solutions
       </h1>
 
       <p className="text-xl text-gray-700 mb-12 max-w-4xl mx-auto text-center">
-        BulutForce olarak, modern siber güvenlik tehditlerine karşı kapsamlı ve
-        entegre çözümler sunuyoruz. Kurumunuzun ihtiyaçlarına özel tasarlanmış
-        güvenlik stratejileri ile dijital varlıklarınızı koruyoruz.
+        As BulutForce, we offer comprehensive and integrated security solutions
+        to protect against modern cyber threats. We design tailored security
+        strategies to safeguard your digital assets, meeting your specific
+        needs.
       </p>
 
       <div className="space-y-16">
@@ -96,13 +98,6 @@ export default function Cozumler() {
 
                 {/* Content with higher z-index to appear above the background */}
                 <div className="relative z-10 text-white">
-                  <div className="mb-6 flex justify-center">
-                    <div className="w-20 h-20 bg-blue-600 bg-opacity-80 rounded-full flex items-center justify-center">
-                      <span className="text-white text-2xl font-bold">
-                        {category.title.charAt(0)}
-                      </span>
-                    </div>
-                  </div>
                   <h2 className="text-2xl font-bold mb-4 text-center">
                     {category.title}
                   </h2>
@@ -112,7 +107,7 @@ export default function Cozumler() {
                       href={category.path}
                       className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200"
                     >
-                      Detaylı Bilgi
+                      Detailed Information
                     </Link>
                   </div>
                 </div>
@@ -120,7 +115,8 @@ export default function Cozumler() {
 
               <div className="md:w-2/3 p-8">
                 <h3 className="text-xl font-semibold mb-6 text-blue-700">
-                  {category.title} Kapsamında Sunduğumuz Çözümler
+                  Solutions We Offer in{" "}
+                  <span className="underline"> {category.title} </span>
                 </h3>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {category.subcategories.map((subcat, idx) => (
@@ -144,9 +140,14 @@ export default function Cozumler() {
                 <div className="mt-8">
                   <Link
                     href={category.path}
-                    className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                    className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center hover:cursor-pointer"
                   >
-                    Tüm {category.title} Çözümlerini Görüntüle
+                    View All{" "}
+                    <p className="font-bold mx-1 hover:!cursor-pointer">
+                      {" "}
+                      {category.title}{" "}
+                    </p>{" "}
+                    Solutions
                     <svg
                       className="w-5 h-5 ml-1"
                       fill="currentColor"

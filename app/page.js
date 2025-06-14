@@ -1,12 +1,13 @@
 import Image from "next/image";
 import BrandSlider from "@/components/BrandSlider";
 import Link from "next/link";
+import SecurityCards from "@/components/SecurityCards";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative h-[900px] flex flex-col justify-center items-center text-white pb-32">
+      <section className="relative h-[900px] flex flex-col justify-center items-center text-white pb-32 px-4">
         <video
           autoPlay
           loop
@@ -18,10 +19,10 @@ export default function Home() {
         </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
         <div className="relative z-20 text-center flex flex-col justify-center items-center flex-grow">
-          <h1 className="text-6xl md:text-8xl font-bold tracking-wider">
+          <h1 className="text-4xl sm:text-5xl md:text-8xl font-bold tracking-wider break-words">
             BULUTFORCE
           </h1>
-          <p className="text-lg md:text-xl mt-4 max-w-xl md:max-w-3xl mx-auto px-4">
+          <p className="text-base sm:text-lg md:text-xl mt-4 max-w-xs sm:max-w-xl md:max-w-3xl mx-auto">
             It is an expert technology company that provides all corporate cyber
             security services from a single location
           </p>
@@ -31,96 +32,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Cards absolutely positioned at the bottom of hero */}
-        <div className="absolute left-1/2 -translate-x-1/2 -bottom-56 w-full max-w-7xl z-30">
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Information Security Card */}
-            <div className="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105 h-full flex flex-col">
-              <div className="h-48 overflow-hidden">
-                <Image
-                  src="/assets/anasayfa/bulutforceBilgiGuvenligi.jpg"
-                  alt="Information Security Solutions"
-                  width={400}
-                  height={200}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6 text-center flex-grow flex flex-col justify-between">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-3 uppercase">
-                  Information Security Solutions
-                </h3>
-                <p className="text-gray-600 text-sm mb-6">
-                  With Our Years Of Experience In The Field Of Information
-                  Security, We Introduce The Security Of Your Corporate Assets
-                  With Operational Excellence.
-                </p>
-                <Link
-                  href="/cozumler/bilgi-guvenligi"
-                  className="bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 uppercase text-sm font-medium mt-auto inline-block"
-                >
-                  Get More Detailed Information
-                </Link>
-              </div>
-            </div>
-            {/* Network Security Card */}
-            <div className="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105 h-full flex flex-col">
-              <div className="h-48 overflow-hidden">
-                <Image
-                  src="/assets/anasayfa/bulutforceAgGuvenligi.jpg"
-                  alt="Network Security Solutions"
-                  width={400}
-                  height={200}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6 text-center flex-grow flex flex-col justify-between">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-3 uppercase">
-                  Network Security Solutions
-                </h3>
-                <p className="text-gray-600 text-sm mb-6">
-                  Considering The Instant Changeability In Network Security, We
-                  Work In A Risk-Oriented Manner And Take Precautions Against
-                  Possible Malicious Attacks In Advance.
-                </p>
-                <Link
-                  href="/cozumler/ag-guvenligi"
-                  className="bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 uppercase text-sm font-medium mt-auto inline-block"
-                >
-                  Get More Detailed Information
-                </Link>
-              </div>
-            </div>
-            {/* Content Security Card */}
-            <div className="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105 h-full flex flex-col">
-              <div className="h-48 overflow-hidden">
-                <Image
-                  src="/assets/anasayfa/bulutforceIcerikGuvenligi.jpg"
-                  alt="Content Security Solutions"
-                  width={400}
-                  height={200}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6 text-center flex-grow flex flex-col justify-between">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-3 uppercase">
-                  Content Security Solutions
-                </h3>
-                <p className="text-gray-600 text-sm mb-6">
-                  We Value Your Corporate Data And Assets And Provide Special
-                  Cybersecurity Measures To Ensure Your Workflow Operates In
-                  Full Integration.
-                </p>
-                <Link
-                  href="/cozumler/icerik-guvenligi"
-                  className="bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 uppercase text-sm font-medium mt-auto inline-block"
-                >
-                  Get More Detailed Information
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Desktop Cards */}
+        <SecurityCards />
       </section>
+
+      {/* Mobile Cards */}
+      <SecurityCards isMobile={true} />
 
       {/* Erken Tespit Arka Plan Image Section */}
       <section className="flex justify-center items-center bg-white mt-24 py-48">

@@ -3,57 +3,57 @@ import Link from "next/link";
 export default function AgGuvenligi() {
   const subcategories = [
     {
-      title: "Ağ Güvenliği Yönetimi",
+      title: "Network Security Management",
       path: "/cozumler/ag-guvenligi/ag-guvenligi-yonetimi",
-      description: "Ağ altyapısının güvenlik yönetimi ve izlenmesi",
+      description: "Management and monitoring of network infrastructure",
     },
     {
-      title: "Anti Ransomware Çözümleri",
+      title: "Anti Ransomware Solutions",
       path: "/cozumler/ag-guvenligi/anti-ransomware-cozumleri",
-      description: "Fidye yazılımlarına karşı koruma ve önleme çözümleri",
+      description: "Protection and prevention solutions against ransomware",
     },
     {
-      title: "Bulut Güvenliği ve Yönetimi",
+      title: "Cloud Security and Management",
       path: "/cozumler/ag-guvenligi/bulut-guvenligi-ve-yonetimi",
-      description: "Bulut altyapılarının güvenliği ve yönetimi",
+      description: "Management and security of cloud infrastructure",
     },
     {
-      title: "DNS ve DHCP Yönetimi",
+      title: "DNS and DHCP Management",
       path: "/cozumler/ag-guvenligi/dns-ve-dhcp-yonetimi",
-      description: "DNS ve DHCP servislerinin güvenli yönetimi",
+      description: "Secure management of DNS and DHCP services",
     },
     {
-      title: "Güvenlik Açığı Yönetimi",
+      title: "Vulnerability Management",
       path: "/cozumler/ag-guvenligi/guvenlik-acigi-yonetimi",
-      description: "Güvenlik açıklarının tespiti ve yönetimi",
+      description: "Detection and management of security vulnerabilities",
     },
     {
-      title: "Güvenlik Duvarı ve IPS/IDS",
+      title: "Firewall and IPS/IDS",
       path: "/cozumler/ag-guvenligi/guvenlik-duvari-ve-ips-ids",
       description:
-        "Gelişmiş güvenlik duvarı ve saldırı tespit/önleme sistemleri",
+        "Advanced security firewall and attack detection/prevention systems",
     },
     {
-      title: "Kötü Amaçlı Yazılım Analizi ve Algılama",
+      title: "Malicious Software Analysis and Detection",
       path: "/cozumler/ag-guvenligi/kotu-amacli-yazilim-analizi-ve-algilama",
-      description: "Zararlı yazılımların tespiti ve analizi",
+      description: "Detection and analysis of malicious software",
     },
     {
-      title: "Uç Nokta Güvenlik Yönetimi",
+      title: "Endpoint Security Management",
       path: "/cozumler/ag-guvenligi/uc-nokta-guvenlik-yonetimi",
-      description: "Son kullanıcı cihazlarının güvenlik yönetimi",
+      description: "Management of endpoint security",
     },
   ];
 
   return (
     <div className="container mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold mb-8 text-center text-blue-800">
-        Ağ Güvenliği Çözümlerimiz
+        Our Network Security Solutions
       </h1>
 
       <p className="text-lg text-gray-700 mb-10 max-w-3xl mx-auto text-center">
-        Kurumsal ağ altyapınızı dış tehditlerden korumak ve güvenliğini sağlamak
-        için kapsamlı ağ güvenliği çözümleri sunuyoruz.
+        We offer comprehensive network security solutions to protect and secure
+        your corporate network infrastructure.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -68,7 +68,7 @@ export default function AgGuvenligi() {
             </h2>
             <p className="text-gray-600">{subcategory.description}</p>
             <div className="mt-4 text-blue-600 font-medium">
-              Daha fazla bilgi →
+              More information
             </div>
           </Link>
         ))}

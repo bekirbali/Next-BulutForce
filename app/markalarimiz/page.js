@@ -5,13 +5,14 @@ export default function Markalarimiz() {
   return (
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold text-blue-900 mb-8 text-center">
-        Markalarımız
+        Our Brands
       </h1>
 
       <div className="max-w-4xl mx-auto">
         <p className="text-lg text-gray-700 mb-10 text-center">
-          BulutForce, sektördeki en güvenilir ve yenilikçi güvenlik çözümlerini
-          sunmak için kendi geliştirdiği özel markaları ile hizmet vermektedir.
+          As BulutForce, we offer services with our own developed brands to
+          provide the most reliable and innovative security solutions in the
+          industry.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -22,15 +23,15 @@ export default function Markalarimiz() {
             </div>
             <div className="p-6 flex flex-col flex-grow">
               <p className="text-gray-700 mb-6 flex-grow">
-                Caspipot, IoT cihazları ve endüstriyel kontrol sistemleri için
-                geliştirilmiş gelişmiş bir güvenlik çözümüdür. Gerçek zamanlı
-                izleme ve tehdit tespiti ile bağlantılı cihazlarınızı korur.
+                Caspipot is an advanced security solution developed for IoT
+                devices and industrial control systems. It monitors connected
+                devices in real time and detects threats.
               </p>
               <Link
                 href="/markalarimiz/caspipot"
                 className="block text-center bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 mt-auto"
               >
-                Detaylı Bilgi
+                More information
               </Link>
             </div>
           </div>
@@ -42,16 +43,17 @@ export default function Markalarimiz() {
             </div>
             <div className="p-6 flex flex-col flex-grow">
               <p className="text-gray-700 mb-6 flex-grow">
-                Skyron, bulut altyapınız ve uygulamalarınız için kapsamlı koruma
-                sağlayan gelişmiş bir bulut güvenlik platformudur. Yapay zeka
-                destekli tehdit tespiti ve otomatik müdahale yetenekleri ile
-                bulut ortamınızı güvende tutar.
+                Skyron is an advanced cloud security platform that provides
+                comprehensive protection for your cloud infrastructure and
+                applications. It uses artificial intelligence-supported threat
+                detection and automatic intervention capabilities to keep your
+                cloud environment secure.
               </p>
               <Link
                 href="/cozumler/ag-guvenligi/ag-guvenligi-yonetimi"
                 className="block text-center bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 mt-auto"
               >
-                Detaylı Bilgi
+                More information
               </Link>
             </div>
           </div>
