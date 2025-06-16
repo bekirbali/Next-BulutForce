@@ -34,22 +34,22 @@ export default function ImageSlider() {
   // Images for the slider
   const images = [
     {
-      src: "/assets/hizmetler/bulutforceozelcozum1.jfif",
+      src: "/assets/hizmetler/bulutforceozelcozum1.jpg",
       alt: "Advanced Support Image 1",
       title: "Customized Solutions",
     },
     {
-      src: "/assets/hizmetler/bulutforceozelcozum2.jfif",
+      src: "/assets/hizmetler/bulutforceozelcozum2.jpg",
       alt: "Advanced Support Image 2",
       title: "Mastery of Technology",
     },
     {
-      src: "/assets/hizmetler/bulutforceozelcozum3.jfif",
+      src: "/assets/hizmetler/bulutforceozelcozum3.jpg",
       alt: "Advanced Support Image 3",
       title: "Proactive Monitoring",
     },
     {
-      src: "/assets/hizmetler/bulutforceozelcozum4.jfif",
+      src: "/assets/hizmetler/bulutforceozelcozum4.jpg",
       alt: "Advanced Support Image 3",
       title: "Complex Problems",
     },

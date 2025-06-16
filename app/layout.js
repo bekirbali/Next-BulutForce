@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Bulut Force",
+  title: "BulutForce - Geleceğin Teknoloji Vizyonu",
   description: "Bulut Force",
 };
 
