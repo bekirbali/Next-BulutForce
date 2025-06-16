@@ -21,7 +21,7 @@ export default function BizKimiz() {
       description:
         "Join our innovative and dynamic team. Discover career opportunities in the cyber security field and become part of our success story.",
       path: "/biz-kimiz/kariyer",
-      image: "/assets/bizkimiz/kariyerBanner.jpg",
+      image: "/assets/bizkimiz/kariyerbanner.jpg",
       highlights: [
         "Innovative projects",
         "Continuous development opportunities",

@@ -95,8 +95,9 @@ const Navbar = () => {
                 <Image
                   src="/assets/markalar/logos/bflogo.png"
                   alt="BulutForce"
-                  width={200}
+                  width={300}
                   height={50}
+                  className="w-[250px] md:w-[300px]"
                 />
               </Link>
             </div>

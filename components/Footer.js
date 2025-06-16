@@ -14,106 +14,50 @@ const Footer = () => {
               href="/"
               className="block hover:text-blue-200 transition-colors duration-200"
             >
-              HOME PAGE
+              Home Page
             </Link>
 
             <div className="group relative">
               <Link
-                href="/who-are-we"
+                href="/biz-kimiz"
                 className="hover:text-blue-200 transition-colors duration-200 flex items-center"
               >
-                WHO ARE WE?
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                About Us
               </Link>
             </div>
 
             <div className="group relative">
               <Link
-                href="/solutions"
+                href="/cozumler"
                 className="hover:text-blue-200 transition-colors duration-200 flex items-center"
               >
-                SOLUTIONS
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                Solutions
               </Link>
             </div>
 
             <div className="group relative">
               <Link
-                href="/services"
+                href="/hizmetler"
                 className="hover:text-blue-200 transition-colors duration-200 flex items-center"
               >
-                SERVICES
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                Services
               </Link>
             </div>
 
             <div className="group relative">
               <Link
-                href="/our-brands"
+                href="/markalarimiz"
                 className="hover:text-blue-200 transition-colors duration-200 flex items-center"
               >
-                OUR BRANDS
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                Our Brands
               </Link>
             </div>
 
             <Link
-              href="/communication"
+              href="/iletisim"
               className="block hover:text-blue-200 transition-colors duration-200"
             >
-              COMMUNICATION
+              Contact Us
             </Link>
           </div>
 
@@ -125,7 +69,7 @@ const Footer = () => {
 
             <p>+90 850 308 0246</p>
 
-            <p>onder.kucuk@bulutforce.com</p>
+            <p>info@bulutforce.com</p>
 
             <p>
               Esentepe neighborhood Martyr Mehmet Miktat Uluünlü Str.No:26/26
@@ -134,7 +78,7 @@ const Footer = () => {
 
             <div className="flex space-x-3 mt-4">
               <Link
-                href="https://facebook.com"
+                href="https://bulutforce.com"
                 className="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
               >
                 <svg
@@ -147,7 +91,7 @@ const Footer = () => {
                 </svg>
               </Link>
               <Link
-                href="https://instagram.com"
+                href="https://bulutforce.com"
                 className="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
               >
                 <svg
@@ -160,7 +104,7 @@ const Footer = () => {
                 </svg>
               </Link>
               <Link
-                href="https://twitter.com"
+                href="https://bulutforce.com"
                 className="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
               >
                 <svg
@@ -192,7 +136,7 @@ const Footer = () => {
                 </svg>
               </Link>
               <Link
-                href="https://pinterest.com"
+                href="https://bulutforce.com"
                 className="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
               >
                 <svg
@@ -214,7 +158,7 @@ const Footer = () => {
           {/* Siberon logo */}
           <div className="hidden md:flex items-center justify-center md:ml-16">
             <Image
-              src="/assets/anasayfa/siberonLogo.png"
+              src="/assets/markalar/logos/bfbeyazlogo.png"
               alt="Siberon Logo"
               width={400}
               height={160}
