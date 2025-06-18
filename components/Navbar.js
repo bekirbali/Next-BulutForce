@@ -1030,6 +1030,9 @@ const Navbar = () => {
                     Contact Us
                   </Link>
                 </li>
+                <li className="w-full flex ml-10 py-4">
+                  <CircularLanguageSelector />
+                </li>
               </ul>
             </div>
           )}
