@@ -272,7 +272,7 @@ export default function Home() {
               </p>
               <Link
                 href="/biz-kimiz/duyurular"
-                className="bg-blue-800 text-white py-2 px-6 rounded-md hover:bg-blue-900 transition-colors duration-300"
+                className="bg-[#1f4b68] text-white py-2 px-6 rounded-md hover:bg-[#173d57] hover:cursor-pointer transition-colors duration-300"
               >
                 Join the Academy
               </Link>
@@ -297,7 +297,7 @@ export default function Home() {
               </p>
               <Link
                 href="/biz-kimiz/duyurular"
-                className="bg-blue-800 text-white py-2 px-6 rounded-md hover:bg-blue-900 transition-colors duration-300"
+                className="bg-[#1f4b68] text-white py-2 px-6 rounded-md hover:bg-[#173d57] hover:cursor-pointer transition-colors duration-300"
               >
                 Follow Announcements
               </Link>
@@ -320,7 +320,7 @@ export default function Home() {
               </p>
               <Link
                 href="/biz-kimiz/duyurular"
-                className="bg-blue-800 text-white py-2 px-6 rounded-md hover:bg-blue-900 transition-colors duration-300"
+                className="bg-[#1f4b68] text-white py-2 px-6 rounded-md hover:bg-[#173d57] hover:cursor-pointer transition-colors duration-300"
               >
                 Read Blog Posts
               </Link>
@@ -343,7 +343,7 @@ export default function Home() {
               </p>
               <Link
                 href="/biz-kimiz/duyurular"
-                className="bg-blue-800 text-white py-2 px-6 rounded-md hover:bg-blue-900 transition-colors duration-300"
+                className="bg-[#1f4b68] text-white py-2 px-6 rounded-md hover:bg-[#173d57] hover:cursor-pointer transition-colors duration-300"
               >
                 Events
               </Link>
@@ -368,7 +368,7 @@ export default function Home() {
           <div className="flex justify-center items-center">
             <div className="text-center max-w-4xl">
               <h2 className="text-4xl md:text-5xl font-bold text-white tracking-wider">
-                PLEASE CONTACT US FOR DETAILED
+                PLEASE FOLLOW US FOR DETAILED
                 <br />
                 INFORMATION AND PRICE OFFERS.
               </h2>

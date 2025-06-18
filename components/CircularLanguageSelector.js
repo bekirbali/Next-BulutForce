@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { FaGlobeAmericas } from "react-icons/fa";
 
 const LANGUAGES = [
   { code: "en", name: "English", flag: "gb" },
@@ -79,10 +80,7 @@ export default function CircularLanguageSelector({ className = "" }) {
                 width: SIZE,
                 height: SIZE,
                 cursor: "pointer",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
                 background: "white",
-                borderRadius: "50%",
-                border: "2px solid #fff",
                 transition: "transform 0.2s",
                 zIndex: 10,
               }}
@@ -91,11 +89,7 @@ export default function CircularLanguageSelector({ className = "" }) {
           );
         })}
       {/* Center globe icon */}
-      <Image
-        src="/globe.svg"
-        alt="Globe"
-        width={36}
-        height={36}
+      <div
         style={{
           position: "absolute",
           left: 17,
@@ -104,13 +98,16 @@ export default function CircularLanguageSelector({ className = "" }) {
           height: 32,
           background: "#fff",
           borderRadius: "50%",
-          boxShadow: "0 2px 8px rgba(0,0,0,0.10)",
-          border: "2px solid #e5e7eb",
           zIndex: 20,
           cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
         onClick={() => setOpen((v) => !v)}
-      />
+      >
+        <FaGlobeAmericas size={34} color="#1f4b68" />
+      </div>
     </div>
   );
 }

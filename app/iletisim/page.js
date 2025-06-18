@@ -120,8 +120,10 @@ export default function Iletisim() {
             className="mb-2"
           />
           <h2 className="font-semibold text-lg mb-1">Address</h2>
-          <div>Propa Plus Residence</div>
-          <div>Şişli/Istanbul</div>
+          <div>
+            Esentepe neighborhood Martyr Mehmet Miktat Uluünlü Str.No:26/26
+            34394 Şişli/Istanbul
+          </div>
         </div>
         {/* Telephone */}
         <div className="flex flex-col items-center text-center">

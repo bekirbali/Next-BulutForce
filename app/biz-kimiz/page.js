@@ -98,7 +98,7 @@ export default function BizKimiz() {
               </ul>
 
               <Link href={category.path}>
-                <button className="w-full bg-blue-800 text-white py-2 px-4 rounded-md hover:bg-blue-900 transition-colors duration-300">
+                <button className="w-full bg-[#1f4b68] text-white py-2 px-4 rounded-md hover:bg-[#173d57] hover:cursor-pointer transition-colors duration-300">
                   More Information
                 </button>
               </Link>
