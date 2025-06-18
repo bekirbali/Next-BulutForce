@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white relative">
+    <footer className="bg-[#1f4b68] text-white relative">
       {/* Main Footer Content */}
       <div className="container mx-auto py-10 px-4 md:px-6">
         <div className="flex flex-col md:flex-row md:justify-center gap-8">
@@ -79,7 +79,7 @@ const Footer = () => {
             <div className="flex space-x-3 mt-4">
               <Link
                 href="https://bulutforce.com"
-                className="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
+                className="border border-white hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ const Footer = () => {
               </Link>
               <Link
                 href="https://bulutforce.com"
-                className="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
+                className="border border-white hover:bg-pink-500 p-2 rounded-full transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ const Footer = () => {
               </Link>
               <Link
                 href="https://bulutforce.com"
-                className="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
+                className="border border-white hover:bg-blue-400 p-2 rounded-full transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@ const Footer = () => {
               </Link>
               <Link
                 href="mailto:contact@bulutforce.com"
-                className="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
+                className="border border-white hover:bg-gray-800 p-2 rounded-full transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ const Footer = () => {
               </Link>
               <Link
                 href="https://bulutforce.com"
-                className="bg-blue-800 hover:bg-blue-700 p-2 rounded-full transition-colors duration-200"
+                className="border border-white hover:bg-red-700 p-2 rounded-full transition-colors duration-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="bg-blue-950 py-3 text-center text-sm">
+      <div className="bg-[#5b5b5b] py-3 text-center text-sm">
         <p>BULUTFORCE | © 2025 All Rights Reserved</p>
       </div>
     </footer>
