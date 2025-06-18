@@ -177,8 +177,10 @@ export default function Iletisim() {
           />
         </div>
         {/* Right: Form */}
+        {/* bf: xrbkkdko */}
+        {/* my: xvgrrlzn */}
         <form
-          action="https://formspree.io/f/xvgrrlzn"
+          action="https://formspree.io/f/xrbkkdko"
           method="POST"
           onSubmit={handleSubmit}
           className="p-8 flex flex-col gap-4 justify-between h-full"
