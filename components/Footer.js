@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="bg-[#1f4b68] text-white relative">
       {/* Main Footer Content */}
-      <div className="container mx-auto py-10 px-4 md:px-6">
-        <div className="flex flex-col md:flex-row md:justify-center gap-8">
-          {/* Left Column - Navigation */}
-          <div className="space-y-4 flex flex-col md:w-auto">
+      <div className="max-w-7xl mx-auto py-10 px-0 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 items-center">
+          {/* Navigation */}
+          <div className="flex flex-col items-center md:items-start space-y-4">
             <Link
               href="/"
               className="block hover:text-blue-200 transition-colors duration-200"
@@ -61,8 +61,8 @@ const Footer = () => {
             </Link>
           </div>
 
-          {/* Right Column - Contact Info */}
-          <div className="space-y-4 md:ml-16 w-[350px]">
+          {/* Contact Info */}
+          <div className="flex flex-col items-center md:items-start space-y-4">
             <h3 className="text-lg font-medium">COMMUNICATION</h3>
 
             <p>Future Technology Vision</p>
@@ -154,9 +154,8 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-
-          {/* Siberon logo */}
-          <div className="hidden md:flex items-center justify-center md:ml-16">
+          {/* Bulutforce logo */}
+          <div className="flex items-center justify-center w-full h-full">
             <Image
               src="/assets/markalar/logos/bfbeyazlogo.png"
               alt="Siberon Logo"

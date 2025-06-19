@@ -87,10 +87,10 @@ const Navbar = () => {
       <div className="bg-white fixed top-0 left-0 w-full z-50 font-[lato]">
         <TopBar />
         <nav>
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-[100rem] mx-auto">
             <div className="flex items-center justify-between h-20">
               {/* Logo */}
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0]">
                 <Link
                   href="/"
                   className="text-2xl font-bold py-2 text-gray-800 hover:text-gray-900 transition-colors duration-200"
