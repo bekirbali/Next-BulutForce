@@ -2,8 +2,8 @@ import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const TopBar = () => (
-  <div className="hidden max-w-7xl mx-auto bg-white text-gray-500 text-xs md:flex items-center justify-between px-4 md:px-16 h-8">
-    <div className="flex justify-center items-center space-x-2 w-[200px]">
+  <div className="hidden max-w-[100rem] mx-auto text-gray-500 text-xs md:flex items-center justify-between h-8">
+    <div className="flex justify-center items-center gap-2 w-[300px]">
       <Link href="#" className="hover:text-blue-700">
         {/* Facebook SVG */}
         <svg
@@ -54,8 +54,19 @@ const TopBar = () => (
           />
         </svg>
       </Link>
+      <Link href="#" className="hover:text-red-600">
+        {/* Pinterest SVG */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-4 w-4"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 4.418 2.865 8.176 6.91 9.497-.096-.807-.183-2.047.038-2.929.2-.803 1.29-5.122 1.29-5.122s-.329-.658-.329-1.631c0-1.528.886-2.671 1.988-2.671.938 0 1.391.705 1.391 1.551 0 .945-.602 2.358-.912 3.673-.259 1.099.548 1.995 1.627 1.995 1.953 0 3.457-2.06 3.457-5.029 0-2.633-1.894-4.478-4.596-4.478-3.129 0-4.97 2.344-4.97 4.77 0 .945.364 1.961.819 2.513.09.11.103.206.075.316-.082.346-.267 1.099-.304 1.252-.048.2-.157.243-.364.147-1.357-.632-2.205-2.616-2.205-4.215 0-3.43 2.492-6.582 7.186-6.582 3.771 0 6.707 2.687 6.707 6.271 0 3.747-2.36 6.759-5.637 6.759-1.099 0-2.133-.571-2.486-1.217l-.677 2.581c-.205.786-.607 1.771-.904 2.372.68.21 1.398.324 2.148.324 5.514 0 9.997-4.483 9.997-9.997s-4.483-9.997-9.997-9.997z" />
+        </svg>
+      </Link>
     </div>
-    <div className="flex items-center gap-2 space-x-2">
+    <div className="flex items-center gap-2 pr-5 space-x-2">
       <span className="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"

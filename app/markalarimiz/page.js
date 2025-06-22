@@ -18,7 +18,7 @@ export default function Markalarimiz() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Caspiot Card */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col">
-            <div className="h-48 bg-blue-900 flex items-center justify-center">
+            <div className="h-48 bg-[#1f4b68] flex items-center justify-center">
               <h2 className="text-3xl font-bold text-white">Caspipot</h2>
             </div>
             <div className="p-6 flex flex-col flex-grow">
@@ -29,7 +29,7 @@ export default function Markalarimiz() {
               </p>
               <Link
                 href="/markalarimiz/caspipot"
-                className="block text-center bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 mt-auto"
+                className="block text-center bg-[#1f4b68] text-white py-2 px-6 rounded-full hover:bg-[#173d57] transition-colors duration-300 mt-auto"
               >
                 More information
               </Link>
@@ -38,7 +38,7 @@ export default function Markalarimiz() {
 
           {/* Skyron Card */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col">
-            <div className="h-48 bg-blue-800 flex items-center justify-center">
+            <div className="h-48 bg-[#2b5f83] flex items-center justify-center">
               <h2 className="text-3xl font-bold text-white">Skyron</h2>
             </div>
             <div className="p-6 flex flex-col flex-grow">
@@ -51,7 +51,7 @@ export default function Markalarimiz() {
               </p>
               <Link
                 href="/cozumler/ag-guvenligi/ag-guvenligi-yonetimi"
-                className="block text-center bg-blue-800 text-white py-2 px-6 rounded-full hover:bg-blue-900 transition-colors duration-300 mt-auto"
+                className="block text-center bg-[#1f4b68] text-white py-2 px-6 rounded-full hover:bg-[#173d57] transition-colors duration-300 mt-auto"
               >
                 More information
               </Link>

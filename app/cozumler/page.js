@@ -105,7 +105,7 @@ export default function Cozumler() {
                   <div className="mt-6 text-center">
                     <Link
                       href={category.path}
-                      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                      className="inline-block bg-[#1f4b68] text-white px-6 py-3 rounded-lg hover:bg-[#173d57] transition-colors duration-200"
                     >
                       Detailed Information
                     </Link>
