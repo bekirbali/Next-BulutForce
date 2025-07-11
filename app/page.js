@@ -17,9 +17,9 @@ export default function Home() {
         >
           <source src="/assets/anasayfa/homePageVideo.mp4" type="video/mp4" />
         </video>
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-10"></div>
         <div className="relative z-20 text-center flex flex-col justify-center items-center flex-grow">
-          <h1 className="text-4xl sm:text-5xl md:text-8xl font-bold tracking-wider break-words">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-wider break-words">
             BULUTFORCE
           </h1>
           <p className="text-base sm:text-lg md:text-xl mt-4 max-w-xs sm:max-w-xl md:max-w-3xl mx-auto">

@@ -65,7 +65,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start space-y-4">
             <h3 className="text-lg font-medium">COMMUNICATION</h3>
 
-            <p>Future Technology Vision</p>
+            <p>Bulutforce Bilgi Teknolojileri Ltd. Şti.</p>
 
             <p>+90 850 308 0246</p>
 
