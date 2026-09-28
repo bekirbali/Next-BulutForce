@@ -65,7 +65,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start space-y-4">
             <h3 className="text-lg font-medium">COMMUNICATION</h3>
 
-            <p>Bulutforce Bilgi Teknolojileri Ltd. Şti.</p>
+            <p className="notranslate" translate="no">Bulutforce Bilgi Teknolojileri Ltd. Şti.</p>
 
             <p>+90 850 308 0246</p>
 
@@ -169,7 +169,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="bg-[#5b5b5b] py-3 text-center text-sm">
-        <p>BULUTFORCE | © 2025 All Rights Reserved</p>
+        <p className="notranslate" translate="no">BULUTFORCE | © 2025 All Rights Reserved</p>
       </div>
     </footer>
   );

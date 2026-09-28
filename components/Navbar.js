@@ -98,9 +98,9 @@ const Navbar = () => {
                   <Image
                     src="/assets/markalar/logos/bflogo.png"
                     alt="BulutForce"
-                    width={300}
-                    height={50}
-                    className="w-[250px] md:w-[300px]"
+                    width={360}
+                    height={60}
+                    className="w-[280px] md:w-[350px]"
                   />
                 </Link>
               </div>
@@ -110,14 +110,7 @@ const Navbar = () => {
                 <li className="relative group">
                   <Link
                     href="/"
-                    className="block py-4 px-3 transition-colors duration-200 uppercase"
-                    style={{ color: "rgba(102,102,102,.85)" }}
-                    onMouseEnter={(e) =>
-                      (e.target.style.color = "rgba(17,17,17,.85)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.target.style.color = "rgba(102,102,102,.85)")
-                    }
+                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
                   >
                     Home Page
                   </Link>
@@ -126,29 +119,15 @@ const Navbar = () => {
                 <li className="relative group">
                   <Link
                     href="/biz-kimiz"
-                    className="block py-4 px-3 transition-colors duration-200 uppercase"
-                    style={{ color: "rgba(102,102,102,.85)" }}
-                    onMouseEnter={(e) =>
-                      (e.target.style.color = "rgba(17,17,17,.85)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.target.style.color = "rgba(102,102,102,.85)")
-                    }
+                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
                   >
                     About Us
                   </Link>
-                  <ul className="absolute left-0 top-full w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <ul className="absolute left-0 top-full w-56 bg-white/95 backdrop-blur-md border border-gray-100/80 shadow-[0_20px_50px_rgba(0,0,0,0.12)] rounded-2xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
                     <li>
                       <Link
                         href="/biz-kimiz/hikayemiz"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Our Story
                       </Link>
@@ -156,14 +135,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/biz-kimiz/kariyer"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Careers
                       </Link>
@@ -171,14 +143,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/biz-kimiz/duyurular"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Announcements
                       </Link>
@@ -189,493 +154,247 @@ const Navbar = () => {
                 <li className="relative group">
                   <Link
                     href="/cozumler"
-                    className="block py-4 px-3 transition-colors duration-200 uppercase"
-                    style={{ color: "rgba(102,102,102,.85)" }}
-                    onMouseEnter={(e) =>
-                      (e.target.style.color = "rgba(17,17,17,.85)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.target.style.color = "rgba(102,102,102,.85)")
-                    }
+                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
                   >
                     Solutions
                   </Link>
-                  <ul className="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                    <li className="relative group/nested">
-                      <Link
-                        href="/cozumler/bilgi-guvenligi"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
-                      >
-                        <span className="flex items-center">
-                          Information Security{" "}
-                          <svg
-                            className="ml-1 w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            viewBox="0 0 24 24"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M9 5l7 7-7 7"
-                            />
-                          </svg>
-                        </span>
-                      </Link>
-                      <ul className="absolute left-full top-0 w-80 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 z-50">
-                        <li>
-                          <Link
-                            href="/cozumler/bilgi-guvenligi/guvenlik-otomasyonu"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Security Automation
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/bilgi-guvenligi/guvenlik-bilgi-olay-yonetimi-ve-korelasyon-sistemi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Security Information and Event Management
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/bilgi-guvenligi/guvenlik-yapilandirilmasi-ve-uyumluluk"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Security Configuration and Compliance
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/bilgi-guvenligi/kullanici-davranisi-ve-analizi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            User Behavior and Analytics
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/bilgi-guvenligi/kurumsal-guvenlik-operasyonu"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Enterprise Security Operations
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/bilgi-guvenligi/siber-risk-puanlamasi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Cyber Risk Scoring
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/bilgi-guvenligi/veri-sifreleme-ve-cihaz-sifreleme"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Data Encryption and Device Encryption
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/bilgi-guvenligi/uygulama-guvenligi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Application Security
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/bilgi-guvenligi/yapay-zeka-ile-tehdit-avi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            AI-Powered Threat Hunting
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full w-[950px] bg-white/95 backdrop-blur-md border border-gray-100/80 shadow-[0_20px_50px_rgba(0,0,0,0.12)] rounded-2xl p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50 pointer-events-none group-hover:pointer-events-auto">
+                    <div className="grid grid-cols-3 gap-8">
+                      {/* Column 1: Information Security */}
+                      <div>
+                        <Link
+                          href="/cozumler/bilgi-guvenligi"
+                          className="block text-[#1f4b68] font-bold text-xs tracking-wider uppercase mb-3 pb-2 border-b border-gray-100 hover:text-black transition-colors duration-200"
+                        >
+                          Information Security
+                        </Link>
+                        <ul className="space-y-1">
+                          <li>
+                            <Link
+                              href="/cozumler/bilgi-guvenligi/guvenlik-otomasyonu"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Security Automation
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/bilgi-guvenligi/guvenlik-bilgi-olay-yonetimi-ve-korelasyon-sistemi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Security Information and Event Management
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/bilgi-guvenligi/guvenlik-yapilandirilmasi-ve-uyumluluk"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Security Configuration and Compliance
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/bilgi-guvenligi/kullanici-davranisi-ve-analizi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              User Behavior and Analytics
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/bilgi-guvenligi/kurumsal-guvenlik-operasyonu"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Enterprise Security Operations
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/bilgi-guvenligi/siber-risk-puanlamasi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Cyber Risk Scoring
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/bilgi-guvenligi/veri-sifreleme-ve-cihaz-sifreleme"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Data Encryption and Device Encryption
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/bilgi-guvenligi/uygulama-guvenligi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Application Security
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/bilgi-guvenligi/yapay-zeka-ile-tehdit-avi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              AI-Powered Threat Hunting
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
 
-                    <li className="relative group/nested">
-                      <Link
-                        href="/cozumler/ag-guvenligi"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
-                      >
-                        <span className="flex items-center">
-                          Network Security{" "}
-                          <svg
-                            className="ml-1 w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            viewBox="0 0 24 24"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M9 5l7 7-7 7"
-                            />
-                          </svg>
-                        </span>
-                      </Link>
-                      <ul className="absolute left-full top-0 w-80 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 z-50">
-                        <li>
-                          <Link
-                            href="/cozumler/ag-guvenligi/ag-guvenligi-yonetimi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Network Security Management
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/ag-guvenligi/anti-ransomware-cozumleri"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Anti-Ransomware Solutions
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/ag-guvenligi/bulut-guvenligi-ve-yonetimi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Cloud Security and Management
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/ag-guvenligi/dns-ve-dhcp-yonetimi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            DNS and DHCP Management
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/ag-guvenligi/guvenlik-acigi-yonetimi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Vulnerability Management
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/ag-guvenligi/guvenlik-duvari-ve-ips-ids"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Firewall and IPS/IDS
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/ag-guvenligi/kotu-amacli-yazilim-analizi-ve-algilama"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Malware Analysis and Detection
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/ag-guvenligi/uc-nokta-guvenlik-yonetimi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Endpoint Security Management
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
+                      {/* Column 2: Network Security */}
+                      <div>
+                        <Link
+                          href="/cozumler/ag-guvenligi"
+                          className="block text-[#1f4b68] font-bold text-xs tracking-wider uppercase mb-3 pb-2 border-b border-gray-100 hover:text-black transition-colors duration-200"
+                        >
+                          Network Security
+                        </Link>
+                        <ul className="space-y-1">
+                          <li>
+                            <Link
+                              href="/cozumler/ag-guvenligi/ag-guvenligi-yonetimi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Network Security Management
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/ag-guvenligi/anti-ransomware-cozumleri"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Anti-Ransomware Solutions
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/ag-guvenligi/bulut-guvenligi-ve-yonetimi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Cloud Security and Management
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/ag-guvenligi/dns-ve-dhcp-yonetimi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              DNS and DHCP Management
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/ag-guvenligi/guvenlik-acigi-yonetimi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Vulnerability Management
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/ag-guvenligi/guvenlik-duvari-ve-ips-ids"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Firewall and IPS/IDS
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/ag-guvenligi/kotu-amacli-yazilim-analizi-ve-algilama"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Malware Analysis and Detection
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/ag-guvenligi/uc-nokta-guvenlik-yonetimi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Endpoint Security Management
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
 
-                    <li className="relative group/nested">
-                      <Link
-                        href="/cozumler/icerik-guvenligi"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
-                      >
-                        <span className="flex items-center">
-                          Content Security{" "}
-                          <svg
-                            className="ml-1 w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            viewBox="0 0 24 24"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M9 5l7 7-7 7"
-                            />
-                          </svg>
-                        </span>
-                      </Link>
-                      <ul className="absolute left-full top-0 w-80 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 z-50">
-                        <li>
-                          <Link
-                            href="/cozumler/icerik-guvenligi/bulut-erisimi-guvenlik-aracisi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Cloud Access Security Broker
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/icerik-guvenligi/dlp-veri-sizintisi-onleme"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            DLP - Data Loss Prevention
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/icerik-guvenligi/eposta-guvenligi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Email Security
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/icerik-guvenligi/konfigurasyonyonetimi"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Configuration Management
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/icerik-guvenligi/url-icerik-filtreleme-ve-gecit"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            URL/Content Filtering and Gateway
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/cozumler/icerik-guvenligi/veri-siniflandirma"
-                            className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 uppercase"
-                            style={{ color: "rgba(102,102,102,.85)" }}
-                            onMouseEnter={(e) =>
-                              (e.target.style.color = "rgba(17,17,17,.85)")
-                            }
-                            onMouseLeave={(e) =>
-                              (e.target.style.color = "rgba(102,102,102,.85)")
-                            }
-                          >
-                            Data Classification
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                      {/* Column 3: Content Security */}
+                      <div>
+                        <Link
+                          href="/cozumler/icerik-guvenligi"
+                          className="block text-[#1f4b68] font-bold text-xs tracking-wider uppercase mb-3 pb-2 border-b border-gray-100 hover:text-black transition-colors duration-200"
+                        >
+                          Content Security
+                        </Link>
+                        <ul className="space-y-1">
+                          <li>
+                            <Link
+                              href="/cozumler/icerik-guvenligi/bulut-erisimi-guvenlik-aracisi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Cloud Access Security Broker
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/icerik-guvenligi/dlp-veri-sizintisi-onleme"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              DLP - Data Loss Prevention
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/icerik-guvenligi/eposta-guvenligi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Email Security
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/icerik-guvenligi/konfigurasyonyonetimi"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Configuration Management
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/icerik-guvenligi/url-icerik-filtreleme-ve-gecit"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              URL/Content Filtering and Gateway
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/cozumler/icerik-guvenligi/veri-siniflandirma"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                            >
+                              Data Classification
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
 
                 <li className="relative group">
                   <Link
                     href="/hizmetler"
-                    className="block py-4 px-3 transition-colors duration-200 uppercase"
-                    style={{ color: "rgba(102,102,102,.85)" }}
-                    onMouseEnter={(e) =>
-                      (e.target.style.color = "rgba(17,17,17,.85)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.target.style.color = "rgba(102,102,102,.85)")
-                    }
+                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
                   >
                     Services
                   </Link>
-                  <ul className="absolute left-0 top-full w-64 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <ul className="absolute left-0 top-full w-72 bg-white/95 backdrop-blur-md border border-gray-100/80 shadow-[0_20px_50px_rgba(0,0,0,0.12)] rounded-2xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
                     <li>
                       <Link
                         href="/hizmetler/installation-professional-services"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Installation and Professional Services
                       </Link>
@@ -683,14 +402,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/hizmetler/advanced-support"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Advanced Support
                       </Link>
@@ -698,14 +410,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/hizmetler/support-plans"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Support Plans
                       </Link>
@@ -716,61 +421,34 @@ const Navbar = () => {
                 <li className="relative group">
                   <Link
                     href="/markalarimiz"
-                    className="block py-4 px-3 transition-colors duration-200 uppercase"
-                    style={{ color: "rgba(102,102,102,.85)" }}
-                    onMouseEnter={(e) =>
-                      (e.target.style.color = "rgba(17,17,17,.85)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.target.style.color = "rgba(102,102,102,.85)")
-                    }
+                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
                   >
                     Our Brands
                   </Link>
-                  <ul className="absolute left-0 top-full w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <ul className="absolute left-0 top-full w-64 bg-white/95 backdrop-blur-md border border-gray-100/80 shadow-[0_20px_50px_rgba(0,0,0,0.12)] rounded-2xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
                     <li>
                       <Link
-                        href="/markalarimiz/caspipot"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
+                        href="/markalarimiz/todyl"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
-                        Caspipot
+                        Todyl
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/markalarimiz/skyron"
-                        className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200 uppercase"
-                        style={{ color: "rgba(102,102,102,.85)" }}
-                        onMouseEnter={(e) =>
-                          (e.target.style.color = "rgba(17,17,17,.85)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.target.style.color = "rgba(102,102,102,.85)")
-                        }
+                        href="/markalarimiz/acronis"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
-                        Skyron
+                        Acronis Cyber Protect
                       </Link>
                     </li>
                   </ul>
                 </li>
+
                 <li className="relative group">
                   <Link
                     href="/iletisim"
-                    className="block py-4 px-3 transition-colors duration-200 uppercase"
-                    style={{ color: "rgba(102,102,102,.85)" }}
-                    onMouseEnter={(e) =>
-                      (e.target.style.color = "rgba(17,17,17,.85)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.target.style.color = "rgba(102,102,102,.85)")
-                    }
+                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
                   >
                     Contact Us
                   </Link>
@@ -1285,8 +963,23 @@ const Navbar = () => {
                       </svg>
                     </button>
                   </div>
-                  {openDropdowns.markalarimiz && (
+                   {openDropdowns.markalarimiz && (
                     <div className="pl-4 bg-gray-50">
+                      <Link
+                        href="/markalarimiz/todyl"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 text-sm uppercase"
+                      >
+                        • Todyl
+                      </Link>
+                      <Link
+                        href="/markalarimiz/acronis"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 text-sm uppercase"
+                      >
+                        • Acronis Cyber Protect
+                      </Link>
+                      {/* Commented out previous brands
                       <Link
                         href="/markalarimiz/caspipot"
                         onClick={toggleMobileMenu}
@@ -1301,6 +994,7 @@ const Navbar = () => {
                       >
                         • Skyron
                       </Link>
+                      */}
                     </div>
                   )}
                 </li>

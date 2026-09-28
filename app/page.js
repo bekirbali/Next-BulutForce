@@ -19,7 +19,7 @@ export default function Home() {
         </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-10"></div>
         <div className="relative z-20 text-center flex flex-col justify-center items-center flex-grow">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-wider break-words">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-wider break-words notranslate" translate="no">
             BULUTFORCE
           </h1>
           <p className="text-base sm:text-lg md:text-xl mt-4 max-w-xs sm:max-w-xl md:max-w-3xl mx-auto">
@@ -28,7 +28,7 @@ export default function Home() {
           </p>
           <div className="relative w-full pt-24">
             <div className="max-w-xl md:max-w-3xl mx-auto">
-              <BrandSlider />
+              {/* <BrandSlider /> */}
             </div>
           </div>
         </div>
@@ -40,10 +40,10 @@ export default function Home() {
       <SecurityCards isMobile={true} />
 
       {/* Erken Tespit Arka Plan Image Section */}
-      <section className="flex justify-center items-center bg-white mt-24 py-48">
-        <div className="relative w-full max-w-7xl">
+      <section className="flex justify-center items-center px-4 bg-white mt-6 md:mt-24 py-8 md:py-48">
+        <div className="relative w-full max-w-7xl md:px-0">
           <Image
-            src="/assets/anasayfa/bulutforceErkenTespitArkaPlan.jpg"
+            src="/assets/anasayfa/Todyl.jpeg"
             alt="Earlier detection. Faster intervention. Lower risk."
             width={1600}
             height={700}
@@ -54,16 +54,15 @@ export default function Home() {
             className="absolute inset-0 flex items-center justify-center rounded-lg"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
           >
-            <h2 className="text-white text-4xl md:text-5xl font-bold text-center">
-              Earlier detection. Faster intervention.
-              <br />
-              Lower risk.
+            <h2 className="text-white text-xl sm:text-3xl md:text-5xl font-bold text-center px-4 md:px-0">
+              Unified Cybersecurity and Data <br className="hidden sm:inline" />
+              Protection with Todyl
             </h2>
           </div>
         </div>
       </section>
 
-      {/* Corporate Info Section */}
+      {/* Corporate Info Section
       <section
         className="relative py-32 bg-cover bg-center text-white"
         style={{
@@ -71,7 +70,6 @@ export default function Home() {
             "url('/assets/anasayfa/bulutforceMaviDesenArkaplan.png')",
         }}
       >
-        {/* Wave Effect */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden">
           <svg
             viewBox="0 0 1000 100"
@@ -149,6 +147,20 @@ export default function Home() {
               />
             </div>
           </div>
+        </div>
+      </section>
+      */}
+
+      {/* Acronis Section */}
+      <section className="flex justify-center items-center bg-white px-4 py-6 md:py-16">
+        <div className="relative w-full max-w-7xl md:px-0">
+          <Image
+            src="/assets/anasayfa/Acronis.jpeg"
+            alt="Acronis Cyber Protect Cloud"
+            width={1600}
+            height={700}
+            className="w-full h-auto rounded-lg object-cover"
+          />
         </div>
       </section>
 
@@ -251,7 +263,7 @@ export default function Home() {
       <section className="bg-gray-100 py-20">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-black mb-16">
-            Follow Bulutforce
+            Follow <span className="notranslate" translate="no">Bulutforce</span>
           </h2>
 
           <div className="grid md:grid-cols-4 gap-8">

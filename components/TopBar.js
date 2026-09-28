@@ -2,8 +2,8 @@ import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const TopBar = () => (
-  <div className="hidden max-w-[100rem] mx-auto text-gray-500 text-xs md:flex items-center justify-between h-8">
-    <div className="flex justify-center items-center gap-2 w-[300px]">
+  <div className="hidden max-w-[100rem] mx-auto text-gray-700 text-xs md:flex items-center justify-between h-8">
+    <div className="flex justify-center items-center gap-2 w-[280px] md:w-[350px]">
       <Link href="#" className="hover:text-blue-700">
         {/* Facebook SVG */}
         <svg
