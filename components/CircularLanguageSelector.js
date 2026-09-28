@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { FaGlobeAmericas } from "react-icons/fa";
 
