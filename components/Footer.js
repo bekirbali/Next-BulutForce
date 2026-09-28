@@ -162,6 +162,7 @@ const Footer = () => {
               width={400}
               height={160}
               className="object-contain"
+              style={{ height: "auto" }}
             />
           </div>
         </div>

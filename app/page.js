@@ -190,6 +190,7 @@ export default function Home() {
                     src="/assets/anasayfa/bulutforceKurulum.jpg"
                     alt="Installation and Professional Services"
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                   <div
@@ -218,6 +219,7 @@ export default function Home() {
                     src="/assets/anasayfa/bulutforceileriduzeydestek.jpg"
                     alt="Advanced Support"
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                   <div
@@ -242,6 +244,7 @@ export default function Home() {
                     src="/assets/anasayfa/bulutforcedestekplanları.jpg"
                     alt="Support Plans"
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                   <div
