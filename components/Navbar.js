@@ -1015,7 +1015,7 @@ const Navbar = () => {
           )}
         </nav>
       </div>
-      <CircularLanguageSelector />
+      <div className="gtranslate_wrapper" style={{ display: "none" }}></div>
     </>
   );
 };
