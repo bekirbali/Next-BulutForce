@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { FaGlobeAmericas } from "react-icons/fa";
 
@@ -39,15 +38,40 @@ export default function CircularLanguageSelector({ className = "" }) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [open]);
 
-  const handleFlagClick = (lang) => {
+  const handleFlagClick = (langCode) => {
     setOpen(false);
-    if (window.gtranslateSettings && window.gtranslateSettings.switcher) {
-      window.gtranslateSettings.switcher.switchTo(lang);
-    } else {
-      // fallback: set cookie and reload
-      document.cookie = `googtrans=/en/${lang}`;
-      window.location.reload();
+    const targetPair = `en|${langCode}`;
+
+    // Set cookie correctly for Google Translate (googtrans=/en/langCode)
+    const cookieVal = langCode === "en" ? "" : `/en/${langCode}`;
+    const expires = langCode === "en" ? "; expires=Thu, 01 Jan 1970 00:00:00 GMT" : "";
+
+    document.cookie = `googtrans=${cookieVal}; path=/${expires}`;
+    if (typeof window !== "undefined" && window.location.hostname && window.location.hostname !== "localhost") {
+      document.cookie = `googtrans=${cookieVal}; path=/; domain=${window.location.hostname}${expires}`;
+      document.cookie = `googtrans=${cookieVal}; path=/; domain=.${window.location.hostname}${expires}`;
     }
+
+    // 1. Try global doGTranslate function from float.js
+    if (typeof window.doGTranslate === "function") {
+      window.doGTranslate(targetPair);
+      const gtSelect = document.querySelector(".gt_selector");
+      if (gtSelect) {
+        gtSelect.value = targetPair;
+      }
+      return;
+    }
+
+    // 2. Try triggering select dropdown if present
+    const gtSelect = document.querySelector(".gt_selector");
+    if (gtSelect) {
+      gtSelect.value = targetPair;
+      gtSelect.dispatchEvent(new Event("change"));
+      return;
+    }
+
+    // 3. Fallback: Page reload with set cookie
+    window.location.reload();
   };
 
   return (

@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 :root {
   --background: #ffffff;
@@ -39,5 +38,5 @@ h6:hover {
 /* Add your global styles here */
 
 .font-lato {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: var(--font-lato), Arial, Helvetica, sans-serif;
 }
