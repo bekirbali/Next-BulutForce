@@ -84,7 +84,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-white fixed top-0 left-0 w-full z-50 font-[lato]">
+      <div className="bg-white fixed top-0 left-0 w-full z-50 font-inter">
         <TopBar />
         <nav>
           <div className="max-w-[100rem] mx-auto">
