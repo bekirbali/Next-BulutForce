@@ -142,7 +142,7 @@ export default function Hikayemiz() {
           </p>
           <div className="flex justify-center">
             <Link href="/iletisim">
-              <button className="bg-white text-blue-800 font-semibold py-3 px-8 rounded-md hover:bg-blue-50 transition duration-300 shadow-md">
+              <button className="bg-white text-primary font-semibold py-3 px-8 rounded-md hover:bg-slate-50 transition duration-300 shadow-md">
                 İLETİŞİM
               </button>
             </Link>

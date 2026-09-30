@@ -5,6 +5,13 @@
   --foreground: #171717;
 }
 
+@theme {
+  --color-primary: #1f4b68;
+  --color-primary-hover: #173d57;
+  --color-navy: #071933;
+  --color-brand-blue: #2563eb;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

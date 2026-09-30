@@ -82,44 +82,48 @@ const Navbar = () => {
     });
   };
 
+  const desktopLinkClass =
+    "block py-4 px-1.5 min-[850px]:px-2 min-[920px]:px-2 lg:px-2.5 xl:px-3.5 text-[#333333] hover:text-primary transition-colors duration-200 uppercase font-semibold whitespace-nowrap text-[11px] min-[850px]:text-[11.5px] min-[920px]:text-xs lg:text-[13px] xl:text-[14.5px] 2xl:text-base tracking-tight min-[920px]:tracking-normal lg:tracking-wide";
+
   return (
     <>
-      <div className="bg-white fixed top-0 left-0 w-full z-50 font-inter">
+      <div className="bg-white fixed top-0 left-0 w-full z-50 font-inter border-b border-gray-100/80 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.08)]">
         <TopBar />
         <nav>
-          <div className="max-w-[100rem] mx-auto">
-            <div className="flex items-center justify-between h-[120px]">
+          <div className="max-w-[100rem] mx-auto px-3 sm:px-4 lg:px-6 xl:px-8">
+            <div className="flex items-center justify-between h-[95px] sm:h-[105px] min-[808px]:h-[105px] lg:h-[130px] xl:h-[148px]">
               {/* Logo */}
-              <div className="flex-shrink-0]">
+              <div className="flex justify-center items-center w-[130px] sm:w-[140px] min-[808px]:w-[145px] lg:w-[200px] xl:w-[230px] 2xl:w-[245px] flex-shrink-0">
                 <Link
                   href="/"
-                  className="text-2xl font-bold py-2 text-gray-800 hover:text-gray-900 transition-colors duration-200"
+                  className="flex items-center justify-center w-full py-1 text-2xl font-bold text-gray-800 hover:text-gray-900 transition-colors duration-200"
                 >
                   <Image
                     src="/assets/markalar/logos/bflogo.png"
                     alt="BulutForce"
-                    width={360}
-                    height={60}
-                    className="w-[280px] md:w-[350px]"
+                    width={400}
+                    height={218}
+                    priority
+                    className="h-[62px] sm:h-[68px] min-[808px]:h-[72px] lg:h-[105px] xl:h-[120px] 2xl:h-[128px] w-auto max-w-full object-contain"
                   />
                 </Link>
               </div>
 
-              {/* Navigation Menu (Desktop) */}
-              <ul className="hidden md:flex space-x-8 items-center">
-                <li className="relative group">
+              {/* Navigation Menu (Desktop, active >= 808px) */}
+              <ul className="hidden min-[808px]:flex items-center gap-1 min-[850px]:gap-1.5 min-[920px]:gap-2 lg:gap-2.5 xl:gap-5 2xl:gap-8 flex-shrink-0">
+                <li className="relative group flex-shrink-0">
                   <Link
                     href="/"
-                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
+                    className={desktopLinkClass}
                   >
                     Home Page
                   </Link>
                 </li>
 
-                <li className="relative group">
+                <li className="relative group flex-shrink-0">
                   <Link
                     href="/biz-kimiz"
-                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
+                    className={desktopLinkClass}
                   >
                     About Us
                   </Link>
@@ -127,7 +131,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/biz-kimiz/hikayemiz"
-                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Our Story
                       </Link>
@@ -135,7 +139,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/biz-kimiz/kariyer"
-                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Careers
                       </Link>
@@ -143,7 +147,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/biz-kimiz/duyurular"
-                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Announcements
                       </Link>
@@ -151,10 +155,10 @@ const Navbar = () => {
                   </ul>
                 </li>
 
-                <li className="relative group">
+                <li className="relative group flex-shrink-0">
                   <Link
                     href="/cozumler"
-                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
+                    className={desktopLinkClass}
                   >
                     Solutions
                   </Link>
@@ -164,7 +168,7 @@ const Navbar = () => {
                       <div>
                         <Link
                           href="/cozumler/bilgi-guvenligi"
-                          className="block text-[#1f4b68] font-bold text-xs tracking-wider uppercase mb-3 pb-2 border-b border-gray-100 hover:text-black transition-colors duration-200"
+                          className="block text-primary font-bold text-xs tracking-wider uppercase mb-3 pb-2 border-b border-gray-100 hover:text-black transition-colors duration-200"
                         >
                           Information Security
                         </Link>
@@ -172,7 +176,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/bilgi-guvenligi/guvenlik-otomasyonu"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Security Automation
                             </Link>
@@ -180,7 +184,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/bilgi-guvenligi/guvenlik-bilgi-olay-yonetimi-ve-korelasyon-sistemi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Security Information and Event Management
                             </Link>
@@ -188,7 +192,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/bilgi-guvenligi/guvenlik-yapilandirilmasi-ve-uyumluluk"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Security Configuration and Compliance
                             </Link>
@@ -196,7 +200,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/bilgi-guvenligi/kullanici-davranisi-ve-analizi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               User Behavior and Analytics
                             </Link>
@@ -204,7 +208,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/bilgi-guvenligi/kurumsal-guvenlik-operasyonu"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Enterprise Security Operations
                             </Link>
@@ -212,7 +216,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/bilgi-guvenligi/siber-risk-puanlamasi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Cyber Risk Scoring
                             </Link>
@@ -220,7 +224,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/bilgi-guvenligi/veri-sifreleme-ve-cihaz-sifreleme"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Data Encryption and Device Encryption
                             </Link>
@@ -228,7 +232,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/bilgi-guvenligi/uygulama-guvenligi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Application Security
                             </Link>
@@ -236,7 +240,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/bilgi-guvenligi/yapay-zeka-ile-tehdit-avi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               AI-Powered Threat Hunting
                             </Link>
@@ -248,7 +252,7 @@ const Navbar = () => {
                       <div>
                         <Link
                           href="/cozumler/ag-guvenligi"
-                          className="block text-[#1f4b68] font-bold text-xs tracking-wider uppercase mb-3 pb-2 border-b border-gray-100 hover:text-black transition-colors duration-200"
+                          className="block text-primary font-bold text-xs tracking-wider uppercase mb-3 pb-2 border-b border-gray-100 hover:text-black transition-colors duration-200"
                         >
                           Network Security
                         </Link>
@@ -256,7 +260,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/ag-guvenligi/ag-guvenligi-yonetimi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Network Security Management
                             </Link>
@@ -264,7 +268,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/ag-guvenligi/anti-ransomware-cozumleri"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Anti-Ransomware Solutions
                             </Link>
@@ -272,7 +276,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/ag-guvenligi/bulut-guvenligi-ve-yonetimi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Cloud Security and Management
                             </Link>
@@ -280,7 +284,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/ag-guvenligi/dns-ve-dhcp-yonetimi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               DNS and DHCP Management
                             </Link>
@@ -288,7 +292,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/ag-guvenligi/guvenlik-acigi-yonetimi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Vulnerability Management
                             </Link>
@@ -296,7 +300,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/ag-guvenligi/guvenlik-duvari-ve-ips-ids"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Firewall and IPS/IDS
                             </Link>
@@ -304,7 +308,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/ag-guvenligi/kotu-amacli-yazilim-analizi-ve-algilama"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Malware Analysis and Detection
                             </Link>
@@ -312,7 +316,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/ag-guvenligi/uc-nokta-guvenlik-yonetimi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Endpoint Security Management
                             </Link>
@@ -324,7 +328,7 @@ const Navbar = () => {
                       <div>
                         <Link
                           href="/cozumler/icerik-guvenligi"
-                          className="block text-[#1f4b68] font-bold text-xs tracking-wider uppercase mb-3 pb-2 border-b border-gray-100 hover:text-black transition-colors duration-200"
+                          className="block text-primary font-bold text-xs tracking-wider uppercase mb-3 pb-2 border-b border-gray-100 hover:text-black transition-colors duration-200"
                         >
                           Content Security
                         </Link>
@@ -332,7 +336,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/icerik-guvenligi/bulut-erisimi-guvenlik-aracisi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Cloud Access Security Broker
                             </Link>
@@ -340,7 +344,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/icerik-guvenligi/dlp-veri-sizintisi-onleme"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               DLP - Data Loss Prevention
                             </Link>
@@ -348,7 +352,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/icerik-guvenligi/eposta-guvenligi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Email Security
                             </Link>
@@ -356,7 +360,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/icerik-guvenligi/konfigurasyonyonetimi"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Configuration Management
                             </Link>
@@ -364,7 +368,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/icerik-guvenligi/url-icerik-filtreleme-ve-gecit"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               URL/Content Filtering and Gateway
                             </Link>
@@ -372,7 +376,7 @@ const Navbar = () => {
                           <li>
                             <Link
                               href="/cozumler/icerik-guvenligi/veri-siniflandirma"
-                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
+                              className="block px-3 py-1.5 text-xs text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-lg transition-all duration-200 uppercase font-medium"
                             >
                               Data Classification
                             </Link>
@@ -383,10 +387,10 @@ const Navbar = () => {
                   </div>
                 </li>
 
-                <li className="relative group">
+                <li className="relative group flex-shrink-0">
                   <Link
                     href="/hizmetler"
-                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
+                    className={desktopLinkClass}
                   >
                     Services
                   </Link>
@@ -394,7 +398,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/hizmetler/installation-professional-services"
-                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Installation and Professional Services
                       </Link>
@@ -402,7 +406,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/hizmetler/advanced-support"
-                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Advanced Support
                       </Link>
@@ -410,7 +414,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/hizmetler/support-plans"
-                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Support Plans
                       </Link>
@@ -418,18 +422,18 @@ const Navbar = () => {
                   </ul>
                 </li>
 
-                <li className="relative group">
+                <li className="relative group flex-shrink-0">
                   <Link
                     href="/markalarimiz"
-                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
+                    className={desktopLinkClass}
                   >
-                    Our Brands
+                    Products
                   </Link>
                   <ul className="absolute left-0 top-full w-64 bg-white/95 backdrop-blur-md border border-gray-100/80 shadow-[0_20px_50px_rgba(0,0,0,0.12)] rounded-2xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
                     <li>
                       <Link
                         href="/markalarimiz/todyl"
-                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Todyl
                       </Link>
@@ -437,7 +441,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         href="/markalarimiz/acronis"
-                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-[#1f4b68] hover:bg-[#1f4b68]/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
+                        className="block px-4 py-2.5 text-sm text-[#333333] hover:text-primary hover:bg-primary/5 hover:translate-x-1 rounded-xl transition-all duration-200 uppercase font-medium"
                       >
                         Acronis Cyber Protect
                       </Link>
@@ -445,24 +449,26 @@ const Navbar = () => {
                   </ul>
                 </li>
 
-                <li className="relative group">
+                <li className="relative group flex-shrink-0">
                   <Link
                     href="/iletisim"
-                    className="block py-4 px-3 text-[#333333] hover:text-[#1f4b68] transition-colors duration-200 uppercase font-medium"
+                    className={desktopLinkClass}
                   >
                     Contact Us
                   </Link>
                 </li>
-                <li className="ml-4 flex items-center">
+                <li className="flex items-center flex-shrink-0 ml-1 lg:ml-2 xl:ml-3">
                   <CircularLanguageSelector />
                 </li>
               </ul>
 
-              {/* Hamburger Menu (Mobile) */}
-              <div className="md:hidden flex items-center">
+              {/* Hamburger Menu & Language (Mobile, active <= 807px) */}
+              <div className="min-[808px]:hidden flex items-center gap-2">
+                <CircularLanguageSelector />
                 <button
                   onClick={toggleMobileMenu}
-                  className="text-gray-700 hover:text-gray-900 focus:outline-none"
+                  aria-label="Toggle navigation menu"
+                  className="p-1.5 text-gray-700 hover:text-gray-900 focus:outline-none"
                 >
                   <svg
                     className="w-6 h-6"
@@ -492,9 +498,9 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Menu */}
+          {/* Mobile Menu (active <= 807px) */}
           {isMobileMenuOpen && (
-            <div className="md:hidden bg-white border-t border-gray-200">
+            <div className="min-[808px]:hidden bg-white border-t border-gray-200">
               <ul className="flex flex-col items-center py-4">
                 <li className="w-full">
                   <Link
@@ -599,14 +605,9 @@ const Navbar = () => {
                           onClick={toggleMobileMenu}
                           className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 text-sm uppercase"
                         >
-                          <Link
-                            href="/cozumler/bilgi-guvenligi"
-                            className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 uppercase"
-                          >
-                            <span className="flex items-center">
-                              Information Security
-                            </span>
-                          </Link>
+                          <span className="flex items-center">
+                            Information Security
+                          </span>
                         </Link>
                         <button
                           onClick={() => toggleDropdown("bilgiGuvenligi")}
@@ -702,14 +703,9 @@ const Navbar = () => {
                           onClick={toggleMobileMenu}
                           className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 text-sm uppercase"
                         >
-                          <Link
-                            href="/cozumler/ag-guvenligi"
-                            className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 uppercase"
-                          >
-                            <span className="flex items-center">
-                              Network Security
-                            </span>
-                          </Link>
+                          <span className="flex items-center">
+                            Network Security
+                          </span>
                         </Link>
                         <button
                           onClick={() => toggleDropdown("agGuvenligi")}
@@ -798,14 +794,9 @@ const Navbar = () => {
                           onClick={toggleMobileMenu}
                           className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 text-sm uppercase"
                         >
-                          <Link
-                            href="/cozumler/icerik-guvenligi"
-                            className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors duration-200 uppercase"
-                          >
-                            <span className="flex items-center">
-                              Content Security
-                            </span>
-                          </Link>
+                          <span className="flex items-center">
+                            Content Security
+                          </span>
                         </Link>
                         <button
                           onClick={() => toggleDropdown("icerikGuvenligi")}
@@ -940,7 +931,7 @@ const Navbar = () => {
                       onClick={toggleMobileMenu}
                       className="block py-2 px-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200 uppercase"
                     >
-                      Our Brands
+                      Products
                     </Link>
                     <button
                       onClick={() => toggleDropdown("markalarimiz")}

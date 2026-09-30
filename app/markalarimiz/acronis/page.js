@@ -59,20 +59,20 @@ export default function Acronis() {
   return (
     <div className="min-h-screen bg-slate-50 font-[lato] pt-10">
       {/* Hero Section */}
-      <div className="relative h-[250px] md:h-[300px] flex flex-col items-center justify-center overflow-hidden bg-[#071933]">
-        {/* Background dark gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#020914] via-[#071933] to-[#041c3d] opacity-95 z-0"></div>
-
-        {/* Background cyber pattern overlay */}
-        <div className="absolute inset-y-0 right-0 w-full md:w-1/2 opacity-20 z-0">
+      <div className="relative h-[250px] md:h-[300px] flex flex-col items-center justify-center overflow-hidden bg-navy">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
           <Image
             src="/assets/anasayfa/bulutforceErkenTespitArkaPlan.jpg"
             alt="Background cyber pattern"
             fill
-            className="object-cover object-right mix-blend-screen"
+            className="object-cover object-center"
             priority
           />
         </div>
+
+        {/* Background dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#020914]/90 via-navy/85 to-[#041c3d]/90 z-0"></div>
 
         {/* Content */}
         <div className="relative z-10 text-center flex flex-col items-center justify-center px-4">
@@ -99,19 +99,19 @@ export default function Acronis() {
 
       {/* Main Container */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 xl:grid-cols-4 gap-12 max-w-7xl mx-auto">
           
           {/* Left Column - Main Content (All 10 Products Scrollable) */}
-          <div className="lg:col-span-3 space-y-20">
+          <div className="xl:col-span-3 space-y-20">
             
             {/* 1. Acronis Cyber Protect Cloud */}
             <section id="cyber-protect-cloud" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     ACRONIS CYBER PROTECT
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis Cyber Protect Cloud 🛡️
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -120,12 +120,12 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     In traditional IT environments, separate software is used for antivirus, separate for backup, and separate for patch management and remote access. This situation both increases costs and creates security gaps due to incompatibility between software. <strong>Acronis Cyber Protect Cloud</strong> integrates all of these processes through a <strong>single agent</strong> and a <strong>single management console</strong>, raising your cyber resilience to the highest level.
                   </p>
 
                   <div className="space-y-4 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Key Capabilities</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 Key Capabilities</h3>
                     <ul className="space-y-4 text-sm md:text-base">
                       <li className="flex items-start space-x-3">
                         <span className="text-lg mt-0.5">🔒</span>
@@ -159,7 +159,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-3 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Why is it the Right Choice for Your Business?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 Why is it the Right Choice for Your Business?</h3>
                     <ol className="list-decimal pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">Cost Advantage:</strong> Instead of allocating separate budgets for different security and backup licenses, lower your operational costs with a single platform.
@@ -174,7 +174,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 mt-6">
-                    <h4 className="font-bold text-[#071933] mb-1 flex items-center">
+                    <h4 className="font-bold text-navy mb-1 flex items-center">
                       <span className="text-lg mr-2">💡</span> Call to Action:
                     </h4>
                     <p className="text-slate-600 text-sm md:text-base italic">
@@ -189,10 +189,10 @@ export default function Acronis() {
             <section id="cyber-protect-on-premises" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     ON-PREMISES SOLUTIONS
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis Cyber Protect (On-Premises)
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -201,15 +201,15 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     Although cloud architectures are becoming more widespread day by day, there are businesses that <strong>cannot export their data out of the institution</strong> or have to work in <strong>closed-loop (LAN) networks</strong> due to regulations (KVKK, BDDK, Presidency Digital Transformation Office Guide) or internal security policies.
                   </p>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <strong>Acronis Cyber Protect (On-Premises)</strong> allows you to install the entire management console and data storage units in your own data center, without the need for an external internet or cloud connection. It combines cyber security, full system backup, and vulnerability management on local servers under your complete control.
                   </p>
 
                   <div className="space-y-6 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
+                    <h3 className="text-lg font-bold text-navy">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
                     
                     <div className="space-y-3">
                       <h4 className="font-bold text-slate-800 flex items-center">
@@ -264,11 +264,11 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 2. On-Premises and Bulut Modellerinin Karşılaştırması</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 2. On-Premises and Bulut Modellerinin Karşılaştırması</h3>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-sm">
                         <thead>
-                          <tr className="bg-[#071933] text-white">
+                          <tr className="bg-navy text-white">
                             <th className="py-3 px-4 font-bold border border-slate-200">Feature</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Acronis Cyber Protect Cloud</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Acronis Cyber Protect (On-Premises)</th>
@@ -306,7 +306,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 3. Hangi İşletme ve Yapılar İçin İdealdir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 3. Hangi İşletme ve Yapılar İçin İdealdir?</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">Defense Industry, Public and Financial Institutions:</strong> High-security structures where exporting data to any external cloud server is legally prohibited.
@@ -320,8 +320,8 @@ export default function Acronis() {
                     </ul>
                   </div>
 
-                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-[#071933]/5 p-6 rounded-xl border border-[#071933]/10">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Bulutforce Mimarisi ve On-Prem Danışmanlığı</h3>
+                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-navy/5 p-6 rounded-xl border border-navy/10">
+                    <h3 className="text-lg font-bold text-navy">🌟 Bulutforce Mimarisi ve On-Prem Danışmanlığı</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 md:text-base">
                       <li>
                         <strong className="text-slate-800">Correct Hardware and Architecture Sizing:</strong> We size the server and storage architecture where the On-Premises console will be installed in the most optimum way according to your business's data volume.
@@ -342,10 +342,10 @@ export default function Acronis() {
             <section id="cyber-frame" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     ARCHITECTURAL SOLUTIONS
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis Cyber Frame
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -354,15 +354,15 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     Ready-made packages and standard security recipes cannot meet the specific needs of every business. Different data sizes, complex network infrastructures, and strict legal regulations (KVKK, BDDK, Presidency Digital Transformation Office Guide) require a holistic cyber security and business continuity framework custom-designed for enterprises.
                   </p>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <strong>Acronis Cyber Frame</strong> is a strategic solution architecture that gathers the global cyber protection modules of the world giant Acronis (Backup, EDR/XDR, DLP, Email Security, RMM) under a single roof and is <strong>scaled specifically for your institution with Bulutforce expertise</strong>.
                   </p>
 
                   <div className="space-y-6 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">1. Mimarinin Yapı Taşları ve Esnek Katmanları 🏛️</h3>
+                    <h3 className="text-lg font-bold text-navy">1. Mimarinin Yapı Taşları ve Esnek Katmanları 🏛️</h3>
                     
                     <div className="space-y-3">
                       <h4 className="font-bold text-slate-800 flex items-center">
@@ -408,11 +408,11 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 2. Neden Standart Paket Değil de "Cyber Frame"?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 2. Neden Standart Paket Değil de "Cyber Frame"?</h3>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-sm">
                         <thead>
-                          <tr className="bg-[#071933] text-white">
+                          <tr className="bg-navy text-white">
                             <th className="py-3 px-4 font-bold border border-slate-200">Feature</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Standard Box / Package Software</th>
                             <th className="py-3 px-4 font-bold border border-slate-200 text-blue-400">Bulutforce Acronis Cyber Frame</th>
@@ -445,7 +445,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 3. Hangi İşletme ve Yapılar İçin İdealdir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 3. Hangi İşletme ve Yapılar İçin İdealdir?</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">Structures Outside Standard Packages:</strong> Medium and large-scale institutions with complex server, virtual machine, and multi-branch infrastructure.
@@ -459,8 +459,8 @@ export default function Acronis() {
                     </ul>
                   </div>
 
-                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-[#071933]/5 p-6 rounded-xl border border-[#071933]/10">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Bulutforce Katma Değeri ve Mimari Danışmanlık</h3>
+                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-navy/5 p-6 rounded-xl border border-navy/10">
+                    <h3 className="text-lg font-bold text-navy">🌟 Bulutforce Katma Değeri ve Mimari Danışmanlık</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 md:text-base">
                       <li>
                         <strong className="text-slate-800">Phase 1 - Infrastructure Analysis (Assessment):</strong> Your company's current IT inventory, security vulnerabilities, and data volume are analyzed to outline the Cyber Frame.
@@ -481,10 +481,10 @@ export default function Acronis() {
             <section id="cloud-backup" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     CLOUD BACKUP
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis Cloud Backup 🛡️
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -493,15 +493,15 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     For businesses, data loss is not just a loss of information, it means direct reputation, time, and financial loss. The most solid line of defense against hardware failures, natural disasters, user errors, and siber attacks is backing up data in a <strong>secure and uninterrupted cloud infrastructure</strong>.
                   </p>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <strong>Acronis Cloud Backup</strong> combines the global Acronis backup engine, preferred by hundreds of thousands of institutions worldwide, with <strong>Bulutforce's high-security local data infrastructure and Master MSP expertise</strong>. It provides full assurance for your servers, virtual machines, and workstations against disasters.
                   </p>
 
                   <div className="space-y-6 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
+                    <h3 className="text-lg font-bold text-navy">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
                     
                     <div className="space-y-3">
                       <h4 className="font-bold text-slate-800 flex items-center">
@@ -553,11 +553,11 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 2. Neden Standart Bulut Yedeklemesi Değil?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 2. Neden Standart Bulut Yedeklemesi Değil?</h3>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-sm">
                         <thead>
-                          <tr className="bg-[#071933] text-white">
+                          <tr className="bg-navy text-white">
                             <th className="py-3 px-4 font-bold border border-slate-200">Feature</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Traditional Cloud Storage (Drive/Dropbox etc.)</th>
                             <th className="py-3 px-4 font-bold border border-slate-200 text-blue-400">Bulutforce Acronis Cloud Backup</th>
@@ -590,7 +590,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 3. Kimler İçin İdealdir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 3. Kimler İçin İdealdir?</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">Institutions Managing Critical Servers and Databases:</strong> Businesses with zero tolerance for data loss and long-term system downtime.
@@ -604,8 +604,8 @@ export default function Acronis() {
                     </ul>
                   </div>
 
-                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-[#071933]/5 p-6 rounded-xl border border-[#071933]/10">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Bulutforce Katma Değeri ve Destek Yaklaşımı</h3>
+                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-navy/5 p-6 rounded-xl border border-navy/10">
+                    <h3 className="text-lg font-bold text-navy">🌟 Bulutforce Katma Değeri ve Destek Yaklaşımı</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 md:text-base">
                       <li>
                         <strong className="text-slate-800">Data Sizing and Sizing Analysis:</strong> Your business's current data volume and daily change rate are analyzed to determine the most accurate storage quota.
@@ -626,10 +626,10 @@ export default function Acronis() {
             <section id="email-backup" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     CLOUD EMAIL BACKUP
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis Email Backup 🛡️
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -638,15 +638,15 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     Many institutions assume their data is automatically backed up when they move to cloud platforms like Microsoft 365 or Google Workspace. However, cloud providers guarantee infrastructure continuity; <strong>they do not commit to recovering accidentally deleted emails, malicious employee interventions, or cloud files encrypted by ransomware.</strong>
                   </p>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <strong>Acronis Email Backup (Cloud-to-Cloud)</strong> completely eliminates the risk of data loss by backing up your Microsoft 365 and Google Workspace environments directly from cloud to cloud. It combines the world-leading Acronis engine with <strong>Bulutforce's Turkey-based data infrastructure and expert support</strong>.
                   </p>
 
                   <div className="space-y-6 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
+                    <h3 className="text-lg font-bold text-navy">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
                     
                     <div className="space-y-3">
                       <h4 className="font-bold text-slate-800 flex items-center">
@@ -702,11 +702,11 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 2. Neden Microsoft 365 / Google Kendi Yedeğini Tutmaz?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 2. Neden Microsoft 365 / Google Kendi Yedeğini Tutmaz?</h3>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-sm">
                         <thead>
-                          <tr className="bg-[#071933] text-white">
+                          <tr className="bg-navy text-white">
                             <th className="py-3 px-4 font-bold border border-slate-200">Scenario / Threat</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Cloud Provider's Standard Structure</th>
                             <th className="py-3 px-4 font-bold border border-slate-200 text-blue-400">Bulutforce Acronis Email Backup</th>
@@ -739,7 +739,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 3. Kimler İçin İdealdir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 3. Kimler İçin İdealdir?</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">All Companies Using Microsoft 365 and Google Workspace:</strong> Businesses of all sizes managing their corporate communication and critical documents in the cloud.
@@ -753,8 +753,8 @@ export default function Acronis() {
                     </ul>
                   </div>
 
-                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-[#071933]/5 p-6 rounded-xl border border-[#071933]/10">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Bulutforce Katma Değeri ve Kurulum Kolaylığı</h3>
+                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-navy/5 p-6 rounded-xl border border-navy/10">
+                    <h3 className="text-lg font-bold text-navy">🌟 Bulutforce Katma Değeri ve Kurulum Kolaylığı</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 md:text-base">
                       <li>
                         <strong className="text-slate-800">Taking Live in Minutes:</strong> We protect your Microsoft 365 or Google Workspace account in minutes via API integration, without requiring company-internal infrastructure investment.
@@ -775,10 +775,10 @@ export default function Acronis() {
             <section id="email-security" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     EMAIL SECURITY
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis Email Security 🛡️
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -787,15 +787,15 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     More than 90% of cyber attacks start via email. Advanced threats like phishing, malicious attachments, fake invoices, and CEO fraud (BEC) can easily bypass classic antivirus engines and default cloud email security layers (Microsoft 365 / Google Workspace).
                   </p>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <strong>Acronis Email Security</strong> integrates <strong>Perception Point</strong> engine, one of the most respected technologies in the cyber security world, into the global Acronis infrastructure. Your emails are analyzed in seconds before they drop into your inbox, blocking even the most complex and zero-day threats instantly.
                   </p>
 
                   <div className="space-y-6 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">1. Temel Mimarisi ve İleri Seviye Koruma Katmanları 🏛️</h3>
+                    <h3 className="text-lg font-bold text-navy">1. Temel Mimarisi ve İleri Seviye Koruma Katmanları 🏛️</h3>
                     
                     <div className="space-y-3">
                       <h4 className="font-bold text-slate-800 flex items-center">
@@ -847,11 +847,11 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 2. Neden Varsayılan Güvenlik (M365 / Google) Yeterli Değil?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 2. Neden Varsayılan Güvenlik (M365 / Google) Yeterli Değil?</h3>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-sm">
                         <thead>
-                          <tr className="bg-[#071933] text-white">
+                          <tr className="bg-navy text-white">
                             <th className="py-3 px-4 font-bold border border-slate-200">Threat Type</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Default Cloud Email Security</th>
                             <th className="py-3 px-4 font-bold border border-slate-200 text-blue-400">Bulutforce Acronis Email Security</th>
@@ -884,7 +884,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 3. Kimler İçin İdealdir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 3. Kimler İçin İdealdir?</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">Companies with Dense Email Traffic:</strong> Businesses whose daily operations, bids, and billing processes are conducted entirely via email.
@@ -898,8 +898,8 @@ export default function Acronis() {
                     </ul>
                   </div>
 
-                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-[#071933]/5 p-6 rounded-xl border border-[#071933]/10">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Bulutforce Katma Değeri ve Kurulum Süreci</h3>
+                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-navy/5 p-6 rounded-xl border border-navy/10">
+                    <h3 className="text-lg font-bold text-navy">🌟 Bulutforce Katma Değeri ve Kurulum Süreci</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 md:text-base">
                       <li>
                         <strong className="text-slate-800">API-Based Installation in Minutes:</strong> We protect your email system in minutes via API integration without changing your MX records.
@@ -920,10 +920,10 @@ export default function Acronis() {
             <section id="edr" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     ENDPOINT DETECTION & RESPONSE
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis EDR (Endpoint Detection & Response) 🛡️
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -932,15 +932,15 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     Classic antivirus software only scans for known threat signatures; however, today's complex cyber attacks (APT, Ransomware, Zero-Day Attacks) proceed without leaving any trace on the system or hiding behind legitimate software. Monitoring suspicious movements at the device level instantly and finding the root cause of the attack is an inevitable requirement.
                   </p>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <strong>Acronis EDR</strong> combines the AI-powered behavioral analysis power of the global Acronis infrastructure with <strong>Bulutforce's Master MSP expertise and 24/7 monitoring support</strong>. It simplifies complex siber security operations, resolving attacks at the source before they spread.
                   </p>
 
                   <div className="space-y-6 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
+                    <h3 className="text-lg font-bold text-navy">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
                     
                     <div className="space-y-3">
                       <h4 className="font-bold text-slate-800 flex items-center">
@@ -992,11 +992,11 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 2. Neden Klasik Antivirüs (EPP) Yeterli Değil?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 2. Neden Klasik Antivirüs (EPP) Yeterli Değil?</h3>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-sm">
                         <thead>
-                          <tr className="bg-[#071933] text-white">
+                          <tr className="bg-navy text-white">
                             <th className="py-3 px-4 font-bold border border-slate-200">Feature / Scenario</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Traditional Antivirus (EPP)</th>
                             <th className="py-3 px-4 font-bold border border-slate-200 text-blue-400">Bulutforce Acronis EDR</th>
@@ -1029,7 +1029,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 3. Kimler İçin İdealdir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 3. Kimler İçin İdealdir?</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">Companies with Critical Data and Server Infrastructure:</strong> Institutions that want to know not only how the attack was blocked but also how it occurred and take precautions.
@@ -1043,8 +1043,8 @@ export default function Acronis() {
                     </ul>
                   </div>
 
-                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-[#071933]/5 p-6 rounded-xl border border-[#071933]/10">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Bulutforce Katma Değeri ve Analiz Desteği</h3>
+                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-navy/5 p-6 rounded-xl border border-navy/10">
+                    <h3 className="text-lg font-bold text-navy">🌟 Bulutforce Katma Değeri ve Analiz Desteği</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 md:text-base">
                       <li>
                         <strong className="text-slate-800">Correct Policy Configuration:</strong> We optimize Acronis EDR rules according to your company's working structure, reducing false-positives to zero.
@@ -1065,10 +1065,10 @@ export default function Acronis() {
             <section id="xdr" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     EXTENDED DETECTION & RESPONSE
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis XDR (Extended Detection & Response) 🛡️
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -1077,15 +1077,15 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     Cyber attacks no longer focus on a single point (just the computer or just the email). Attackers usually penetrate the system with a stolen email password, escalate privileges in cloud applications, and encrypt data on servers in the final stage. Monitoring only a single layer by security solutions makes it impossible to see the attack as a whole.
                   </p>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <strong>Acronis XDR</strong> gathers data from devices (Endpoints), emails, user identities (Identity), and cloud workloads in a single center. It combines global Acronis threat intelligence with <strong>Bulutforce's Master MSP power</strong>, neutralizing complex and multi-layered siber attacks at the very beginning.
                   </p>
 
                   <div className="space-y-6 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
+                    <h3 className="text-lg font-bold text-navy">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
                     
                     <div className="space-y-3">
                       <h4 className="font-bold text-slate-800 flex items-center">
@@ -1137,11 +1137,11 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 2. EDR ve XDR Arasındaki Fark Nedir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 2. EDR ve XDR Arasındaki Fark Nedir?</h3>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-sm">
                         <thead>
-                          <tr className="bg-[#071933] text-white">
+                          <tr className="bg-navy text-white">
                             <th className="py-3 px-4 font-bold border border-slate-200">Feature / Scope</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Acronis EDR</th>
                             <th className="py-3 px-4 font-bold border border-slate-200 text-blue-400">Acronis XDR</th>
@@ -1174,7 +1174,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 3. Kimler İçin İdealdir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 3. Kimler İçin İdealdir?</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">Institutions with Wide and Complex IT Architecture:</strong> Companies with multiple branches, cloud services (M365/Google), and hybrid server infrastructure.
@@ -1188,8 +1188,8 @@ export default function Acronis() {
                     </ul>
                   </div>
 
-                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-[#071933]/5 p-6 rounded-xl border border-[#071933]/10">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Bulutforce Katma Değeri ve SOC Mimarisi</h3>
+                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-navy/5 p-6 rounded-xl border border-navy/10">
+                    <h3 className="text-lg font-bold text-navy">🌟 Bulutforce Katma Değeri ve SOC Mimarisi</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 md:text-base">
                       <li>
                         <strong className="text-slate-800">XDR Policy and Playbook Configuration:</strong> We configure automatic response scenarios (Playbooks) that will not disrupt your company's workflows together with our expert engineers.
@@ -1210,10 +1210,10 @@ export default function Acronis() {
             <section id="dlp" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     DATA LOSS PREVENTION
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis DLP (Data Loss Prevention) 🛡️
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -1222,15 +1222,15 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     One of the biggest security risks for businesses is data leaks. Employees exporting sensitive data, financial tables, source codes, or commercial secrets belonging to customers outside the company, either accidentally or maliciously; leads to both serious loss of prestige and high financial penalties under KVKK/GDPR.
                   </p>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <strong>Acronis DLP</strong> prevents sensitive information from falling into unauthorized hands by monitoring user behavior and data movements on the device level instantly. It combines global Acronis technology with <strong>Bulutforce's regulatory and architectural consultancy</strong>, taking your corporate memory under full protection.
                   </p>
 
                   <div className="space-y-6 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
+                    <h3 className="text-lg font-bold text-navy">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
                     
                     <div className="space-y-3">
                       <h4 className="font-bold text-slate-800 flex items-center">
@@ -1285,11 +1285,11 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 2. Neden Bütünleşik Acronis DLP?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 2. Neden Bütünleşik Acronis DLP?</h3>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-sm">
                         <thead>
-                          <tr className="bg-[#071933] text-white">
+                          <tr className="bg-navy text-white">
                             <th className="py-3 px-4 font-bold border border-slate-200">Feature / Approach</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Traditional Standalone DLP Software</th>
                             <th className="py-3 px-4 font-bold border border-slate-200 text-blue-400">Bulutforce Acronis DLP</th>
@@ -1322,7 +1322,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 3. Kimler İçin İdealdir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 3. Kimler İçin İdealdir?</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">Institutions in KVKK and GDPR Compliance Process:</strong> All businesses legally obligated to protect customer data, employee information, and personal data.
@@ -1336,8 +1336,8 @@ export default function Acronis() {
                     </ul>
                   </div>
 
-                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-[#071933]/5 p-6 rounded-xl border border-[#071933]/10">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Bulutforce Katma Değeri ve Mevzuat Danışmanlığı</h3>
+                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-navy/5 p-6 rounded-xl border border-navy/10">
+                    <h3 className="text-lg font-bold text-navy">🌟 Bulutforce Katma Değeri ve Mevzuat Danışmanlığı</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 md:text-base">
                       <li>
                         <strong className="text-slate-800">DLP Policy Design:</strong> We design department-based (Finance, HR, R&D, etc.) blocking and permission rules together by mapping your company's data path.
@@ -1358,10 +1358,10 @@ export default function Acronis() {
             <section id="rmm-patch" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-primary/70 font-bold text-xs uppercase tracking-wider mb-2 block">
                     REMOTE MONITORING & MANAGEMENT
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     Acronis RMM & Patch Management 🛡️
                   </h2>
                   <p className="text-slate-700 font-semibold italic text-base md:text-lg">
@@ -1370,15 +1370,15 @@ export default function Acronis() {
                 </div>
 
                 <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base">
-                  <p>
+                  <p className="text-base md:text-lg">
                     A major portion of cyber attacks stem from known security vulnerabilities not patched in time in operating systems and 3rd party applications used (Chrome, Adobe, Zoom, etc.). However, tracking updates of tens or hundreds of computers and servers manually turns into an impossible operational load for IT teams.
                   </p>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <strong>Acronis RMM & Patch Management</strong> combines remote monitoring, management, and automatic patching capabilities in the global Acronis architecture. It automates the maintenance of your IT infrastructure with <strong>Bulutforce's Master MSP expertise</strong>, closing security gaps before attackers do.
                   </p>
 
                   <div className="space-y-6 pt-4">
-                    <h3 className="text-lg font-bold text-[#071933]">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
+                    <h3 className="text-lg font-bold text-navy">1. Temel Mimarisi ve Öne Çıkan Yetenekleri 🏛️</h3>
                     
                     <div className="space-y-3">
                       <h4 className="font-bold text-slate-800 flex items-center">
@@ -1430,11 +1430,11 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 2. Neden Bütünleşik RMM ve Patch Yönetimi?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 2. Neden Bütünleşik RMM ve Patch Yönetimi?</h3>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-sm">
                         <thead>
-                          <tr className="bg-[#071933] text-white">
+                          <tr className="bg-navy text-white">
                             <th className="py-3 px-4 font-bold border border-slate-200">Feature / Approach</th>
                             <th className="py-3 px-4 font-bold border border-slate-200">Traditional Separate IT Management Software</th>
                             <th className="py-3 px-4 font-bold border border-slate-200 text-blue-400">Bulutforce Acronis RMM & Patch</th>
@@ -1467,7 +1467,7 @@ export default function Acronis() {
                   </div>
 
                   <div className="space-y-4 pt-6 border-t border-slate-100">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 3. Kimler İçin İdealdir?</h3>
+                    <h3 className="text-lg font-bold text-navy">🌟 3. Kimler İçin İdealdir?</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                       <li>
                         <strong className="text-slate-800">Those Seeking to Lighten IT Team's Operational Load:</strong> All institutions wanting to automate update and inventory tracking that takes hours.
@@ -1481,8 +1481,8 @@ export default function Acronis() {
                     </ul>
                   </div>
 
-                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-[#071933]/5 p-6 rounded-xl border border-[#071933]/10">
-                    <h3 className="text-lg font-bold text-[#071933]">🌟 Bulutforce Katma Değeri ve Otomasyon Desteği</h3>
+                  <div className="space-y-4 pt-6 border-t border-slate-100 bg-navy/5 p-6 rounded-xl border border-navy/10">
+                    <h3 className="text-lg font-bold text-navy">🌟 Bulutforce Katma Değeri ve Otomasyon Desteği</h3>
                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 md:text-base">
                       <li>
                         <strong className="text-slate-800">System-Specific Patch Policies:</strong> We design patch transition scenarios suitable for separate risk levels for servers and user devices.
@@ -1502,12 +1502,12 @@ export default function Acronis() {
           </div>
 
           {/* Right Column - Dynamic Sticky Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-32 space-y-8">
+          <div className="xl:col-span-1">
+            <div className="xl:sticky xl:top-[195px] space-y-3.5">
               
               {/* Scroll tracking navigation */}
-              <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
-                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 pb-2 border-b border-slate-100">
+              <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
+                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5 pb-2 border-b border-slate-100">
                   Page Navigation
                 </h3>
                 <nav className="flex flex-col space-y-1">
@@ -1515,13 +1515,13 @@ export default function Acronis() {
                     <a
                       key={item.id}
                       href={`#${item.id}`}
-                      className={`text-sm py-2.5 px-3 rounded-lg font-semibold transition-all duration-200 flex items-center space-x-2.5 ${
+                      className={`text-sm py-2 px-3 rounded-lg font-semibold transition-all duration-200 flex items-center space-x-2.5 ${
                         activeSection === item.id
-                          ? "bg-blue-50 text-blue-600 border-l-4 border-blue-600 pl-4"
+                          ? "bg-blue-50 text-primary border-l-4 border-primary pl-3.5"
                           : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 pl-3"
                       }`}
                     >
-                      <span>{item.icon}</span>
+                      <span className="text-base">{item.icon}</span>
                       <span className="truncate">{item.label}</span>
                     </a>
                   ))}
@@ -1529,7 +1529,7 @@ export default function Acronis() {
               </div>
 
               {/* Contact CTA Card */}
-              <div className="bg-gradient-to-br from-[#071933] to-[#12305a] rounded-2xl p-6 text-white shadow-md relative overflow-hidden group">
+              <div className="bg-gradient-to-br from-navy to-[#12305a] rounded-2xl p-6 text-white shadow-md relative overflow-hidden group">
                 <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all duration-300"></div>
                 <div className="absolute top-0 right-0 w-16 h-16 bg-white/5 rounded-bl-full"></div>
 

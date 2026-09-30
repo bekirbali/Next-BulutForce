@@ -234,7 +234,7 @@ export default function Iletisim() {
           </div>
           <button
             type="submit"
-            className="bg-[#1f4b68] text-white px-6 py-2 rounded mt-2 w-24 min-w-fit"
+            className="bg-primary text-white px-6 py-2 rounded mt-2 w-24 min-w-fit hover:bg-primary-hover transition-colors"
           >
             Send
           </button>

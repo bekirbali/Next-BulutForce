@@ -39,7 +39,7 @@ export default function InstallationProfessionalServices() {
       {/* Three-column feature section */}
       <div className="flex flex-col md:flex-row py-12 px-4 gap-4 max-w-5xl mx-auto">
         <div className="flex-1 p-8 flex items-center justify-center rounded-lg relative overflow-hidden shadow-md">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-800 to-blue-600 z-0"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-navy to-primary z-0"></div>
           <p className="text-center max-w-md text-white relative z-10 font-medium">
             Our expert team members are equipped with the latest technology and
             industry trends. We provide you with the most up-to-date and
@@ -49,7 +49,7 @@ export default function InstallationProfessionalServices() {
         </div>
 
         <div className="flex-1 p-8 flex items-center justify-center rounded-lg relative overflow-hidden shadow-md">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-blue-500 z-0"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-hover z-0"></div>
           <p className="text-center max-w-md text-white relative z-10 font-medium">
             Dealing with advanced complex problems requires experience and
             expertise. Our experienced team is here to solve complex problems
@@ -58,7 +58,7 @@ export default function InstallationProfessionalServices() {
         </div>
 
         <div className="flex-1 p-8 flex items-center justify-center rounded-lg relative overflow-hidden shadow-md">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-400 z-0"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-hover to-primary/70 z-0"></div>
           <p className="text-center max-w-md text-white relative z-10 font-medium">
             Every business is different and has different requirements. Our
             advanced support services support you by providing solutions
@@ -70,7 +70,7 @@ export default function InstallationProfessionalServices() {
       {/* Image Slider Section */}
       <div className="py-16 bg-gray-100">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">
+          <h2 className="text-3xl font-bold text-center mb-10 text-primary">
             Our Advanced Support Services
           </h2>
           <ImageSlider />

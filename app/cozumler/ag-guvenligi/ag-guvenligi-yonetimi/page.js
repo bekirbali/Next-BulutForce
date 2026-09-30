@@ -121,7 +121,7 @@ export default function GuvenlikOtomasyonu() {
                   />
                   <div className="mt-8">
                     <Link href="/iletisim">
-                      <button className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 hover:cursor-pointer transition-colors">
+                      <button className="bg-primary text-white px-8 py-3 rounded-md font-medium hover:bg-primary-hover hover:cursor-pointer transition-colors">
                         Get Information for Demo
                       </button>
                     </Link>

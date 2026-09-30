@@ -12,8 +12,8 @@ const LANGUAGES = [
   { code: "de", name: "German", flag: "de" },
 ];
 
-const RADIUS = 32; // px, distance from center (smaller for navbar)
-const SIZE = 20; // px, flag size (smaller for navbar)
+const RADIUS = 28; // px, distance from center
+const SIZE = 20; // px, flag size
 
 export default function CircularLanguageSelector({ className = "" }) {
   const [open, setOpen] = useState(false);
@@ -77,20 +77,18 @@ export default function CircularLanguageSelector({ className = "" }) {
   return (
     <div
       ref={wrapperRef}
-      className={className}
+      className={`relative inline-flex items-center justify-center flex-shrink-0 ${className}`}
       style={{
-        position: "relative",
-        width: 70,
-        height: 70,
-        display: "inline-block",
+        width: 76,
+        height: 76,
       }}
     >
       {/* Flags in a circle, only if open */}
       {open &&
         LANGUAGES.map((lang, i) => {
           const angle = (2 * Math.PI * i) / LANGUAGES.length - Math.PI / 2;
-          const x = 33 + RADIUS * Math.cos(angle) - SIZE / 2;
-          const y = 33 + RADIUS * Math.sin(angle) - SIZE / 2;
+          const x = 38 + RADIUS * Math.cos(angle) - SIZE / 2;
+          const y = 38 + RADIUS * Math.sin(angle) - SIZE / 2;
           return (
             <img
               key={lang.code}
@@ -105,21 +103,20 @@ export default function CircularLanguageSelector({ className = "" }) {
                 height: SIZE,
                 cursor: "pointer",
                 background: "white",
-                transition: "transform 0.2s",
                 zIndex: 10,
               }}
+              className="hover:scale-125 transition-transform duration-150 rounded-full shadow-sm"
               onClick={() => handleFlagClick(lang.code)}
             />
           );
         })}
       {/* Center globe icon */}
-      <div
+      <button
+        type="button"
+        aria-label="Toggle language menu"
         style={{
-          position: "absolute",
-          left: 17,
-          top: 17,
-          width: 32,
-          height: 32,
+          width: 34,
+          height: 34,
           background: "#fff",
           borderRadius: "50%",
           zIndex: 20,
@@ -127,11 +124,14 @@ export default function CircularLanguageSelector({ className = "" }) {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          boxShadow: open ? "0 0 0 2px rgba(31, 75, 104, 0.25)" : "none",
+          transition: "transform 0.15s ease, box-shadow 0.15s ease",
         }}
+        className="hover:scale-110 active:scale-95 border-0 p-0"
         onClick={() => setOpen((v) => !v)}
       >
-        <FaGlobeAmericas size={34} color="#1f4b68" />
-      </div>
+        <FaGlobeAmericas size={30} className="text-primary" />
+      </button>
     </div>
   );
 }

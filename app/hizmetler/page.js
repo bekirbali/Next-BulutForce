@@ -24,7 +24,7 @@ export default function Hizmetler() {
 
   return (
     <div className="container mx-auto py-12 px-4 min-h-[500px]">
-      <h1 className="text-4xl font-bold mb-4 text-center text-blue-800">
+      <h1 className="text-4xl font-bold mb-4 text-center text-primary">
         Our Services
       </h1>
 
@@ -35,14 +35,14 @@ export default function Hizmetler() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {services.map((service, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-xl font-bold text-blue-600 mb-3">
+          <div key={index} className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
+            <h2 className="text-xl font-bold text-primary mb-3">
               {service.title}
             </h2>
-            <p className="text-gray-600 mb-4">{service.description}</p>
+            <p className="text-gray-600 mb-4 flex-grow">{service.description}</p>
             <Link
               href={service.path}
-              className="text-blue-500 hover:text-blue-700 inline-flex items-center"
+              className="text-primary hover:text-primary-hover inline-flex items-center mt-auto"
             >
               More information
             </Link>

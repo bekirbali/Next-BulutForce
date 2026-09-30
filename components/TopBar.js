@@ -1,10 +1,18 @@
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
 
-const TopBar = () => (
-  <div className="hidden max-w-[100rem] mx-auto text-gray-700 text-xs md:flex items-center justify-between h-8">
-    <div className="flex justify-center items-center gap-2 w-[280px] md:w-[350px]">
-      <Link href="#" className="hover:text-blue-700">
+const TopBar = ({ isCompact = null }) => {
+  const visibilityClass =
+    isCompact === null
+      ? "hidden min-[808px]:flex"
+      : isCompact
+        ? "hidden"
+        : "flex";
+
+  return (
+    <div className={`${visibilityClass} max-w-[100rem] mx-auto text-gray-700 text-xs items-center justify-between h-8 px-3 sm:px-4 lg:px-6 xl:px-8`}>
+    <div className="flex justify-center items-center gap-2.5 sm:gap-3 lg:gap-3.5 w-[130px] sm:w-[140px] min-[808px]:w-[145px] lg:w-[200px] xl:w-[230px] 2xl:w-[245px] flex-shrink-0">
+      <Link href="#" className="hover:text-primary">
         {/* Facebook SVG */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +74,7 @@ const TopBar = () => (
         </svg>
       </Link>
     </div>
-    <div className="flex items-center gap-2 pr-5 space-x-2">
+    <div className="flex items-center gap-2 space-x-2">
       <span className="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -121,6 +129,7 @@ const TopBar = () => (
       </span>
     </div>
   </div>
-);
+  );
+};
 
 export default TopBar;

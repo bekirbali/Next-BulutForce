@@ -47,7 +47,7 @@ export default function SecurityCards({ isMobile = false }) {
         <p className="text-gray-600 text-sm mb-6">{card.description}</p>
         <Link
           href={card.link}
-          className="bg-[#1f4b68] text-white py-2 px-6 rounded-full hover:bg-[#173d57] transition-colors duration-300 uppercase text-sm font-medium mt-auto inline-block"
+          className="bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-colors duration-300 uppercase text-sm font-medium mt-auto inline-block"
         >
           Get More Detailed Information
         </Link>
