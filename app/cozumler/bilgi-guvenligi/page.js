@@ -52,7 +52,7 @@ export default function BilgiGuvenligi() {
 
   return (
     <div className="container mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold mb-8 text-center text-blue-800">
+      <h1 className="text-3xl font-bold mb-8 text-center text-primary">
         Our Information Security Solutions
       </h1>
 
@@ -66,13 +66,15 @@ export default function BilgiGuvenligi() {
           <Link
             href={subcategory.path}
             key={index}
-            className="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 hover:shadow-xl border border-gray-100"
+            className="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 hover:shadow-xl border border-gray-100 flex flex-col justify-between h-full"
           >
-            <h2 className="text-xl font-semibold mb-3 text-blue-700">
-              {subcategory.title}
-            </h2>
-            <p className="text-gray-600">{subcategory.description}</p>
-            <div className="mt-4 text-blue-600 font-medium">
+            <div>
+              <h2 className="text-xl font-semibold mb-3 text-primary">
+                {subcategory.title}
+              </h2>
+              <p className="text-gray-600">{subcategory.description}</p>
+            </div>
+            <div className="mt-4 pt-2 text-primary font-medium">
               More information
             </div>
           </Link>

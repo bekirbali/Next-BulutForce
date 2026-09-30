@@ -41,7 +41,7 @@ export default function BizKimiz() {
 
   return (
     <div className="container mx-auto py-12 px-4 min-h-[600px]">
-      <h1 className="text-4xl font-bold mb-4 text-center text-blue-800">
+      <h1 className="text-4xl font-bold mb-4 text-center text-primary">
         Who We Are?
       </h1>
 
@@ -55,9 +55,9 @@ export default function BizKimiz() {
         {categories.map((category, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+            className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
           >
-            <div className="relative h-48">
+            <div className="relative h-48 flex-shrink-0">
               <Image
                 src={category.image}
                 alt={category.title}
@@ -71,10 +71,10 @@ export default function BizKimiz() {
               </h2>
             </div>
 
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-grow">
               <p className="text-gray-600 mb-4">{category.description}</p>
 
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-2 mb-6 flex-grow">
                 {(
                   category.stats ||
                   category.highlights ||
@@ -82,7 +82,7 @@ export default function BizKimiz() {
                 )?.map((item, idx) => (
                   <li key={idx} className="flex items-center text-gray-700">
                     <svg
-                      className="w-4 h-4 text-blue-600 mr-2"
+                      className="w-4 h-4 text-primary/90 mr-2 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -92,13 +92,13 @@ export default function BizKimiz() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {item}
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
 
-              <Link href={category.path}>
-                <button className="w-full bg-[#1f4b68] text-white py-2 px-4 rounded-md hover:bg-[#173d57] hover:cursor-pointer transition-colors duration-300">
+              <Link href={category.path} className="mt-auto block">
+                <button className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-hover hover:cursor-pointer transition-colors duration-300">
                   More Information
                 </button>
               </Link>

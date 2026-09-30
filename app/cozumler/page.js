@@ -53,7 +53,7 @@ export default function Cozumler() {
 
   return (
     <div className="container mx-auto py-12 px-4 min-h-[600px]">
-      <h1 className="text-4xl font-bold mb-4 text-center text-blue-800">
+      <h1 className="text-4xl font-bold mb-4 text-center text-primary">
         Our Security Solutions
       </h1>
 
@@ -105,7 +105,7 @@ export default function Cozumler() {
                   <div className="mt-6 text-center">
                     <Link
                       href={category.path}
-                      className="inline-block bg-[#1f4b68] text-white px-6 py-3 rounded-lg hover:bg-[#173d57] transition-colors duration-200"
+                      className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors duration-200"
                     >
                       Detailed Information
                     </Link>
@@ -114,7 +114,7 @@ export default function Cozumler() {
               </div>
 
               <div className="md:w-2/3 p-8">
-                <h3 className="text-xl font-semibold mb-6 text-blue-700">
+                <h3 className="text-xl font-semibold mb-6 text-primary">
                   Solutions We Offer in{" "}
                   <span className="underline"> {category.title} </span>
                 </h3>
@@ -122,7 +122,7 @@ export default function Cozumler() {
                   {category.subcategories.map((subcat, idx) => (
                     <li key={idx} className="flex items-start space-x-2">
                       <svg
-                        className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0"
+                        className="w-5 h-5 text-primary/90 mt-0.5 flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,7 @@ export default function Cozumler() {
                 <div className="mt-8">
                   <Link
                     href={category.path}
-                    className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center hover:cursor-pointer"
+                    className="text-primary hover:text-primary-hover font-medium inline-flex items-center hover:cursor-pointer"
                   >
                     View All{" "}
                     <p className="font-bold mx-1 hover:!cursor-pointer">

@@ -31,7 +31,9 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
       >
         <Navbar />
-        <div className="pt-[100px]">{children}</div>
+        <div className="pt-[95px] sm:pt-[105px] min-[808px]:pt-[137px] lg:pt-[162px] xl:pt-[180px] bg-[url('/bfbgnew.jpg')] bg-cover bg-center bg-fixed min-h-screen">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

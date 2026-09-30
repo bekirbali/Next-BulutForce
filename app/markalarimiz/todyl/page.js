@@ -55,20 +55,20 @@ export default function Todyl() {
   return (
     <div className="min-h-screen bg-slate-50 font-[lato] pt-10">
       {/* Hero Section */}
-      <div className="relative h-[250px] md:h-[300px] flex flex-col items-center justify-center overflow-hidden bg-[#071933]">
-        {/* Background dark gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#020914] via-[#071933] to-[#041c3d] opacity-95 z-0"></div>
-
-        {/* Background cyber pattern overlay */}
-        <div className="absolute inset-y-0 right-0 w-full md:w-1/2 opacity-20 z-0">
+      <div className="relative h-[250px] md:h-[300px] flex flex-col items-center justify-center overflow-hidden bg-navy">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
           <Image
             src="/assets/anasayfa/bulutforceErkenTespitArkaPlan.jpg"
             alt="Background cyber pattern"
             fill
-            className="object-cover object-right mix-blend-screen"
+            className="object-cover object-center"
             priority
           />
         </div>
+
+        {/* Background dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#020914]/90 via-navy/85 to-[#041c3d]/90 z-0"></div>
 
         {/* Content */}
         <div className="relative z-10 text-center flex flex-col items-center justify-center px-4">
@@ -95,23 +95,23 @@ export default function Todyl() {
 
       {/* Main Container */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 xl:grid-cols-4 gap-12 max-w-7xl mx-auto">
           
           {/* Left Column - Main Content (All Sections Scrollable) */}
-          <div className="lg:col-span-3 space-y-20">
+          <div className="xl:col-span-3 space-y-20">
             
             {/* Header intro info */}
             <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
-              <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+              {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                 MODULAR SECURITY ARCHITECTURE AND LAYER GUIDE
-              </span>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-4">
+              </span> */}
+              <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-4">
                 Todyl Unified Security Platform
               </h2>
-              <p className="text-slate-600 leading-relaxed text-sm md:text-base">
+              <p className="text-slate-600 leading-relaxed text-base md:text-lg">
                 Todyl, unlike traditional complex security products, allows you to modularly deploy all solutions through a <strong>single lightweight agent (SGN Agent)</strong> and a <strong>single cloud management console</strong>.
               </p>
-              <p className="text-slate-600 leading-relaxed text-sm md:text-base mt-2">
+              <p className="text-slate-600 leading-relaxed text-base md:text-lg mt-2">
                 Below are the main modules, sub-parameters, and technical details of the platform:
               </p>
             </div>
@@ -120,13 +120,13 @@ export default function Todyl() {
             <section id="sgn-sase" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                     MODULE 01
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     1. Secure Global Network™ (SGN) – Cloud Network & SASE Architecture
                   </h2>
-                  <p className="text-slate-600 text-sm md:text-base">
+                  <p className="text-slate-600 leading-relaxed text-base md:text-lg">
                     It is the fundamental infrastructure that connects all remote workers, branch offices, cloud resources (AWS/Azure), and data centers into a single encrypted cloud network.
                   </p>
                 </div>
@@ -170,13 +170,13 @@ export default function Todyl() {
             <section id="ztna" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                     MODULE 02
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     2. Zero Trust Network Access (ZTNA) – Micro-Segmentation & Access Management
                   </h2>
-                  <p className="text-slate-600 text-sm md:text-base">
+                  <p className="text-slate-600 leading-relaxed text-base md:text-lg">
                     Eliminates the "whoever enters the network accesses everywhere" logic of traditional VPNs, providing full control.
                   </p>
                 </div>
@@ -217,13 +217,13 @@ export default function Todyl() {
             <section id="swg-dns" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                     MODULE 03
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     3. Secure Web Gateway (SWG) & DNS Security – Web Security
                   </h2>
-                  <p className="text-slate-600 text-sm md:text-base">
+                  <p className="text-slate-600 leading-relaxed text-base md:text-lg">
                     Inspects internet traffic at the cloud level, no matter where users connect from.
                   </p>
                 </div>
@@ -267,13 +267,13 @@ export default function Todyl() {
             <section id="ngfw-casb" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                     MODULE 04
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     4. Cloud Next-Gen Firewall (NGFW) & CASB – Layer 7 Application Control
                   </h2>
-                  <p className="text-slate-600 text-sm md:text-base">
+                  <p className="text-slate-600 leading-relaxed text-base md:text-lg">
                     Provides visibility and control of all traffic on the network at the application level.
                   </p>
                 </div>
@@ -319,13 +319,13 @@ export default function Todyl() {
             <section id="endpoint-protection" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                     MODULE 05
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     5. Endpoint Protection (EDR & NGAV) – Endpoint Security
                   </h2>
-                  <p className="text-slate-600 text-sm md:text-base">
+                  <p className="text-slate-600 leading-relaxed text-base md:text-lg">
                     It is an advanced behavioral artificial intelligence agent running on endpoints (Windows, macOS, Linux).
                   </p>
                 </div>
@@ -366,13 +366,13 @@ export default function Todyl() {
             <section id="mxdr" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                     MODULE 06
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     6. Managed eXtended Detection & Response (MXDR) – 24/7 SOC Service
                   </h2>
-                  <p className="text-slate-600 text-sm md:text-base">
+                  <p className="text-slate-600 leading-relaxed text-base md:text-lg">
                     It is the managed service layer offered jointly by Todyl's own expert SOC analysts and Bulutforce engineers.
                   </p>
                 </div>
@@ -410,13 +410,13 @@ export default function Todyl() {
             <section id="siem-log" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                     MODULE 07
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     7. SIEM & Log Management – Central Analytics & Compliance
                   </h2>
-                  <p className="text-slate-600 text-sm md:text-base">
+                  <p className="text-slate-600 leading-relaxed text-base md:text-lg">
                     Ensures all infrastructure logs are stored and analyzed in accordance with regulations.
                   </p>
                 </div>
@@ -451,10 +451,10 @@ export default function Todyl() {
             <section id="licensing-matrix" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="border-b border-slate-100 pb-6 mb-6">
-                  <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
+                  {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                     SUMMARY MATRIX
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#071933] mb-3">
+                  </span> */}
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-3">
                     📊 SUMMARY LICENSING AND PACKAGING ARCHITECTURE (Matrix)
                   </h2>
                 </div>
@@ -462,7 +462,7 @@ export default function Todyl() {
                 <div className="overflow-x-auto">
                   <table className="w-full text-left border-collapse text-sm">
                     <thead>
-                      <tr className="bg-[#071933] text-white">
+                      <tr className="bg-navy text-white">
                         <th className="py-3 px-4 font-bold border border-slate-200">Service Module</th>
                         <th className="py-3 px-4 font-bold border border-slate-200">Core Function</th>
                         <th className="py-3 px-4 font-bold border border-slate-200">Licensing / Unit Metric</th>
@@ -472,37 +472,37 @@ export default function Todyl() {
                       <tr>
                         <td className="py-3 px-4 border border-slate-200 font-semibold">SGN / SASE</td>
                         <td className="py-3 px-4 border border-slate-200">Cloud Network & Virtual Firewall</td>
-                        <td className="py-3 px-4 border border-slate-200 font-semibold text-[#071933]">Per User / Device</td>
+                        <td className="py-3 px-4 border border-slate-200 font-semibold text-navy">Per User / Device</td>
                       </tr>
                       <tr className="bg-slate-50">
                         <td className="py-3 px-4 border border-slate-200 font-semibold">ZTNA</td>
                         <td className="py-3 px-4 border border-slate-200">Identity-Based Secure Access</td>
-                        <td className="py-3 px-4 border border-slate-200 font-semibold text-[#071933]">Per User</td>
+                        <td className="py-3 px-4 border border-slate-200 font-semibold text-navy">Per User</td>
                       </tr>
                       <tr>
                         <td className="py-3 px-4 border border-slate-200 font-semibold">SWG & DNS</td>
                         <td className="py-3 px-4 border border-slate-200">Web & SSL Filtering</td>
-                        <td className="py-3 px-4 border border-slate-200 font-semibold text-[#071933]">Per User / Device</td>
+                        <td className="py-3 px-4 border border-slate-200 font-semibold text-navy">Per User / Device</td>
                       </tr>
                       <tr className="bg-slate-50">
                         <td className="py-3 px-4 border border-slate-200 font-semibold">NGFW & CASB</td>
                         <td className="py-3 px-4 border border-slate-200">Layer 7 & Shadow IT Control</td>
-                        <td className="py-3 px-4 border border-slate-200 font-semibold text-[#071933]">Per Network / Tunnel</td>
+                        <td className="py-3 px-4 border border-slate-200 font-semibold text-navy">Per Network / Tunnel</td>
                       </tr>
                       <tr>
                         <td className="py-3 px-4 border border-slate-200 font-semibold">EDR / NGAV</td>
                         <td className="py-3 px-4 border border-slate-200">Behavioral Endpoint Protection</td>
-                        <td className="py-3 px-4 border border-slate-200 font-semibold text-[#071933]">Per Device (Agent)</td>
+                        <td className="py-3 px-4 border border-slate-200 font-semibold text-navy">Per Device (Agent)</td>
                       </tr>
                       <tr className="bg-slate-50">
                         <td className="py-3 px-4 border border-slate-200 font-semibold">MXDR</td>
                         <td className="py-3 px-4 border border-slate-200">24/7 SOC & Threat Hunting</td>
-                        <td className="py-3 px-4 border border-slate-200 font-semibold text-[#071933]">Per User / Device</td>
+                        <td className="py-3 px-4 border border-slate-200 font-semibold text-navy">Per User / Device</td>
                       </tr>
                       <tr>
                         <td className="py-3 px-4 border border-slate-200 font-semibold">SIEM & Log</td>
                         <td className="py-3 px-4 border border-slate-200">Log Storage & Analytics</td>
-                        <td className="py-3 px-4 border border-slate-200 font-semibold text-[#071933]">Data Volume (GB) or Per Device</td>
+                        <td className="py-3 px-4 border border-slate-200 font-semibold text-navy">Data Volume (GB) or Per Device</td>
                       </tr>
                     </tbody>
                   </table>
@@ -513,12 +513,12 @@ export default function Todyl() {
           </div>
 
           {/* Right Column - Dynamic Sticky Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-32 space-y-8">
+          <div className="xl:col-span-1">
+            <div className="xl:sticky xl:top-[195px] space-y-3.5">
               
               {/* Scroll tracking navigation */}
-              <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
-                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 pb-2 border-b border-slate-100">
+              <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
+                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5 pb-2 border-b border-slate-100">
                   Page Navigation
                 </h3>
                 <nav className="flex flex-col space-y-1">
@@ -526,13 +526,13 @@ export default function Todyl() {
                     <a
                       key={item.id}
                       href={`#${item.id}`}
-                      className={`text-sm py-2.5 px-3 rounded-lg font-semibold transition-all duration-200 flex items-center space-x-2.5 ${
+                      className={`text-sm py-2 px-3 rounded-lg font-semibold transition-all duration-200 flex items-center space-x-2.5 ${
                         activeSection === item.id
-                          ? "bg-blue-50 text-blue-600 border-l-4 border-blue-600 pl-4"
+                          ? "bg-blue-50 text-primary border-l-4 border-primary pl-3.5"
                           : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 pl-3"
                       }`}
                     >
-                      <span>{item.icon}</span>
+                      <span className="text-base">{item.icon}</span>
                       <span className="truncate">{item.label}</span>
                     </a>
                   ))}
@@ -540,7 +540,7 @@ export default function Todyl() {
               </div>
 
               {/* Contact CTA Card */}
-              <div className="bg-gradient-to-br from-[#071933] to-[#12305a] rounded-2xl p-6 text-white shadow-md relative overflow-hidden group">
+              <div className="bg-gradient-to-br from-navy to-[#12305a] rounded-2xl p-6 text-white shadow-md relative overflow-hidden group">
                 <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all duration-300"></div>
                 <div className="absolute top-0 right-0 w-16 h-16 bg-white/5 rounded-bl-full"></div>
 

@@ -4,7 +4,7 @@ export default function Skyron() {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-blue-900 mb-6">Skyron</h1>
+        <h1 className="text-4xl font-bold text-primary mb-6">Skyron</h1>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-10">
           <div className="p-6">
@@ -16,7 +16,7 @@ export default function Skyron() {
               secure against evolving cyber threats.
             </p>
 
-            <h2 className="text-2xl font-semibold text-blue-800 mb-4">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
               Key Features
             </h2>
 
@@ -39,13 +39,13 @@ export default function Skyron() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-blue-800 mb-4">
+            <h2 className="text-2xl font-semibold text-primary mb-4">
               Use Cases
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-blue-900 mb-2">
+                <h3 className="font-semibold text-primary mb-2">
                   Cloud Migration Security
                 </h3>
                 <p className="text-gray-700">
@@ -54,7 +54,7 @@ export default function Skyron() {
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-blue-900 mb-2">
+                <h3 className="font-semibold text-primary mb-2">
                   DevSecOps Integration
                 </h3>
                 <p className="text-gray-700">
@@ -63,7 +63,7 @@ export default function Skyron() {
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-blue-900 mb-2">
+                <h3 className="font-semibold text-primary mb-2">
                   Regulatory Compliance
                 </h3>
                 <p className="text-gray-700">
@@ -72,7 +72,7 @@ export default function Skyron() {
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-blue-900 mb-2">
+                <h3 className="font-semibold text-primary mb-2">
                   Hybrid Cloud Security
                 </h3>
                 <p className="text-gray-700">
@@ -83,7 +83,7 @@ export default function Skyron() {
             </div>
 
             <div className="text-center mt-8">
-              <button className="bg-blue-900 text-white py-3 px-8 rounded-full hover:bg-blue-800 transition-colors duration-300">
+              <button className="bg-primary text-white py-3 px-8 rounded-full hover:bg-primary-hover transition-colors duration-300">
                 Request a Demo
               </button>
             </div>
