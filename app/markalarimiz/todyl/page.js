@@ -119,6 +119,17 @@ export default function Todyl() {
             {/* 1. Secure Global Network™ (SGN) */}
             <section id="sgn-sase" className="scroll-mt-32">
               <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                {/* Module Architecture Illustration */}
+                <div className="relative w-full h-56 sm:h-72 md:h-96 rounded-xl overflow-hidden mb-8 border border-slate-100 shadow-sm bg-slate-900">
+                  <Image
+                    src="/assets/markalar/todyl_sgn_sase.jpg"
+                    alt="Secure Global Network (SGN) & SASE Mimari Diyagramı"
+                    fill
+                    className="object-cover object-center"
+                    priority
+                  />
+                </div>
+
                 <div className="border-b border-slate-100 pb-6 mb-6">
                   {/* <span className="text-blue-600 font-bold text-xs uppercase tracking-wider mb-2 block">
                     MODULE 01
