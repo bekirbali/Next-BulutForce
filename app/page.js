@@ -196,7 +196,7 @@ export default function Home() {
       <section className="flex justify-center items-center px-4 py-4 md:py-8">
         <div className="relative w-full max-w-7xl md:px-0">
           <Image
-            src="/assets/anasayfa/acronishomepagenew.jfif"
+            src="/assets/anasayfa/acronishomepagenew.jpg"
             alt="Acronis Cyber Protect Cloud - Acronis Cyber Frame Solutions"
             width={1600}
             height={700}
