@@ -3,6 +3,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default function Acronis() {
   const [activeSection, setActiveSection] = useState("cyber-protect-cloud");
@@ -43,6 +49,22 @@ export default function Acronis() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToSection = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const navbarOffset = 140;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - navbarOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+      setActiveSection(id);
+    }
+  };
+
   const menuItems = [
     { id: "cyber-protect-cloud", label: "Cyber Protect Cloud", icon: "🛡️" },
     { id: "cyber-protect-on-premises", label: "Cyber Protect (On-Prem)", icon: "🏛️" },
@@ -57,7 +79,7 @@ export default function Acronis() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50 font-[lato] pt-10">
+    <div className="min-h-screen bg-slate-50 font-[lato] pt-10 scroll-smooth">
       {/* Hero Section */}
       <div className="relative h-[250px] md:h-[300px] flex flex-col items-center justify-center overflow-hidden bg-navy">
         {/* Background Image */}
@@ -1506,15 +1528,16 @@ export default function Acronis() {
             <div className="xl:sticky xl:top-[195px] space-y-3.5">
               
               {/* Scroll tracking navigation */}
-              <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
+              <div className={`bg-white rounded-2xl p-5 border border-slate-100 shadow-sm ${inter.className}`}>
                 <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5 pb-2 border-b border-slate-100">
-                  Page Navigation
+                  Navigation
                 </h3>
                 <nav className="flex flex-col space-y-1">
                   {menuItems.map((item) => (
                     <a
                       key={item.id}
                       href={`#${item.id}`}
+                      onClick={(e) => scrollToSection(e, item.id)}
                       className={`text-sm py-2 px-3 rounded-lg font-semibold transition-all duration-200 flex items-center space-x-2.5 ${
                         activeSection === item.id
                           ? "bg-blue-50 text-primary border-l-4 border-primary pl-3.5"
