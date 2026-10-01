@@ -3,11 +3,16 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Inter } from "next/font/google";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export default function Todyl() {
@@ -90,34 +95,21 @@ export default function Todyl() {
 
         <div className="container mx-auto px-4 max-w-6xl relative z-10 text-center">
           
-          {/* Brand Lockup Capsule */}
-          <div className="inline-flex items-center space-x-3 mb-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl border border-[#c8d3d9] shadow-sm hover:border-[#3ba6d0] transition-colors duration-200">
+          {/* Brand Lockup Capsule (1.5x Enlarged) */}
+          <div className="inline-flex items-center space-x-4 mb-10 bg-white/95 backdrop-blur-md px-5 py-2.5 rounded-2xl border border-[#c8d3d9] shadow-sm hover:border-[#3ba6d0] transition-colors duration-200">
             <Image
               src="/assets/markalar/logos/todyl_logo_black.png"
               alt="Todyl Logo"
-              width={100}
-              height={28}
-              className="h-6 w-auto object-contain"
+              width={225}
+              height={62}
+              className="h-12 w-auto object-contain"
               priority
             />
-            <div className="h-4 w-px bg-slate-300"></div>
-            <div className="flex items-center space-x-1.5 bg-[#061217] text-white px-2.5 py-0.5 rounded text-xs font-medium tracking-tight">
+            <div className="h-6 w-px bg-slate-300"></div>
+            <div className="flex items-center space-x-2 bg-[#061217] text-white px-3 py-1 rounded-md text-xs sm:text-sm font-medium tracking-tight">
               <span>_protect what you build</span>
               <span className="text-[#3ba6d0] font-bold">↗</span>
             </div>
-          </div>
-
-          {/* Breadcrumbs */}
-          <div className="flex items-center justify-center space-x-2 text-xs font-medium text-slate-500 mb-8">
-            <Link href="/" className="hover:text-[#061217] transition-colors">
-              Home
-            </Link>
-            <span>/</span>
-            <Link href="/markalarimiz" className="hover:text-[#061217] transition-colors">
-              Our Brands
-            </Link>
-            <span>/</span>
-            <span className="text-[#061217] font-semibold">Todyl</span>
           </div>
 
           {/* Hero Main Headline */}
@@ -801,12 +793,12 @@ export default function Todyl() {
             <div className="xl:sticky xl:top-[185px] space-y-4">
               
               {/* Navigation Menu Card */}
-              <div className="bg-white rounded-2xl p-5 border border-[#c8d3d9] shadow-sm relative overflow-hidden">
+              <div className={`bg-white rounded-2xl p-5 border border-[#c8d3d9] shadow-sm relative overflow-hidden ${inter.className}`}>
                 <div className="flex items-center justify-between border-b border-slate-100 pb-3 mb-3">
-                  <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-[#061217]">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-[#061217]">
                     _navigation
                   </h3>
-                  <span className="text-[10px] font-mono text-slate-400">8 MODULES</span>
+                  <span className="text-[10px] text-slate-400 font-semibold">8 MODULES</span>
                 </div>
 
                 <nav className="flex flex-col space-y-1">
@@ -863,7 +855,7 @@ export default function Todyl() {
 
                   <div>
                     <h4 className="font-bold text-base leading-snug">
-                      _get started with todiyl
+                      _get started with todyl
                     </h4>
                     <p className="text-slate-300 text-xs mt-1 leading-relaxed">
                       Contact Bulutforce engineers for custom sizing, demo instances, and special pricing.
