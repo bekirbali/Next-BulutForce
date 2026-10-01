@@ -47,6 +47,23 @@ export default function Todyl() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToSection = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      // Calculate position accounting for fixed navbar height
+      const navbarOffset = 140;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - navbarOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+      setActiveSection(id);
+    }
+  };
+
   const menuItems = [
     { id: "sgn-sase", label: "_SGN & SASE", icon: "🌐" },
     { id: "ztna", label: "_ZTNA Access", icon: "🛡️" },
@@ -59,7 +76,7 @@ export default function Todyl() {
   ];
 
   return (
-    <div className={`min-h-screen bg-[#f8fafc] text-[#061217] ${dmSans.className} pt-4 pb-20`}>
+    <div className={`min-h-screen bg-[#f8fafc] text-[#061217] ${dmSans.className} pt-4 pb-20 scroll-smooth`}>
       {/* Hero Section - Todyl Bright, White & Optimistic Aesthetic */}
       <section className="relative overflow-hidden border-b border-[#c8d3d9]/70 bg-gradient-to-b from-[#eef3f6] via-[#f8fafc] to-[#ffffff] py-16 md:py-24">
         {/* Subtle Tech Grid Pattern */}
@@ -799,6 +816,7 @@ export default function Todyl() {
                       <a
                         key={item.id}
                         href={`#${item.id}`}
+                        onClick={(e) => scrollToSection(e, item.id)}
                         className={`text-xs sm:text-sm py-2 px-3 rounded-lg font-medium transition-all duration-150 flex items-center justify-between group ${
                           isActive
                             ? "bg-[#061217] text-white shadow-xs font-semibold"
