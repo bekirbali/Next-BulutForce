@@ -249,9 +249,6 @@ export default function Todyl() {
                     className="object-cover object-center group-hover:scale-[1.01] transition-transform duration-300"
                     priority
                   />
-                  <div className="absolute bottom-3 right-3 bg-[#061217]/90 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded border border-white/10">
-                    _architecture // SGN SASE ↗
-                  </div>
                 </div>
 
                 {/* Technical Points */}
@@ -319,9 +316,6 @@ export default function Todyl() {
                     fill
                     className="object-cover object-center group-hover:scale-[1.01] transition-transform duration-300"
                   />
-                  <div className="absolute bottom-3 right-3 bg-[#061217]/90 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded border border-white/10">
-                    _architecture // ZTNA ACCESS ↗
-                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 text-slate-700 text-sm">
@@ -385,9 +379,6 @@ export default function Todyl() {
                     fill
                     className="object-cover object-center group-hover:scale-[1.01] transition-transform duration-300"
                   />
-                  <div className="absolute bottom-3 right-3 bg-[#061217]/90 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded border border-white/10">
-                    _architecture // SWG & DNS ↗
-                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 text-slate-700 text-sm">
@@ -454,9 +445,6 @@ export default function Todyl() {
                     fill
                     className="object-cover object-center group-hover:scale-[1.01] transition-transform duration-300"
                   />
-                  <div className="absolute bottom-3 right-3 bg-[#061217]/90 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded border border-white/10">
-                    _architecture // NGFW & CASB ↗
-                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 text-slate-700 text-sm">
@@ -519,9 +507,6 @@ export default function Todyl() {
                     fill
                     className="object-cover object-center group-hover:scale-[1.01] transition-transform duration-300"
                   />
-                  <div className="absolute bottom-3 right-3 bg-[#061217]/90 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded border border-white/10">
-                    _architecture // EDR & NGAV ↗
-                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 text-slate-700 text-sm">
@@ -585,9 +570,6 @@ export default function Todyl() {
                     fill
                     className="object-cover object-center group-hover:scale-[1.01] transition-transform duration-300"
                   />
-                  <div className="absolute bottom-3 right-3 bg-[#061217]/90 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded border border-white/10">
-                    _architecture // MXDR 24/7 SOC ↗
-                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 text-slate-700 text-sm">
@@ -651,9 +633,6 @@ export default function Todyl() {
                     fill
                     className="object-cover object-center group-hover:scale-[1.01] transition-transform duration-300"
                   />
-                  <div className="absolute bottom-3 right-3 bg-[#061217]/90 backdrop-blur-md text-white text-[11px] font-mono px-2.5 py-1 rounded border border-white/10">
-                    _architecture // SIEM & LOG ↗
-                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 text-slate-700 text-sm">
@@ -844,9 +823,9 @@ export default function Todyl() {
                     <Image
                       src="/assets/markalar/logos/todyl_logo_white.png"
                       alt="Todyl"
-                      width={80}
-                      height={24}
-                      className="h-5 w-auto object-contain"
+                      width={100}
+                      height={30}
+                      className="h-6 sm:h-[26px] w-auto object-contain"
                     />
                     <span className="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-[#3ba6d0]">
                       _partner
