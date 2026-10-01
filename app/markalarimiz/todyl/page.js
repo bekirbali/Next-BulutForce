@@ -116,7 +116,7 @@ export default function Todyl() {
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#061217] tracking-tight max-w-4xl mx-auto leading-tight mb-6">
             _protection. confidence. <br className="hidden sm:inline" />
             we help you{" "}
-            <span className="bg-[#3ba6d0] text-white px-3 py-0.5 font-bold inline-block my-1 rounded-sm shadow-sm">
+            <span className="bg-primary text-white px-3 py-0.5 font-bold inline-block my-1 rounded-sm shadow-sm">
               build them all.
             </span>
           </h1>
@@ -833,17 +833,17 @@ export default function Todyl() {
                   </div>
 
                   <div>
-                    <h4 className="font-bold text-base leading-snug">
+                    <h4 className="font-bold text-lg sm:text-xl leading-snug">
                       _get started with todyl
                     </h4>
-                    <p className="text-slate-300 text-xs mt-1 leading-relaxed">
+                    <p className="text-slate-300 text-sm mt-2 leading-relaxed">
                       Contact Bulutforce engineers for custom sizing, demo instances, and special pricing.
                     </p>
                   </div>
 
                   <Link
                     href="/iletisim"
-                    className="block text-center bg-[#3ba6d0] hover:bg-[#2e94bd] text-white font-bold py-2.5 px-4 rounded-xl text-xs transition-all duration-200 shadow-md hover:scale-[1.02]"
+                    className="block text-center bg-[#3ba6d0] hover:bg-[#2e94bd] text-white font-bold py-3 px-4 rounded-xl text-sm transition-all duration-200 shadow-md hover:scale-[1.02]"
                   >
                     _request demo & quote ↗
                   </Link>
