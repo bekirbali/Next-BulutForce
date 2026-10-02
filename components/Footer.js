@@ -49,7 +49,7 @@ const Footer = () => {
                 href="/markalarimiz"
                 className="hover:text-blue-200 transition-colors duration-200 flex items-center"
               >
-                Our Brands
+                Products
               </Link>
             </div>
 
