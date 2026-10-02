@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative h-[900px] flex flex-col justify-center items-center text-white pb-32 px-4">
+      <section className="relative h-[720px] md:h-[780px] flex flex-col justify-center items-center text-white px-4 pb-20">
         <video
           autoPlay
           loop
@@ -17,8 +17,10 @@ export default function Home() {
         >
           <source src="/assets/anasayfa/homePageVideo.mp4" type="video/mp4" />
         </video>
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-10"></div>
-        <div className="relative z-20 text-center flex flex-col justify-center items-center flex-grow">
+        <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-10"></div>
+        
+        {/* Hero Title & Subtitle */}
+        <div className="relative z-20 text-center flex flex-col justify-center items-center">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-wider break-words notranslate" translate="no">
             BULUTFORCE
           </h1>
@@ -26,21 +28,17 @@ export default function Home() {
             It is an expert technology company that provides all corporate cyber
             security services from a single location
           </p>
-          <div className="relative w-full pt-24">
-            <div className="max-w-xl md:max-w-3xl mx-auto">
-              {/* <BrandSlider /> */}
-            </div>
-          </div>
         </div>
-        {/* Desktop Cards */}
+
+        {/* Desktop Cards (Yarısı videoda, yarısı dışarıda) */}
         <SecurityCards />
       </section>
 
-      {/* Mobile Cards */}
+      {/* Mobile Cards (Mobil akış) */}
       <SecurityCards isMobile={true} />
 
       {/* Erken Tespit Arka Plan Image Section */}
-      <section className="flex justify-center items-center px-4 mt-6 md:mt-20 py-4 md:py-6">
+      <section className="flex justify-center items-center px-4 mt-6 md:mt-64 py-4 md:py-6">
         <div className="relative w-full max-w-7xl md:px-0">
           <Image
             src="/assets/anasayfa/Todyl.jpeg"
