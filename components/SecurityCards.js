@@ -57,8 +57,8 @@ export default function SecurityCards({ isMobile = false }) {
 
   if (isMobile) {
     return (
-      <div className="md:hidden w-full max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 gap-8">
+      <div className="md:hidden w-full max-w-7xl mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 gap-6">
           {cards.map((card, index) => (
             <Card key={index} card={card} />
           ))}
@@ -68,7 +68,7 @@ export default function SecurityCards({ isMobile = false }) {
   }
 
   return (
-    <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-56 w-full max-w-7xl z-30">
+    <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-52 w-full max-w-7xl px-4 z-30">
       <div className="grid md:grid-cols-3 gap-8">
         {cards.map((card, index) => (
           <Card key={index} card={card} />
@@ -77,3 +77,4 @@ export default function SecurityCards({ isMobile = false }) {
     </div>
   );
 }
+
