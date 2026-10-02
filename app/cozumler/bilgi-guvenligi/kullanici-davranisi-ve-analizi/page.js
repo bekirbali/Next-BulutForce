@@ -7,7 +7,7 @@ export default function KullaniciDavranisiVeAnalizi() {
       {/* Banner Section */}
       <div className="relative h-[300px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/assets/anasayfa/bulutforcedetaylıbilgiarkaplan.jpg"
+          src="/assets/anasayfa/bulutforcedetaylibilgiarkaplan.jpg"
           alt="Security Automation Banner"
           fill
           priority
@@ -62,7 +62,7 @@ export default function KullaniciDavranisiVeAnalizi() {
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
             <div className="lg:w-[500px]">
               <Image
-                src="/assets/çözümler/UBA.png"
+                src="/assets/cozumler/UBA.png"
                 alt="User Behavior Analytics"
                 width={500}
                 height={350}
@@ -125,7 +125,7 @@ export default function KullaniciDavranisiVeAnalizi() {
             <div className="flex flex-col items-center text-center p-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src="/assets/çözümler/bulutforce3cizgi.jpg"
+                  src="/assets/cozumler/bulutforce3cizgi.jpg"
                   alt="Advanced Threat Detection"
                   width={100}
                   height={80}
@@ -144,7 +144,7 @@ export default function KullaniciDavranisiVeAnalizi() {
             <div className="flex flex-col items-center text-center p-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src="/assets/çözümler/bulutforce3cizgi.jpg"
+                  src="/assets/cozumler/bulutforce3cizgi.jpg"
                   alt="Effective Response Process"
                   width={100}
                   height={80}
@@ -163,7 +163,7 @@ export default function KullaniciDavranisiVeAnalizi() {
             <div className="flex flex-col items-center text-center p-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src="/assets/çözümler/bulutforce3cizgi.jpg"
+                  src="/assets/cozumler/bulutforce3cizgi.jpg"
                   alt="Identifies Potential Problems"
                   width={100}
                   height={80}

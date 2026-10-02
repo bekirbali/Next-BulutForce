@@ -6,7 +6,7 @@ export default function InstallationProfessionalServices() {
     <div>
       <div className="relative h-[300px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/assets/anasayfa/bulutforcedetaylıbilgiarkaplan.jpg"
+          src="/assets/anasayfa/bulutforcedetaylibilgiarkaplan.jpg"
           alt="Security Automation Banner"
           fill
           priority

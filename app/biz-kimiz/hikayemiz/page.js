@@ -121,7 +121,7 @@ export default function Hikayemiz() {
       <div
         className="relative h-[400px] flex items-center justify-center"
         style={{
-          backgroundImage: `url('/assets/anasayfa/bulutforcedetaylıbilgiarkaplan.jpg')`,
+          backgroundImage: `url('/assets/anasayfa/bulutforcedetaylibilgiarkaplan.jpg')`,
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
           backgroundSize: "cover",

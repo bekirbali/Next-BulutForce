@@ -7,7 +7,7 @@ export default function GuvenlikOtomasyonu() {
       {/* Banner Section */}
       <div className="relative h-[300px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/assets/anasayfa/bulutforcedetaylıbilgiarkaplan.jpg"
+          src="/assets/anasayfa/bulutforcedetaylibilgiarkaplan.jpg"
           alt="Security Automation Banner"
           fill
           priority
@@ -84,7 +84,7 @@ export default function GuvenlikOtomasyonu() {
             </div>
             <div className="w-full lg:w-1/2 p-4 flex items-center justify-center">
               <Image
-                src="/assets/çözümler/bulutforceransomware.jpg"
+                src="/assets/cozumler/bulutforceransomware.jpg"
                 alt="Ransomware Protection"
                 width={500}
                 height={400}
@@ -120,7 +120,7 @@ export default function GuvenlikOtomasyonu() {
             <div className="flex flex-col items-center text-center p-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src="/assets/çözümler/bulutforce3cizgi.jpg"
+                  src="/assets/cozumler/bulutforce3cizgi.jpg"
                   alt="Advanced Threat Detection"
                   width={100}
                   height={80}
@@ -140,7 +140,7 @@ export default function GuvenlikOtomasyonu() {
             <div className="flex flex-col items-center text-center p-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src="/assets/çözümler/bulutforce3cizgi.jpg"
+                  src="/assets/cozumler/bulutforce3cizgi.jpg"
                   alt="Effective Response Process"
                   width={100}
                   height={80}
@@ -160,7 +160,7 @@ export default function GuvenlikOtomasyonu() {
             <div className="flex flex-col items-center text-center p-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src="/assets/çözümler/bulutforce3cizgi.jpg"
+                  src="/assets/cozumler/bulutforce3cizgi.jpg"
                   alt="Identifies Potential Problems"
                   width={100}
                   height={80}

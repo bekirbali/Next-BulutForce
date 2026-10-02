@@ -92,7 +92,7 @@ export default function Iletisim() {
       />
       <div className="relative h-[300px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/assets/anasayfa/bulutforcedetaylıbilgiarkaplan.jpg"
+          src="/assets/anasayfa/bulutforcedetaylibilgiarkaplan.jpg"
           alt="Security Automation Banner"
           fill
           priority
@@ -113,7 +113,7 @@ export default function Iletisim() {
         {/* Address */}
         <div className="flex flex-col items-center text-center">
           <Image
-            src="/assets/iletişim/bulutforceadres.png"
+            src="/assets/iletisim/bulutforceadres.png"
             alt="Address Icon"
             width={64}
             height={64}
@@ -128,7 +128,7 @@ export default function Iletisim() {
         {/* Telephone */}
         <div className="flex flex-col items-center text-center">
           <Image
-            src="/assets/iletişim/bulutforcetelefon.png"
+            src="/assets/iletisim/bulutforcetelefon.png"
             alt="Telephone Icon"
             width={64}
             height={64}
@@ -140,7 +140,7 @@ export default function Iletisim() {
         {/* E-mail */}
         <div className="flex flex-col items-center text-center">
           <Image
-            src="/assets/iletişim/bulutforcemail.png"
+            src="/assets/iletisim/bulutforcemail.png"
             alt="E-mail Icon"
             width={64}
             height={64}
@@ -170,7 +170,7 @@ export default function Iletisim() {
         {/* Left: Image */}
         <div className="h-full w-full">
           <Image
-            src="/assets/iletişim/bulutforceiletisimanaresim.jpg"
+            src="/assets/iletisim/bulutforceiletisimanaresim.jpg"
             alt="Contact Visual"
             width={800}
             height={600}

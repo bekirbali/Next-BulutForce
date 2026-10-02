@@ -7,7 +7,7 @@ export default function GuvenlikOtomasyonu() {
       {/* Banner Section */}
       <div className="relative h-[300px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/assets/anasayfa/bulutforcedetaylıbilgiarkaplan.jpg"
+          src="/assets/anasayfa/bulutforcedetaylibilgiarkaplan.jpg"
           alt="Security Automation Banner"
           fill
           priority
@@ -54,7 +54,7 @@ export default function GuvenlikOtomasyonu() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-8">
             <div className="md:w-1/2 flex justify-center">
               <Image
-                src="/assets/çözümler/modem.png"
+                src="/assets/cozumler/modem.png"
                 alt="Network Security Device"
                 width={800}
                 height={300}
@@ -113,7 +113,7 @@ export default function GuvenlikOtomasyonu() {
               <div className="md:w-1/2">
                 <div className="flex flex-col items-center justify-center h-full">
                   <Image
-                    src="/assets/çözümler/areas.jpg"
+                    src="/assets/cozumler/areas.jpg"
                     alt="Application Areas"
                     width={750}
                     height={900}
@@ -141,7 +141,7 @@ export default function GuvenlikOtomasyonu() {
             <div className="flex flex-col items-center text-center p-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src="/assets/çözümler/bulutforce3cizgi.jpg"
+                  src="/assets/cozumler/bulutforce3cizgi.jpg"
                   alt="Advanced Threat Detection"
                   width={100}
                   height={80}
@@ -161,7 +161,7 @@ export default function GuvenlikOtomasyonu() {
             <div className="flex flex-col items-center text-center p-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src="/assets/çözümler/bulutforce3cizgi.jpg"
+                  src="/assets/cozumler/bulutforce3cizgi.jpg"
                   alt="Effective Response Process"
                   width={100}
                   height={80}
@@ -180,7 +180,7 @@ export default function GuvenlikOtomasyonu() {
             <div className="flex flex-col items-center text-center p-4">
               <div className="flex justify-center mb-6">
                 <Image
-                  src="/assets/çözümler/bulutforce3cizgi.jpg"
+                  src="/assets/cozumler/bulutforce3cizgi.jpg"
                   alt="Identifies Potential Problems"
                   width={100}
                   height={80}

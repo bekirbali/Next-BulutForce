@@ -157,7 +157,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center">
                   <Image
-                    src="/assets/anasayfa/bulutforce20yıl.png"
+                    src="/assets/anasayfa/bulutforce20yil.png"
                     alt="Experience"
                     width={120}
                     height={120}
@@ -280,7 +280,7 @@ export default function Home() {
               <div className="relative rounded-lg overflow-hidden group cursor-pointer">
                 <div className="h-96 relative">
                   <Image
-                    src="/assets/anasayfa/bulutforcedestekplanları.jpg"
+                    src="/assets/anasayfa/bulutforcedestekplanlari.jpg"
                     alt="Support Plans"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -414,7 +414,7 @@ export default function Home() {
         className="relative py-32 bg-cover bg-center bg-fixed flex items-center justify-center min-h-[400px]"
         style={{
           backgroundImage:
-            "url('/assets/anasayfa/bulutforcedetaylıbilgiarkaplan.jpg')",
+            "url('/assets/anasayfa/bulutforcedetaylibilgiarkaplan.jpg')",
           backgroundAttachment: "fixed",
         }}
       >
